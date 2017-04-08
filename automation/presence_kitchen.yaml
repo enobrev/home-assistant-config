@@ -1,0 +1,19 @@
+    - alias: "Kitchen Presence On"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.kitchen_sensor_opened
+          to: 'on'
+      action:
+        - service: homeassistant.turn_on
+          entity_id: input_boolean.presence_room_kitchen
+
+    - alias: "Kitchen Presence Off"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.kitchen_sensor_opened
+          to: 'off'
+          for:
+              minutes: 2
+      action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_room_kitchen

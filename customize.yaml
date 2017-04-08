@@ -1,0 +1,51 @@
+media_player.roku_6325ae219771:
+    friendly_name: Roku
+media_player.samsung_wireless_audio_spkwam1500:
+    friendly_name: Samsung Wireless Speaker
+media_player.johnny_5_guestroom:
+    friendly_name: Chromecast Guest Room
+media_player.walle_living_room:
+    friendly_name: Chromecast Living Room
+
+
+input_boolean.presence_home_mark:
+    entity_picture: /local/mark.jpg
+input_boolean.presence_home_lauren:
+    entity_picture: /local/lauren.jpg
+climate.dining_room:
+    entity_picture: /local/nest.jpg
+cover.garage_door_opener:
+    entity_picture: /local/garage.jpg
+light.living_room_lamp:
+    entity_picture: /local/lamp.jpg
+light.bedroom_lamp:
+    entity_picture: /local/lamp.jpg
+light.dining_room_light:
+    entity_picture: /local/jar-light.jpg
+light.kitchen_light:
+    entity_picture: /local/track-light.jpg
+light.front_porch_light:
+    entity_picture: /local/porch-light.jpg
+
+group.all_automations:
+    hidden: false
+group.all_devices:
+    hidden: false
+group.all_lights:
+    hidden: false
+group.all_covers:
+    hidden: false
+group.all_locks:
+    hidden: false
+group.all_remotes:
+    hidden: false
+group.all_scripts:
+    hidden: false
+group.all_switches:
+    hidden: false
+
+
+media_player.plex_web_chrome:
+    hidden: true
+media_player.galaxy_s6:
+    hidden: true

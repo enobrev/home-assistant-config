@@ -1,0 +1,19 @@
+    - alias: "Dining Room Presence On"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.dining_room_sensor_opened
+          to: 'on'
+      action:
+        - service: homeassistant.turn_on
+          entity_id: input_boolean.presence_room_dining
+
+    - alias: "Dining Room Presence Off"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.dining_room_sensor_opened
+          to: 'off'
+          for:
+              minutes: 2
+      action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_room_dining

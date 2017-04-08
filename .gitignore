@@ -1,0 +1,13 @@
+*.iml
+*.conf
+.idea
+.uuid
+.google.token
+/deps/
+/tts/
+/www/
+/secrets.yaml
+/home-assistant.log
+/known_devices.yaml
+/google_calendars.yaml
+/testing.yaml

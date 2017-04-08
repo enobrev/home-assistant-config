@@ -1,0 +1,10 @@
+
+    - platform: asuswrt
+      host: 192.168.1.1
+      username: !secret asus_username
+      password: !secret asus_password
+      protocol: telnet
+    - platform: netgear
+      host: 192.168.1.250
+      username: !secret netgear_username
+      password: !secret netgear_password

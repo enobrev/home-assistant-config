@@ -1,0 +1,74 @@
+  - alias: "Lauren is Home"
+    trigger:
+        - platform: state
+          entity_id: input_boolean.presence_home_lauren
+          state: 'on'
+    action:
+        - service: input_select.select_option
+          data:
+              entity_id: input_select.presence_room_lauren
+              option: "At Home"
+
+  - alias: "Lauren is Away"
+    trigger:
+        - platform: state
+          entity_id: input_boolean.presence_home_lauren
+          state: 'off'
+    action:
+        - service: input_select.select_option
+          data:
+              entity_id: input_select.presence_room_lauren
+              option: "Away"
+
+  - alias: "A Router has detected Lauren"
+    condition:
+        - condition: state
+          entity_id: input_boolean.presence_home_lauren
+          state: 'off'
+    trigger:
+        - platform: state
+          entity_id: device_tracker.netgear_android_lauren
+          state: 'home'
+        - platform: state
+          entity_id: device_tracker.asus_android_lauren
+          state: 'home'
+    action:
+        - service: homeassistant.turn_on
+          entity_id: input_boolean.presence_home_lauren
+
+
+  - alias: "Lauren has disconnected (Last: Asus)"
+    condition:
+        - condition: state
+          entity_id: device_tracker.netgear_android_lauren
+          state: 'not_home'
+        - condition: state
+          entity_id: input_boolean.presence_home_lauren
+          state: 'on'
+    trigger:
+        - platform: state
+          entity_id: device_tracker.asus_android_lauren
+          state: 'not_home'
+          for:
+              minutes: 3
+    action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_home_lauren
+
+  - alias: "Lauren has disconnected (Last: Netgear)"
+    condition:
+        - condition: state
+          entity_id: device_tracker.asus_android_lauren
+          state: 'not_home'
+        - condition: state
+          entity_id: input_boolean.presence_home_lauren
+          state: 'on'
+    trigger:
+        - platform: state
+          entity_id: device_tracker.netgear_android_lauren
+          state: 'not_home'
+          for:
+              minutes: 3
+    action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_home_lauren

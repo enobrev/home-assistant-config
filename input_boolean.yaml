@@ -1,0 +1,34 @@
+presence_home_mark:
+    name: "Mark is Home"
+    initial: on
+    icon: mdi:human-male
+
+presence_home_lauren:
+    name: "Lauren is Home"
+    initial: on
+    icon: mdi:human-female
+
+presence_home_visitor:
+    name: "Visitor Mode"
+    initial: off
+    icon: mdi:human
+
+presence_home_all:
+    name: "Someone is Home"
+    initial: on
+    icon: mdi:human-male-female
+
+presence_room_kitchen:
+    name: "Someone is in the Kitchen"
+    initial: off
+    icon: mdi:human-handsup
+
+presence_room_dining:
+    name: "Someone is in the Dining Room"
+    initial: off
+    icon: mdi:human-handsup
+
+presence_room_living:
+    name: "Someone is in the Living Room"
+    initial: off
+    icon: mdi:human-handsup

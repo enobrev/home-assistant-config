@@ -1,0 +1,23 @@
+
+  - alias: "Nobody is Home"
+    trigger:
+        - platform: template
+          value_template: "{% if is_state('input_boolean.presence_home_mark', 'off') and is_state('input_boolean.presence_home_lauren', 'off') and is_state('input_boolean.presence_home_visitor', 'off') %}true{% endif %}"
+    action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_home_all
+
+  - alias: "Somebody is Home"
+    trigger:
+        - platform: state
+          entity_id: input_boolean.presence_home_lauren
+          state: 'on'
+        - platform: state
+          entity_id: input_boolean.presence_home_mark
+          state: 'on'
+        - platform: state
+          entity_id: input_boolean.presence_home_visitor
+          state: 'on'
+    action:
+        - service: homeassistant.turn_on
+          entity_id: input_boolean.presence_home_all

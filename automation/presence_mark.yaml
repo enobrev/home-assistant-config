@@ -1,0 +1,74 @@
+  - alias: "Mark is Home"
+    trigger:
+        - platform: state
+          entity_id: input_boolean.presence_home_mark
+          state: 'on'
+    action:
+        - service: input_select.select_option
+          data:
+              entity_id: input_select.presence_room_mark
+              option: "At Home"
+
+  - alias: "Mark is Away"
+    trigger:
+        - platform: state
+          entity_id: input_boolean.presence_home_mark
+          state: 'off'
+    action:
+        - service: input_select.select_option
+          data:
+              entity_id: input_select.presence_room_mark
+              option: "Away"
+
+  - alias: "A Router has Detected Mark"
+    condition:
+        - condition: state
+          entity_id: input_boolean.presence_home_mark
+          state: 'off'
+    trigger:
+        - platform: state
+          entity_id: device_tracker.netgear_android_mark
+          state: 'home'
+        - platform: state
+          entity_id: device_tracker.asus_android_mark
+          state: 'home'
+    action:
+        - service: homeassistant.turn_on
+          entity_id: input_boolean.presence_home_mark
+
+
+  - alias: "Mark has disconnected (Last: Asus)"
+    condition:
+        - condition: state
+          entity_id: device_tracker.netgear_android_mark
+          state: 'not_home'
+        - condition: state
+          entity_id: input_boolean.presence_home_mark
+          state: 'on'
+    trigger:
+        - platform: state
+          entity_id: device_tracker.asus_android_mark
+          state: 'not_home'
+          for:
+              minutes: 3
+    action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_home_mark
+
+  - alias: "Mark has disconnected (Last: Netgear)"
+    condition:
+        - condition: state
+          entity_id: device_tracker.asus_android_mark
+          state: 'not_home'
+        - condition: state
+          entity_id: input_boolean.presence_home_mark
+          state: 'on'
+    trigger:
+        - platform: state
+          entity_id: device_tracker.netgear_android_mark
+          state: 'not_home'
+          for:
+              minutes: 3
+    action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_home_mark

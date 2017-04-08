@@ -1,0 +1,265 @@
+
+default_view:
+    view: yes
+    name: Important Stuff
+    entities:
+        - climate.dining_room
+        - group.lights
+        - group.garage
+        - scene.movie_mode
+        - scene.sleep_mode
+        - group.presence_people
+        - group.media
+
+presence_people:
+    view: no
+    name: Where is Everybody
+    entities:
+        - input_boolean.presence_home_mark
+        - input_boolean.presence_home_lauren
+        - input_boolean.presence_home_visitor
+
+people:
+    view: yes
+    name: People
+    entities:
+        - group.presence_places
+        - group.mark
+        - group.lauren
+        - group.cat_pan
+
+presence_places:
+    view: no
+    name: Presence Sensors
+    entities:
+        - input_boolean.presence_home_all
+        - input_boolean.presence_home_visitor
+        - input_boolean.presence_room_living
+        - input_boolean.presence_room_dining
+        - input_boolean.presence_room_kitchen
+
+media:
+    view: yes
+    name: Media
+    entities:
+        - media_player.roku_6325ae219771
+        - media_player.samsung_wireless_audio_spkwam1500
+        - media_player.johnny_5_guestroom
+        - media_player.walle_living_room
+
+floor_1:
+    view: yes
+    name: First Floor
+    entities:
+        - group.dining_room
+        - group.living_room
+        - group.kitchen
+        - group.front_porch
+        - group.thermostat
+        - group.speedtest
+        - group.garage
+floor_2:
+    view: yes
+    name: Second Floor
+    entities:
+        - group.master_bedroom
+        - group.office
+        - group.guest_room
+
+office:
+    view: no
+    name: Office
+    entities:
+        - device_tracker.computer_enobrev
+        - device_tracker.computer_mac_mini
+        - device_tracker.hdhr_office
+        - device_tracker.brother_printer
+        - device_tracker.iphone_mark
+        - device_tracker.wink_hub_wifi
+        - device_tracker.wink_hub_lan
+
+master_bedroom:
+    view: no
+    name: Master Bedroom
+    entities:
+        - light.bedroom_lamp
+        - media_player.samsung_wireless_audio_spkwam1500
+
+guest_room:
+    view: no
+    name: Guest Room
+    entities:
+        - media_player.johnny_5_guestroom
+dining_room:
+    view: no
+    name: Dining Room
+    entities:
+        - input_boolean.presence_room_dining
+        - light.dining_room_light
+        - binary_sensor.dining_room_sensor_opened
+        - climate.dining_room
+living_room:
+    view: no
+    name: Living Room
+    entities:
+        - input_boolean.presence_room_living
+        - light.living_room_lamp
+        - media_player.roku_6325ae219771
+        - media_player.walle_living_room
+        - device_tracker.brother_document_scanner
+garage:
+    view: no
+    name: Garage
+    entities:
+        - cover.garage_door_opener
+front_porch:
+    view: no
+    name: Front Porch
+    entities:
+        - light.front_porch_light
+kitchen:
+    view: no
+    name: Kitchen
+    entities:
+        - input_boolean.presence_room_kitchen
+        - light.kitchen_light
+        - calendar.house_garbage
+        - binary_sensor.kitchen_sensor_opened
+lauren:
+    view: no
+    name: Lauren
+    entities:
+        - input_boolean.presence_home_lauren
+        - input_select.presence_room_lauren
+mark:
+    view: no
+    name: Mark
+    entities:
+        - input_boolean.presence_home_mark
+        - input_select.presence_room_mark
+
+cat_pan:
+    view: no
+    name: Cat Pan
+    entities:
+        - calendar.house_cat_pan_mark
+        - calendar.house_cat_pan_lauren
+
+all_of_it:
+    view: yes
+    name: Kitchen Sink
+    entities:
+        - group.weather
+        - group.system
+        - group.thermostat
+        - group.speedtest
+        - group.movement
+        - group.inputs
+        - group.garage
+        - group.media
+        - group.all_automations
+        - group.all_lights
+        - group.all_devices
+        - group.all_covers
+        - group.calendar
+
+
+inputs:
+    view: no
+    name: Inputs
+    entities:
+        - input_boolean.presence_home_mark
+        - input_boolean.presence_home_lauren
+        - input_boolean.presence_home_all
+        - input_boolean.presence_room_kitchen
+        - input_boolean.presence_room_dining
+        - input_boolean.presence_room_living
+        - input_select.presence_room_mark
+        - input_select.presence_room_lauren
+weather:
+    view: no
+    name: Weather
+    entities:
+        - sun.sun
+        - sensor.dark_sky_summary
+        - sensor.dark_sky_temperature
+        - sensor.dark_sky_apparent_temperature
+        - sensor.dark_sky_daily_low_temperature
+        - sensor.dark_sky_daily_high_temperature
+        - sensor.dark_sky_humidity
+        - sensor.dark_sky_wind_speed
+        - sensor.dark_sky_cloud_coverage
+        - sensor.dark_sky_precip
+        - sensor.dark_sky_precip_intensity
+        - sensor.dark_sky_precip_probability
+thermostat:
+    view: no
+    name: Thermostat
+    entities:
+        - climate.dining_room
+        - sensor.dining_room_thermostat_target
+        - sensor.dining_room_thermostat_temperature
+        - sensor.dining_room_thermostat_humidity
+        - sensor.dining_room_thermostat_hvac_state
+        - sensor.dining_room_thermostat_operation_mode
+        - binary_sensor.dining_room_thermostat_fan
+        - binary_sensor.dining_room_thermostat_has_leaf
+        - binary_sensor.dining_room_thermostat_is_locked
+        - binary_sensor.dining_room_thermostat_is_using_emergency_heat
+        - binary_sensor.dining_room_thermostat_online
+speedtest:
+    view: no
+    name: Speed Test
+    entities:
+        - sensor.speedtest_download
+        - sensor.speedtest_ping
+        - sensor.speedtest_upload
+system:
+    view: no
+    name: System
+    entities:
+        - sensor.cpu_use
+        - sensor.disk_use_
+        - sensor.ram_free
+        - sensor.received_eth0
+        - sensor.sent_eth0
+        - sensor.last_boot
+
+movement:
+    view: no
+    name: Motion Sensors
+    entities:
+        - binary_sensor.dining_room_sensor_opened
+        - binary_sensor.kitchen_sensor_opened
+lights:
+    view: no
+    name: Lights
+    entities:
+        - light.bedroom_lamp
+        - light.front_porch_light
+        - light.kitchen_light
+        - light.living_room_lamp
+        - light.dining_room_light
+devices:
+    view: no
+    name: Devices
+    entities:
+        - device_tracker.roku_living_room
+        - device_tracker.nest_dining_room
+        - device_tracker.computer_enobrev
+        - device_tracker.computer_mac_mini
+        - device_tracker.hdhr_office
+        - device_tracker.asus_android_lauren
+        - device_tracker.netgear_android_lauren
+        - device_tracker.asus_android_mark
+        - device_tracker.netgear_android_mark
+        - device_tracker.iphone_mark
+        - device_tracker.brother_printer
+        - device_tracker.brother_document_scanner
+        - device_tracker.chromecast_guest_room
+        - device_tracker.chromecast_living_room
+        - device_tracker.wink_hub_wifi
+        - device_tracker.wink_hub_lan
+        - device_tracker.netgear_extender
+        - device_tracker.samsung_laptop
+        - device_tracker.myq_garage

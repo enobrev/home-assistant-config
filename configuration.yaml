@@ -1,0 +1,91 @@
+homeassistant:
+    name: Home
+    customize: !include customize.yaml
+    latitude: !secret latitude
+    longitude: !secret longitude
+    # Impacts weather/sunrise data (altitude above sea level in meters)
+    elevation: 186
+    # metric for Metric, imperial for Imperial
+    unit_system: imperial
+    # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+    time_zone: America/Chicago
+
+    # https://github.com/andrey-git/home-assistant-custom-ui
+    customize_glob:
+        light.*:
+            custom_ui_state_card: custom_light
+        cover.*:
+            custom_ui_state_card: custom_cover
+
+# Show links to resources in log and frontend
+# introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+    api_password: !secret api_password
+    base_url: !secret host
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+recorder:
+    db_url: !secret db_url
+
+# Text to speech
+tts:
+    platform: google
+
+group: !include groups.yaml
+
+nest:
+    client_id: !secret nest_id
+    client_secret: !secret nest_secret
+
+google:
+    client_id: !secret google_id
+    client_secret: !secret google_secret
+
+wink:
+    access_token: !secret wink_token
+
+cover:
+  - platform: myq
+    username: !secret myq_username
+    password: !secret myq_password
+    type: chamberlain
+
+notify:
+    - name: HTML5
+      platform: html5
+      gcm_api_key: !secret gcm_key
+      gcm_sender_id: !secret gcm_id
+    - name: pushbullet
+      platform: pushbullet
+      api_key: !secret pushbullet_key
+
+
+device_tracker: !include device_tracker.yaml
+input_select: !include input_select.yaml
+input_boolean: !include input_boolean.yaml
+sensor: !include sensor.yaml
+automation: !include_dir_merge_list automation
