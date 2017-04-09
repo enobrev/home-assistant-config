@@ -28,7 +28,7 @@ config:
 
 http:
     api_password: !secret api_password
-    base_url: !secret host
+#    base_url: !secret host
 
 # Checks for available updates
 updater:
@@ -66,7 +66,12 @@ google:
     client_secret: !secret google_secret
 
 wink:
-    access_token: !secret wink_token
+    email: !secret wink_email
+    password: !secret wink_password
+#    access_token: !secret wink_token
+#    refresh_token: !secret wink_refresh
+#    client_id: !secret wink_client_id
+#    client_secret: !secret wink_client_secret
 
 cover:
   - platform: myq
@@ -75,10 +80,6 @@ cover:
     type: chamberlain
 
 notify:
-    - name: HTML5
-      platform: html5
-      gcm_api_key: !secret gcm_key
-      gcm_sender_id: !secret gcm_id
     - name: pushbullet
       platform: pushbullet
       api_key: !secret pushbullet_key
