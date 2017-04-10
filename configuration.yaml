@@ -14,8 +14,6 @@ homeassistant:
     customize_glob:
         light.*:
             custom_ui_state_card: custom_light
-        cover.*:
-            custom_ui_state_card: custom_cover
 
 # Show links to resources in log and frontend
 # introduction:
@@ -64,6 +62,10 @@ nest:
 google:
     client_id: !secret google_id
     client_secret: !secret google_secret
+
+zwave:
+    usb_path: /dev/ttyACM0
+    config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
 
 wink:
     email: !secret wink_email

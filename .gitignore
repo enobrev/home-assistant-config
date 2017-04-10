@@ -1,5 +1,6 @@
 *.iml
 *.conf
+*.xml
 .idea
 .uuid
 .google.token
@@ -11,3 +12,5 @@
 /known_devices.yaml
 /google_calendars.yaml
 /testing.yaml
+/OZW_Log.txt
+/pyozw.sqlite

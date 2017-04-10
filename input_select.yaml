@@ -51,3 +51,21 @@ presence_room_lauren:
         - "Art Room"
     initial: "At Home"
     icon: mdi:face
+
+delay_dining_room:
+    name: Dining Room
+    options:
+        - "Immediate"
+        - "5 Minutes"
+        - "Half Hour"
+    initial: "5 Minutes"
+    icon: mdi:clock
+
+delay_kitchen:
+    name: Kitchen
+    options:
+        - "Immediate"
+        - "5 Minutes"
+        - "Half Hour"
+    initial: "5 Minutes"
+    icon: mdi:clock

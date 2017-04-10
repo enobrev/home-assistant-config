@@ -1,15 +1,23 @@
 
-default_view:
+default_view2:
     view: yes
     name: Important Stuff
     entities:
         - climate.dining_room
         - group.lights
+        - group.light_delays
         - group.garage
         - scene.movie_mode
         - scene.sleep_mode
         - group.presence_people
         - group.media
+
+light_delays:
+    view: no
+    name: Light Fade-Out Timing
+    entities:
+        - input_select.delay_dining_room
+        - input_select.delay_kitchen
 
 presence_people:
     view: no
@@ -82,7 +90,7 @@ master_bedroom:
     view: no
     name: Master Bedroom
     entities:
-        - light.bedroom_lamp
+        - light.bedroom
         - media_player.samsung_wireless_audio_spkwam1500
 
 guest_room:
@@ -95,7 +103,7 @@ dining_room:
     name: Dining Room
     entities:
         - input_boolean.presence_room_dining
-        - light.dining_room_light
+        - light.dining_room
         - binary_sensor.dining_room_sensor_opened
         - climate.dining_room
 living_room:
@@ -103,7 +111,7 @@ living_room:
     name: Living Room
     entities:
         - input_boolean.presence_room_living
-        - light.living_room_lamp
+        - light.living_room
         - media_player.roku_6325ae219771
         - media_player.walle_living_room
         - device_tracker.brother_document_scanner
@@ -116,13 +124,13 @@ front_porch:
     view: no
     name: Front Porch
     entities:
-        - light.front_porch_light
+        - light.front_porch
 kitchen:
     view: no
     name: Kitchen
     entities:
         - input_boolean.presence_room_kitchen
-        - light.kitchen_light
+        - light.kitchen
         - calendar.house_garbage
         - binary_sensor.kitchen_sensor_opened
 lauren:
@@ -235,11 +243,11 @@ lights:
     view: no
     name: Lights
     entities:
-        - light.bedroom_lamp
-        - light.front_porch_light
-        - light.kitchen_light
-        - light.living_room_lamp
-        - light.dining_room_light
+        - light.bedroom
+        - light.front_porch
+        - light.kitchen
+        - light.living_room
+        - light.dining_room
 devices:
     view: no
     name: Devices

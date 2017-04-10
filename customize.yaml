@@ -16,15 +16,15 @@ climate.dining_room:
     entity_picture: /local/nest.jpg
 cover.garage_door_opener:
     entity_picture: /local/garage.jpg
-light.living_room_lamp:
+light.living_room:
     entity_picture: /local/lamp.jpg
-light.bedroom_lamp:
+light.bedroom:
     entity_picture: /local/lamp.jpg
-light.dining_room_light:
+light.dining_room:
     entity_picture: /local/jar-light.jpg
-light.kitchen_light:
+light.kitchen:
     entity_picture: /local/track-light.jpg
-light.front_porch_light:
+light.front_porch:
     entity_picture: /local/porch-light.jpg
 
 group.all_automations:

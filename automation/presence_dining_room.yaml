@@ -6,14 +6,46 @@
       action:
         - service: homeassistant.turn_on
           entity_id: input_boolean.presence_room_dining
+   
+    - alias: "Dining Room Presence Off Immediate"
+      condition: 
+          condition: state
+          entity_id: input_select.delay_dining_room
+          state: "Immediate"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.dining_room_sensor_opened
+          to: 'off'
+      action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_room_dining
 
-    - alias: "Dining Room Presence Off"
+    - alias: "Dining Room Presence Off 5 Minutes"
+      condition: 
+          condition: state
+          entity_id: input_select.delay_dining_room
+          state: "5 Minutes"
       trigger:
           platform: state
           entity_id: binary_sensor.dining_room_sensor_opened
           to: 'off'
           for:
-              minutes: 2
+              minutes: 5
+      action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_room_dining
+
+    - alias: "Dining Room Presence Off 30 Minutes"
+      condition: 
+          condition: state
+          entity_id: input_select.delay_dining_room
+          state: "30 Minutes"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.dining_room_sensor_opened
+          to: 'off'
+          for:
+              minutes: 30
       action:
         - service: homeassistant.turn_off
           entity_id: input_boolean.presence_room_dining
