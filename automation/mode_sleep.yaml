@@ -1,0 +1,29 @@
+    - alias: "Sleep Mode"
+      trigger:
+          platform: state
+          entity_id: input_boolean.mode_sleep
+          to: 'on'
+      action:
+          - service: input_select.select_option
+            data:
+                entity_id: input_select.delay_dining_room
+                option: "5 Minutes"
+          - service: light.turn_off
+            data:
+                entity_id: light.living_room
+          - service: light.turn_off
+            data:
+                entity_id: light.switch_level_3_0 
+          - service: light.turn_off
+            data:
+                entity_id: light.switch_level_6_0 
+          - service: climate.set_temparature
+            data:
+                entity_id: climate.dining_room
+                temperature: 60
+          - service: lock.lock
+            data:
+                entity_id: local.lock
+          - service: input_boolean.turn_off
+            data:
+                entity_id: input_boolean.mode_sleep

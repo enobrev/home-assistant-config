@@ -1,0 +1,21 @@
+    - alias: "Movie Mode"
+      trigger:
+          platform: state
+          entity_id: input_boolean.mode_movie
+          to: 'on'
+      action:
+          - service: light.turn_on
+            data:
+                entity_id: light.living_room
+                brightness: 65
+          - service: input_select.select_option
+            data:
+                entity_id: input_select.delay_dining_room
+                option: "Immediate"
+          - service: input_select.select_option
+            data:
+                entity_id: input_select.delay_kitchen
+                option: "Immediate"
+          - service: input_boolean.turn_off
+            data:
+                entity_id: input_boolean.mode_movie

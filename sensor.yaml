@@ -55,3 +55,10 @@
   - type: network_out
     arg: eth0
   - type: last_boot
+
+- platform: template
+  sensors:
+      solar_angle:
+          value_template: '{{ "%+.1f"|format(states.sun.sun.attributes.elevation) }}'
+          friendly_name: 'Sun Angle'
+          unit_of_measurement: '°'

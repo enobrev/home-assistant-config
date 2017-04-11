@@ -58,3 +58,6 @@ media_player.plex_web_chrome:
     hidden: true
 media_player.galaxy_s6:
     hidden: true
+
+sensor.solar_angle:
+    icon: mdi:weather-sunny

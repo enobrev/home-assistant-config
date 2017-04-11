@@ -1,17 +1,17 @@
 
-default_view2:
+default_view:
     view: yes
     name: Home
     entities:
+        - persistent_notification.update_available
         - climate.dining_room
         - group.lights
         - group.light_delays
         - group.garage
-        - scene.movie_mode
-        - scene.sleep_mode
         - group.presence_people
         - group.room_sensors
         - lock.lock
+        - group.modes
 
 light_delays:
     view: no
@@ -29,7 +29,14 @@ presence_people:
         - input_boolean.presence_home_lauren
         - input_boolean.presence_home_visitor
 
-people:
+modes:
+    view: no
+    name: Modes
+    entities:
+        - input_boolean.mode_sleep
+        - input_boolean.mode_movie
+
+view_people:
     view: yes
     name: People
     entities:
@@ -54,7 +61,6 @@ room_sensors:
     entities:
         - input_boolean.presence_room_dining
         - input_boolean.presence_room_kitchen
-        - input_slider.darkness
 
 media:
     view: yes
@@ -64,19 +70,23 @@ media:
         - media_player.samsung_wireless_audio_spkwam1500
         - media_player.johnny_5_guestroom
         - media_player.walle_living_room
-
-floor_1:
+view_outside:
+    view: yes
+    name: Outside
+    entities:
+        - group.outside
+        - group.garage
+        - group.weather
+view_floor_1:
     view: yes
     name: First Floor
     entities:
         - group.dining_room
         - group.living_room
         - group.kitchen
-        - group.front_porch
         - group.thermostat
         - group.speedtest
-        - group.garage
-floor_2:
+view_floor_2:
     view: yes
     name: Second Floor
     entities:
@@ -131,13 +141,18 @@ garage:
     name: Garage
     entities:
         - cover.garage_door_opener
-        - light.garage_door
 
-front_porch:
+outside:
     view: no
-    name: Front Porch
+    name: Outside
     entities:
+        - input_slider.darkness
         - light.front_porch
+        - light.garage_door
+        - sensor.solar_angle
+        - sensor.dark_sky_cloud_coverage
+        - sensor.dark_sky_precip_intensity
+
 kitchen:
     view: no
     name: Kitchen
@@ -167,7 +182,7 @@ cat_pan:
         - calendar.house_cat_pan_mark
         - calendar.house_cat_pan_lauren
 
-all_of_it:
+view_all_of_it:
     view: yes
     name: Kitchen Sink
     entities:
@@ -185,6 +200,7 @@ all_of_it:
         - group.all_covers
         - group.all_locks
         - group.calendar
+        - group.modes
 
 
 inputs:
@@ -204,6 +220,7 @@ weather:
     name: Weather
     entities:
         - sun.sun
+        - sensor.solar_angle
         - sensor.dark_sky_summary
         - sensor.dark_sky_temperature
         - sensor.dark_sky_apparent_temperature

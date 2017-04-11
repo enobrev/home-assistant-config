@@ -32,3 +32,15 @@ presence_room_living:
     name: "Someone is in the Living Room"
     initial: off
     icon: mdi:human-handsup
+
+mode_sleep:
+    name: "Sleep Mode"
+    initial: off
+    icon: mdi:sleep
+
+mode_movie:
+    name: "Movie Mode"
+    initial: off
+    icon: mdi:movie
+
+
