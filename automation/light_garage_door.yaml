@@ -1,0 +1,23 @@
+    - alias: "Garage Door Light Off"
+      trigger:
+          platform: state
+          entity_id: input_slider.darkness
+      condition:
+          condition: template
+          value_template: '{{ states.input_slider.darkness.state | int < 1 }}'
+      action:
+          service: light.turn_off
+          entity_id: light.garage_door
+
+    - alias: "Garage Door Light On"
+      trigger:
+          platform: state
+          entity_id: input_slider.darkness
+      condition:
+          condition: template
+          value_template: '{{ states.input_slider.darkness.state | int > 0 }}'
+      action:
+          service: light.turn_on
+          data_template:
+              entity_id: light.garage_door
+              brightness: '{{ states.input_slider.darkness.state | int * 30 }}'

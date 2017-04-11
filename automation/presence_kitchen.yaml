@@ -14,8 +14,23 @@
           state: "Immediate"
       trigger:
           platform: state
-          entity_id: binary_sensor.kitchen_sensor_opened
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_4_0
           to: 'off'
+      action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_room_kitchen
+
+    - alias: "Kitchen Presence Off 2 Minutes"
+      condition: 
+          condition: state
+          entity_id: input_select.delay_kitchen
+          state: "2 Minutes"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_4_0
+          to: 'off'
+          for:
+              minutes: 2
       action:
         - service: homeassistant.turn_off
           entity_id: input_boolean.presence_room_kitchen

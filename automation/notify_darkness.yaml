@@ -1,0 +1,25 @@
+    - alias: "Notify Light"
+      trigger:
+          platform: state
+          entity_id: input_slider.darkness
+      condition:
+          condition: template
+          value_template: '{{ states.input_slider.darkness.state | int < 1 }}'
+      action:
+          service: notify.pushbullet
+          data_template: 
+              title: Light
+              message: '{{ states.input_slider.darkness.state }}'
+
+    - alias: "Notify Darkness"
+      trigger:
+          platform: state
+          entity_id: input_slider.darkness
+      condition:
+          condition: template
+          value_template: '{{ states.input_slider.darkness.state | int > 0 }}'
+      action:
+          service: notify.pushbullet
+          data_template:
+              title: Darkness
+              message: '{{ states.input_slider.darkness.state }}'

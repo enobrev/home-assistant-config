@@ -1,0 +1,39 @@
+
+    - alias: "Sunny"
+      trigger:
+          platform: numeric_state
+          entity_id: sun.sun
+          value_template: '{{ state.attributes.elevation }}'
+          above: 7
+      action:
+          service: input_slider.select_value
+          data_template:
+              entity_id: input_slider.darkness
+              value:     "{% if sensor.dark_sky_cloud_coverage | int > 80 %}1{% else %}0{% endif %}"
+          
+    - alias: "Sunset"
+      trigger:
+          platform: numeric_state
+          entity_id: sun.sun
+          value_template: '{{ state.attributes.elevation }}'
+          below: 7
+          above: -20
+      action:
+          service: input_slider.select_value
+          data_template:
+              entity_id: input_slider.darkness
+              value:     "{% if sensor.dark_sky_cloud_coverage | int > 80 %}3{% else %}2{% endif %}"
+
+    - alias: "Evening"
+      trigger:
+          platform: numeric_state
+          entity_id: sun.sun
+          value_template: '{{ state.attributes.elevation }}'
+          below: -20
+      action:
+          service: input_slider.select_value
+          data:
+              entity_id: input_slider.darkness
+              value:     4
+          
+

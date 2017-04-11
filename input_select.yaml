@@ -56,16 +56,30 @@ delay_dining_room:
     name: Dining Room
     options:
         - "Immediate"
+        - "2 Minutes"
         - "5 Minutes"
         - "Half Hour"
-    initial: "5 Minutes"
+    initial: "2 Minutes"
     icon: mdi:clock
 
 delay_kitchen:
     name: Kitchen
     options:
         - "Immediate"
+        - "2 Minutes"
         - "5 Minutes"
         - "Half Hour"
-    initial: "5 Minutes"
+    initial: "2 Minutes"
+    icon: mdi:clock
+
+timer_bedroom:
+    name: Bedroom
+    options:
+        - "30 Seconds"
+        - "2 Minutes"
+        - "5 Minutes"
+        - "Half Hour"
+        - "One Hour"
+        - "Stay On"
+    initial: "Stay On"
     icon: mdi:clock

@@ -1,7 +1,7 @@
 
 default_view2:
     view: yes
-    name: Important Stuff
+    name: Home
     entities:
         - climate.dining_room
         - group.lights
@@ -10,7 +10,8 @@ default_view2:
         - scene.movie_mode
         - scene.sleep_mode
         - group.presence_people
-        - group.media
+        - group.room_sensors
+        - lock.lock
 
 light_delays:
     view: no
@@ -18,6 +19,7 @@ light_delays:
     entities:
         - input_select.delay_dining_room
         - input_select.delay_kitchen
+        - input_select.timer_bedroom
 
 presence_people:
     view: no
@@ -45,6 +47,14 @@ presence_places:
         - input_boolean.presence_room_living
         - input_boolean.presence_room_dining
         - input_boolean.presence_room_kitchen
+
+room_sensors:
+    view: no
+    name: Room Sensors
+    entities:
+        - input_boolean.presence_room_dining
+        - input_boolean.presence_room_kitchen
+        - input_slider.darkness
 
 media:
     view: yes
@@ -121,6 +131,8 @@ garage:
     name: Garage
     entities:
         - cover.garage_door_opener
+        - light.garage_door
+
 front_porch:
     view: no
     name: Front Porch
@@ -171,6 +183,7 @@ all_of_it:
         - group.all_lights
         - group.all_devices
         - group.all_covers
+        - group.all_locks
         - group.calendar
 
 

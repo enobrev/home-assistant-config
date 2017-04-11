@@ -20,6 +20,21 @@
         - service: homeassistant.turn_off
           entity_id: input_boolean.presence_room_dining
 
+    - alias: "Dining Room Presence Off 2 Minutes"
+      condition: 
+          condition: state
+          entity_id: input_select.delay_dining_room
+          state: "2 Minutes"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_2_0
+          to: 'off'
+          for:
+              minutes: 2
+      action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_room_dining
+
     - alias: "Dining Room Presence Off 5 Minutes"
       condition: 
           condition: state
