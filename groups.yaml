@@ -103,7 +103,8 @@ dining_room:
     name: Dining Room
     entities:
         - input_boolean.presence_room_dining
-        - light.dining_room
+          # - light.ge_12724_3way_dimmer_switch_level_3_0
+        - light.switch_level_3_0
         - binary_sensor.dining_room_sensor_opened
         - climate.dining_room
 living_room:
@@ -130,7 +131,8 @@ kitchen:
     name: Kitchen
     entities:
         - input_boolean.presence_room_kitchen
-        - light.kitchen
+          # - light.ge_12724_3way_dimmer_switch_level_6_0  
+        - light.switch_level_6_0
         - calendar.house_garbage
         - binary_sensor.kitchen_sensor_opened
 lauren:
@@ -245,9 +247,12 @@ lights:
     entities:
         - light.bedroom
         - light.front_porch
-        - light.kitchen
         - light.living_room
-        - light.dining_room
+        - light.garage_door
+          # - light.ge_12724_3way_dimmer_switch_level_3_0  # dining room
+        - light.switch_level_3_0                       # dining room
+          # - light.ge_12724_3way_dimmer_switch_level_6_0  # kitchen
+        - light.switch_level_6_0                       # kitchen
 devices:
     view: no
     name: Devices

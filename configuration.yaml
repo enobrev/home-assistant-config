@@ -66,6 +66,20 @@ google:
 zwave:
     usb_path: /dev/ttyACM0
     config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
+    polling_interval: 60000
+    # debug: 1
+    # autoheal: False
+    device_config:
+        # https://community.home-assistant.io/t/z-wave-devices-stop-reporting-to-hass/6636/28
+        light.switch_level_3_0:
+            refresh_value: true   # refresh the brightness value if the dimmer do "soft off"
+            delay: 2              # Amount of seconds before the refresh is done after the actual action.
+            polling_intensity: 1  # Polls the device when each (polling_intensity) polling is performed(By polling_interval)
+        light.switch_level_6_0:
+            refresh_value: true   # refresh the brightness value if the dimmer do "soft off"
+            delay: 2              # Amount of seconds before the refresh is done after the actual action.
+            polling_intensity: 1  # Polls the device when each (polling_intensity) polling is performed(By polling_interval)
+
 
 wink:
     email: !secret wink_email

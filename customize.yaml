@@ -20,12 +20,22 @@ light.living_room:
     entity_picture: /local/lamp.jpg
 light.bedroom:
     entity_picture: /local/lamp.jpg
-light.dining_room:
-    entity_picture: /local/jar-light.jpg
-light.kitchen:
-    entity_picture: /local/track-light.jpg
 light.front_porch:
     entity_picture: /local/porch-light.jpg
+light.ge_12724_3way_dimmer_switch_level_3_0:
+    entity_picture: /local/jar-light.jpg
+    friendly_name: Dining Room
+light.switch_level_3_0:
+    entity_picture: /local/jar-light.jpg
+    friendly_name: Dining Room
+light.ge_12724_3way_dimmer_switch_level_6_0:
+    entity_picture: /local/track-light.jpg
+    friendly_name: Kitchen
+light.switch_level_6_0:
+    entity_picture: /local/track-light.jpg
+    friendly_name: Kitchen
+lock.lock:
+    friendly_name: Back Door
 
 group.all_automations:
     hidden: false
@@ -43,7 +53,6 @@ group.all_scripts:
     hidden: false
 group.all_switches:
     hidden: false
-
 
 media_player.plex_web_chrome:
     hidden: true
