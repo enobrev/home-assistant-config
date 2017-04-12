@@ -11,11 +11,11 @@
           - service: input_select.select_option
             data:
                 entity_id: input_select.delay_dining_room
-                option: "Immediate"
+                option: "2 Minutes"
           - service: input_select.select_option
             data:
                 entity_id: input_select.delay_kitchen
-                option: "Immediate"
+                option: "2 Minutes"
           - service: input_boolean.turn_off
             data:
                 entity_id: input_boolean.mode_movie

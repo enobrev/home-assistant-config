@@ -20,4 +20,4 @@
           service: light.turn_on
           data_template:
               entity_id: light.garage_door
-              brightness: '{{ states.input_slider.darkness.state | int * 25 }}'
+              brightness: '{{ states.input_slider.darkness.state | int * 15 }}'

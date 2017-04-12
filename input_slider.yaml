@@ -2,6 +2,6 @@ darkness:
     name: Outside Darkness
     initial: 0
     min: 0
-    max: 6
+    max: 10
     step: 1
 

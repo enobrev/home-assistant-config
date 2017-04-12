@@ -77,6 +77,7 @@ view_outside:
         - group.outside
         - group.garage
         - group.weather
+        - persistent_notification.darkness_math
 view_floor_1:
     view: yes
     name: First Floor
