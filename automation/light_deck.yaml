@@ -1,0 +1,35 @@
+
+    - alias: "Deck Lights on During Party Mode"
+      trigger:
+          platform: state
+          entity_id: input_slider.darkness
+      condition:
+          condition: and
+          conditions: 
+              - condition: state
+                entity_id: input_boolean.presence_home_party
+                state: 'on'
+              - condition: template
+                value_template: '{{ states.input_slider.darkness.state | int >= 5 }}'
+      action:
+          service: homeassistant.turn_on
+          data_template:
+              entity_id: switch.ge_12720_outdoor_smart_switch_switch_7_0
+              brightness: '{{ states.input_slider.darkness.state | int * 25 }}'
+
+    - alias: "Deck Lights off During Party Mode"
+      trigger:
+          platform: state
+          entity_id: input_slider.darkness
+      condition:
+          condition: and
+          conditions: 
+              - condition: state
+                entity_id: input_boolean.presence_home_party
+                state: 'on'
+              - condition: template
+                value_template: '{{ states.input_slider.darkness.state | int < 5 }}'
+      action:
+          service: homeassistant.turn_off
+          entity_id: switch.ge_12720_outdoor_smart_switch_switch_7_0
+

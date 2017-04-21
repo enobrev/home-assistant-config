@@ -16,7 +16,7 @@
               value:  >
                   {# ##### Max Angle is Appx Sun in the Sky, Min Angle is Appx Night Time #}
                   {% set min_angle = -30 %}
-                  {% set max_angle =  7 %}
+                  {% set max_angle =  15 %}
                   {# ##### Our Starting Values #}
                   {% set angle  = states.sensor.solar_angle.state               | float %}
                   {% set clouds = states.sensor.dark_sky_cloud_coverage.state   | float %}
@@ -45,7 +45,7 @@
           #      message: >
           #        {# ##### Max Angle is Appx Sun in the Sky, Min Angle is Appx Night Time #}
           #        {% set min_angle = -30 %}
-          #        {% set max_angle =  7 %}
+          #        {% set max_angle =  15 %}
           #        {# ##### Our Starting Values #}
           #        {% set angle  = states.sensor.solar_angle.state               | float %}
           #        {% set clouds = states.sensor.dark_sky_cloud_coverage.state   | float %}

@@ -13,6 +13,11 @@ presence_home_visitor:
     initial: off
     icon: mdi:human
 
+presence_home_party:
+    name: "Party Mode"
+    initial: off
+    icon: mdi:account-multiple
+
 presence_home_all:
     name: "Someone is Home"
     initial: on
