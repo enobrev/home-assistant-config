@@ -40,7 +40,7 @@ party:
         - light.living_room
         - light.switch_level_3_0
         - light.switch_level_6_0
-        - switch.ge_12720_outdoor_smart_switch_switch_7_0
+        - switch.switch_switch_7_0
 
 batteries:
     view: no
@@ -184,7 +184,7 @@ outside:
         - sensor.darkness
         - light.front_porch
         - light.garage_door
-        - switch.ge_12720_outdoor_smart_switch_switch_7_0
+        - switch.switch_switch_7_0
         - sensor.solar_angle
         - sensor.dark_sky_cloud_coverage
         - sensor.dark_sky_precip_probability
@@ -320,11 +320,9 @@ lights:
         - light.front_porch
         - light.living_room
         - light.garage_door
-          # - light.ge_12724_3way_dimmer_switch_level_3_0  # dining room
         - light.switch_level_3_0                       # dining room
-          # - light.ge_12724_3way_dimmer_switch_level_6_0  # kitchen
         - light.switch_level_6_0                       # kitchen
-        - switch.ge_12720_outdoor_smart_switch_switch_7_0
+        - switch.switch_switch_7_0
 devices:
     view: no
     name: Devices
