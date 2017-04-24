@@ -187,7 +187,7 @@ outside:
         - switch.ge_12720_outdoor_smart_switch_switch_7_0
         - sensor.solar_angle
         - sensor.dark_sky_cloud_coverage
-        - sensor.dark_sky_precip_intensity
+        - sensor.dark_sky_precip_probability
 
 kitchen:
     view: no

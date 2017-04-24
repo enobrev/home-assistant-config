@@ -70,9 +70,9 @@
               {% set min_angle = -20 %}
               {% set max_angle =  8 %}
               {# ##### Our Starting Values #}
-              {% set angle  = states.sensor.solar_angle.state               | float %}
-              {% set clouds = states.sensor.dark_sky_cloud_coverage.state   | float %}
-              {% set p_rain = states.sensor.dark_sky_precip_intensity.state | float %}
+              {% set angle  = states.sensor.solar_angle.state                 | float %}
+              {% set clouds = states.sensor.dark_sky_cloud_coverage.state     | float %}
+              {% set p_rain = states.sensor.dark_sky_precip_probability.state | float %}
               {# ##### Crop our Angle to our Range #}
               {% if angle > max_angle %}
                   {% set angle = max_angle %}

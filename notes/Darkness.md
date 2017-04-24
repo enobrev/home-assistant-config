@@ -2,7 +2,7 @@
 
 Originally Posted on [Reddit](https://www.reddit.com/r/homeautomation/comments/67680g/is_it_possible_to_save_alias_triggers_in_home/dgob0tc/) and the [HA Forums](https://community.home-assistant.io/t/is-it-possible-to-save-alias-triggers/16285/4)
 
-I have a sensor for tracking the sun angle. This was directly from the docs [somewhere](https://home-assistant.io/components/sensor.template/#sun-angle). I found it useful for getting the elevation as a float.  I also have a sensor that takes a couple other sensors (sun angle, dark sky cloudiness, dark sky precipitation intensity) and generates a “darkness percentage”.
+I have a sensor for tracking the sun angle. This was directly from the docs [somewhere](https://home-assistant.io/components/sensor.template/#sun-angle). I found it useful for getting the elevation as a float.  I also have a sensor that takes a couple other sensors (sun angle, dark sky cloudiness, dark sky precipitation probability) and generates a “darkness percentage”.
 
 A cloudy afternoon would be about a 30%.  Midnight, Overcast, and Raining is 100%.  Sunny Day, Clear Sky is 0.
 
@@ -26,9 +26,9 @@ Here are the solar angle and darkness sensors.  It looks hairier than it is. I'l
                   {% set min_angle = -20 %}
                   {% set max_angle =  8 %}
                   {# ##### Our Starting Values #}
-                  {% set angle  = states.sensor.solar_angle.state               | float %}
-                  {% set clouds = states.sensor.dark_sky_cloud_coverage.state   | float %}
-                  {% set p_rain = states.sensor.dark_sky_precip_intensity.state | float %}
+                  {% set angle  = states.sensor.solar_angle.state                 | float %}
+                  {% set clouds = states.sensor.dark_sky_cloud_coverage.state     | float %}
+                  {% set p_rain = states.sensor.dark_sky_precip_probability.state | float %}
                   {# ##### Crop our Angle to our Range #}
                   {% if angle > max_angle %}
                       {% set angle = max_angle %}
@@ -110,9 +110,9 @@ These are just variables. I'm going to use them later and I don't want to deal w
 
 ```
     {# ##### Our Starting Values #}
-    {% set angle  = states.sensor.solar_angle.state               | float %}
-    {% set clouds = states.sensor.dark_sky_cloud_coverage.state   | float %}
-    {% set p_rain = states.sensor.dark_sky_precip_intensity.state | float %}
+    {% set angle  = states.sensor.solar_angle.state                 | float %}
+    {% set clouds = states.sensor.dark_sky_cloud_coverage.state     | float %}
+    {% set p_rain = states.sensor.dark_sky_precip_probability.state | float %}
 ```
 
 If the angle is beyond the bounds I described above, just set them to the bounds. So if the sun angle is 10 and my max angle is 8, just set it to 8. Anything over 8 is useless information
