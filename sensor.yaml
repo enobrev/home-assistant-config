@@ -81,7 +81,7 @@
               {% endif %}
               {# ##### Figure out the percentage our angle falls within our range, and then subtract if from 1 for it to mean 'darkness' rather than 'brightness' #}
               {% set p_angle   = 1 - ((angle - min_angle) / (max_angle - min_angle)) %}
-              {% set p_clouds  = clouds / 100 %} 
+              {% set p_clouds  = clouds / 100 %}
               {# ##### Get the average of the three, with adjustments for importance in our final value #}
               {% set p_average = ((7 * p_angle) + (2 *  p_clouds) + p_rain) / 10 %}
               {# ##### Multiply our average percentage by 10 and round it for our final result #}

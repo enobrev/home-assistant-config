@@ -89,16 +89,20 @@ mqtt:
     protocol: 3.1
 
 cover:
-  - platform: myq
-    username: !secret myq_username
-    password: !secret myq_password
-    type: chamberlain
+    - platform: myq
+      username: !secret myq_username
+      password: !secret myq_password
+      type: chamberlain
 
 notify:
     - name: pushbullet
       platform: pushbullet
       api_key: !secret pushbullet_key
 
+media_player:
+    - platform: spotify
+      client_id: !secret: spotify_id
+      client_secret: !secret: spotify_secret
 
 device_tracker: !include device_tracker.yaml
 input_select: !include input_select.yaml
