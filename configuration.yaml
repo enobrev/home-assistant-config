@@ -101,8 +101,8 @@ notify:
 
 media_player:
     - platform: spotify
-      client_id: !secret: spotify_id
-      client_secret: !secret: spotify_secret
+      client_id: !secret spotify_id
+      client_secret: !secret spotify_secret
 
 device_tracker: !include device_tracker.yaml
 input_select: !include input_select.yaml
