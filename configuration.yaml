@@ -79,6 +79,15 @@ wink:
 #    client_id: !secret wink_client_id
 #    client_secret: !secret wink_client_secret
 
+mqtt:
+    broker: 192.168.1.4
+    port: 1883
+    keepalive: 60
+    client_id: homeassistant
+    username: !secret mqtt_username
+    password: !secret mqtt_password
+    protocol: 3.1
+
 cover:
   - platform: myq
     username: !secret myq_username

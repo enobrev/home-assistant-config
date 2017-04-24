@@ -62,3 +62,8 @@
           value_template: '{{ "%+.1f"|format(states.sun.sun.attributes.elevation) }}'
           friendly_name: 'Sun Angle'
           unit_of_measurement: '°'
+
+- platform: mqtt
+  state_topic: 'armendariz/location/mark'
+  name: mark_location
+  value_template: '{{value_json.location }}'
