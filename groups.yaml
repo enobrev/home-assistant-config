@@ -196,7 +196,7 @@ kitchen:
         - input_boolean.presence_room_kitchen
         - light.switch_level_6_0
         - binary_sensor.kitchen_sensor_opened
-        - binary_sensor.motion_sensor_2_0
+        - binary_sensor.motion_sensor_4_0
 
 lauren:
     view: no
