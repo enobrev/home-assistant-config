@@ -15,3 +15,7 @@ I recently grabbed a few amazon dash buttons for $1 apiece, but I haven't actual
 ## Automation Goals
 
 I don't ever want to touch a light switch again.
+
+## Documentation
+
+If I do anything weird or interesting, I'll try to document it in the [Notes directory](./notes/)
