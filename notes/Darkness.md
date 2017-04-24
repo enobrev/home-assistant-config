@@ -62,7 +62,7 @@ Here are the solar angle and darkness sensors.  It looks hairier than it is. I'l
               - service: input_slider.select_value
                 data_template:
                   entity_id: input_slider.darkness
-                  value:  '{{ (states.sensor.darkness.state / 100 * 10) | round }}'
+                  value: '{{ states.sensor.darkness.state | int / 10 | round }}'
 
 ## Light Automation Example
 
