@@ -1,8 +1,8 @@
 
     - alias: "Darkness Sensors Changed"
       trigger:
-          - platform: state
-            entity_id: sensor.darkness
+          platform: state
+          entity_id: sensor.darkness
       action:
           - service: input_slider.select_value
             data_template:
