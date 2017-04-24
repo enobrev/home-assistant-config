@@ -4,6 +4,7 @@
 .idea
 .uuid
 .google.token
+.spotify-token-cache
 /deps/
 /tts/
 /www/
