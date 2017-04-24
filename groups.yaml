@@ -12,6 +12,14 @@ default_view:
         - group.room_sensors
         - lock.lock
         - group.modes
+        - group.now
+          
+now:
+    view: no
+    name: Now
+    entities:
+        - sensor.date
+        - sensor.time
 
 light_delays:
     view: no
@@ -197,6 +205,7 @@ mark:
     entities:
         - input_boolean.presence_home_mark
         - input_select.presence_room_mark
+        - sensor.mark_location
 
 cat_pan:
     view: no
@@ -209,6 +218,7 @@ view_all_of_it:
     view: yes
     name: Kitchen Sink
     entities:
+        - group.now
         - group.weather
         - group.system
         - group.thermostat
@@ -331,3 +341,4 @@ devices:
         - device_tracker.netgear_extender
         - device_tracker.samsung_laptop
         - device_tracker.myq_garage
+
