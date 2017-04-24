@@ -7,5 +7,5 @@
           - service: input_slider.select_value
             data_template:
               entity_id: input_slider.darkness
-              value:  {{ (states.sensor.darkness.state / 100 * 10) | round }}
+              value:  '{{ (states.sensor.darkness.state / 100 * 10) | round }}'
 
