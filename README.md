@@ -2,7 +2,7 @@
 
 Here are the configuration files for my [Home Assistant](https://home-assistant.io/) setup.
 
-I'm running HA on a [Raspberry Pi 3](https://smile.amazon.com/gp/product/B01CDVSBPO/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1) with a [UZB](https://smile.amazon.com/gp/product/B00QJEY6OC/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1) stick for interacting with Z-Wave components and a [Wink Hub 2](https://smile.amazon.com/gp/product/B01KW8WGZQ/ref=oh_aui_search_detailpage?ie=UTF8&psc=1) for the Zigbee bulbs.
+I'm running HA on a [Raspberry Pi 3](https://smile.amazon.com/gp/product/B01CDVSBPO/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1) with a [UZB](https://smile.amazon.com/gp/product/B00QJEY6OC/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1) stick for interacting with Z-Wave components and a [Wink Hub 2](https://smile.amazon.com/gp/product/B01KW8WGZQ/ref=oh_aui_search_detailpage?ie=UTF8&psc=1) for the Zigbee bulbs. I'm using my Asus Router to track presence.
 
 For ZWave, I have two [GE 12724 Dimmers](https://smile.amazon.com/gp/product/B006LQFHN2/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1) for my dining room and kitchen lights, which are generally controlled by two [Ecolink Motion Detectors](https://smile.amazon.com/gp/product/B01MQXXG0I/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1).  I also have a [GE 12720 Outdoor Module](https://smile.amazon.com/gp/product/B0013V8K3O/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1) to control my deck lights.
 
