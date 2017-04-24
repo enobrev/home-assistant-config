@@ -35,6 +35,7 @@ party:
     entities:
         - input_boolean.presence_home_party
         - input_slider.darkness
+        - sensor.darkness
         - light.bedroom
         - light.living_room
         - light.switch_level_3_0
@@ -107,6 +108,7 @@ view_outside:
         - group.garage
         - group.weather
         - persistent_notification.darkness_math
+
 view_floor_1:
     view: yes
     name: First Floor
@@ -177,6 +179,7 @@ outside:
     name: Outside
     entities:
         - input_slider.darkness
+        - sensor.darkness
         - light.front_porch
         - light.garage_door
         - switch.ge_12720_outdoor_smart_switch_switch_7_0

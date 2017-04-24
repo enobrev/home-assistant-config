@@ -62,6 +62,30 @@
           value_template: '{{ "%+.1f"|format(states.sun.sun.attributes.elevation) }}'
           friendly_name: 'Sun Angle'
           unit_of_measurement: '°'
+      darkness:
+          friendly_name: 'Darkness'
+          unit_of_measurement: '%'
+          value_template: >
+              {# ##### Max Angle is Appx Sun in the Sky, Min Angle is Appx Night Time #}
+              {% set min_angle = -20 %}
+              {% set max_angle =  8 %}
+              {# ##### Our Starting Values #}
+              {% set angle  = states.sensor.solar_angle.state               | float %}
+              {% set clouds = states.sensor.dark_sky_cloud_coverage.state   | float %}
+              {% set p_rain = states.sensor.dark_sky_precip_intensity.state | float %}
+              {# ##### Crop our Angle to our Range #}
+              {% if angle > max_angle %}
+                  {% set angle = max_angle %}
+              {% elif angle < min_angle %}
+                  {% set angle = min_angle %}
+              {% endif %}
+              {# ##### Figure out the percentage our angle falls within our range, and then subtract if from 1 for it to mean 'darkness' rather than 'brightness' #}
+              {% set p_angle   = 1 - ((angle - min_angle) / (max_angle - min_angle)) %}
+              {% set p_clouds  = clouds / 100 %} 
+              {# ##### Get the average of the three, with adjustments for importance in our final value #}
+              {% set p_average = ((7 * p_angle) + (2 *  p_clouds) + p_rain) / 10 %}
+              {# ##### Multiply our average percentage by 10 and round it for our final result #}
+              {{ (p_average * 100) }}
 
 - platform: mqtt
   state_topic: 'armendariz/location/mark'
