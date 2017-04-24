@@ -5,7 +5,7 @@
           to: 'on'
       condition:
           condition: state
-          entity_id: input_boolean.presence_home_party
+          entity_id: input_boolean.mode_home_party
           state: 'off'
       action:
           service: light.turn_on
@@ -20,7 +20,7 @@
           to: 'off'
       condition:
           condition: state
-          entity_id: input_boolean.presence_home_party
+          entity_id: input_boolean.mode_home_party
           state: 'off'
       action:
           service: light.turn_off
@@ -32,7 +32,7 @@
           entity_id: input_slider.darkness
       condition:
           condition: state
-          entity_id: input_boolean.presence_home_party
+          entity_id: input_boolean.mode_home_party
           state: 'on'
       action:
           service: light.turn_on

@@ -7,7 +7,7 @@
           condition: and
           conditions: 
               - condition: state
-                entity_id: input_boolean.presence_home_party
+                entity_id: input_boolean.mode_home_party
                 state: 'on'
               - condition: template
                 value_template: '{{ states.input_slider.darkness.state | int >= 5 }}'
@@ -25,7 +25,7 @@
           condition: and
           conditions: 
               - condition: state
-                entity_id: input_boolean.presence_home_party
+                entity_id: input_boolean.mode_home_party
                 state: 'on'
               - condition: template
                 value_template: '{{ states.input_slider.darkness.state | int < 5 }}'

@@ -9,14 +9,9 @@ presence_home_lauren:
     icon: mdi:human-female
 
 presence_home_visitor:
-    name: "Visitor Mode"
+    name: "Visitor is Home"
     initial: off
     icon: mdi:human
-
-presence_home_party:
-    name: "Party Mode"
-    initial: off
-    icon: mdi:account-multiple
 
 presence_home_all:
     name: "Someone is Home"
@@ -48,4 +43,8 @@ mode_movie:
     initial: off
     icon: mdi:movie
 
+mode_home_party:
+    name: "Party Mode"
+    initial: off
+    icon: mdi:account-multiple
 

@@ -33,7 +33,7 @@ party:
     view: yes
     name: Party
     entities:
-        - input_boolean.presence_home_party
+        - input_boolean.mode_home_party
         - input_slider.darkness
         - sensor.darkness
         - light.bedroom
@@ -56,7 +56,6 @@ presence_people:
         - input_boolean.presence_home_mark
         - input_boolean.presence_home_lauren
         - input_boolean.presence_home_visitor
-        - input_boolean.presence_home_party
 
 modes:
     view: no
@@ -64,6 +63,7 @@ modes:
     entities:
         - input_boolean.mode_sleep
         - input_boolean.mode_movie
+        - input_boolean.mode_home_party
 
 view_people:
     view: yes
@@ -80,7 +80,6 @@ presence_places:
     entities:
         - input_boolean.presence_home_all
         - input_boolean.presence_home_visitor
-        - input_boolean.presence_home_party
         - input_boolean.presence_room_living
         - input_boolean.presence_room_dining
         - input_boolean.presence_room_kitchen
