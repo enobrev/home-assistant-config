@@ -36,7 +36,7 @@ light.switch_level_6_0:
     friendly_name: Kitchen
 lock.lock:
     friendly_name: Back Door
-switch.ge_12720_outdoor_smart_switch_switch_7_0:
+switch.switch_switch_7_0:
     friendly_name: Deck
     entity_picture: /local/globe.jpg
 
