@@ -56,13 +56,13 @@ Here are the solar angle and darkness sensors.  It looks hairier than it is. I'l
 
         - alias: "Darkness Sensors Changed"
           trigger:
-              - platform: state
-                entity_id: sensor.darkness
+              platform: state
+              entity_id: sensor.darkness
           action:
               - service: input_slider.select_value
                 data_template:
                   entity_id: input_slider.darkness
-                  value:  {{ (states.sensor.darkness.state / 100 * 10) | round }}
+                  value:  '{{ (states.sensor.darkness.state / 100 * 10) | round }}'
 
 ## Light Automation Example
 
