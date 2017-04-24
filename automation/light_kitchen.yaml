@@ -9,7 +9,6 @@
           state: 'off'
       action:
           service: light.turn_on
-          # entity_id: light.ge_12724_3way_dimmer_switch_level_6_0
           entity_id: light.switch_level_6_0
           data:
               brightness: 255
@@ -25,7 +24,6 @@
           state: 'off'
       action:
           service: light.turn_off
-          # entity_id: light.ge_12724_3way_dimmer_switch_level_6_0
           entity_id: light.switch_level_6_0
     
     - alias: "Kitchen Fade in During Party Mode"
@@ -39,6 +37,5 @@
       action:
           service: light.turn_on
           data_template:
-              # entity_id: light.ge_12724_3way_dimmer_switch_level_6_0
               entity_id: light.switch_level_6_0
               brightness: '{{ states.input_slider.darkness.state | int * 50 }}'

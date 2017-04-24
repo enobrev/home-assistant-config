@@ -46,8 +46,8 @@ batteries:
     view: no
     name: Batteries
     entities:
-        - zwave.ecolink_motion_detector_2
-        - zwave.ecolink_motion_detector_4
+        - zwave.motion_2
+        - zwave.motion_4
 
 presence_people:
     view: no

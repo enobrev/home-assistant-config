@@ -65,24 +65,24 @@ media_player.galaxy_s6:
 sensor.solar_angle:
     icon: mdi:weather-sunny
 
-sensor.ecolink_motion_detector_alarm_level_2_1:
+sensor.motion_alarm_type_2_0:
     hidden: true
-sensor.ecolink_motion_detector_alarm_type_2_0:
+sensor.motion_alarm_level_2_1:
     hidden: true
-sensor.ecolink_motion_detector_burglar_2_10:
+sensor.motion_sourcenodeid_2_2:
     hidden: true
-sensor.ecolink_motion_detector_power_management_2_11:
+sensor.motion_burglar_2_10:
     hidden: true
-sensor.ecolink_motion_detector_sourcenodeid_2_2:
+sensor.motion_power_management_2_11:
     hidden: true
 
-sensor.ecolink_motion_detector_alarm_level_4_1:
+sensor.motion_alarm_type_4_0:
     hidden: true
-sensor.ecolink_motion_detector_alarm_type_4_0:
+sensor.motion_alarm_level_4_1:
     hidden: true
-sensor.ecolink_motion_detector_burglar_4_10:
+sensor.motion_sourcenodeid_4_2:
     hidden: true
-sensor.ecolink_motion_detector_power_management_4_11:
+sensor.motion_burglar_4_10:
     hidden: true
-sensor.ecolink_motion_detector_sourcenodeid_4_2:
+sensor.motion_power_management_4_11:
     hidden: true
