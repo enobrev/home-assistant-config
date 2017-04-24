@@ -8,7 +8,7 @@ For ZWave, I have two [GE 12724 Dimmers](https://smile.amazon.com/gp/product/B00
 
 For Zigbee, I have two [Cree Connected](https://smile.amazon.com/gp/product/B01701DKVM/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1) lights for my lamps in the living room and bedroom, and two [Cree Connected Daylight](https://smile.amazon.com/gp/product/B01701DL7A/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1) bulbs for outside lights.
 
-I also have a [MyQ Garage Controller](https://smile.amazon.com/Chamberlain-MYQ-G0201-MyQ-Garage-Controls-Smartphone/dp/B00EAD65UW/ref=sr_1_1?s=hi&ie=UTF8&qid=1493026683&sr=1-1&keywords=myq), but really only use it to keep track of whether my door is open and occasionally to open it remotely when coming home through the alley, and a Nest Thermostat, which came with the house.
+I also have a [MyQ Garage Controller](https://smile.amazon.com/Chamberlain-MYQ-G0201-MyQ-Garage-Controls-Smartphone/dp/B00EAD65UW/ref=sr_1_1?s=hi&ie=UTF8&qid=1493026683&sr=1-1&keywords=myq), but really only use it to keep track of whether my door is open and occasionally to open it remotely when coming home through the alley, and a [Nest Thermostat](https://smile.amazon.com/Nest-Learning-Thermostat-Generation-Amazon/dp/B0131RG6VK/ref=sr_1_2?ie=UTF8&qid=1493027233&sr=8-2&keywords=nest), which came with the house.
 
 I recently grabbed a few amazon dash buttons for $1 apiece, but I haven't actually done anything with them yet.  And I have a z-wave capable lock, which I also haven't really done anything with yet.
 
