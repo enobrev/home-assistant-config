@@ -16,7 +16,7 @@
               value:  >
                   {# ##### Max Angle is Appx Sun in the Sky, Min Angle is Appx Night Time #}
                   {% set min_angle = -30 %}
-                  {% set max_angle =  15 %}
+                  {% set max_angle =  8 %}
                   {# ##### Our Starting Values #}
                   {% set angle  = states.sensor.solar_angle.state               | float %}
                   {% set clouds = states.sensor.dark_sky_cloud_coverage.state   | float %}
@@ -34,38 +34,4 @@
                   {% set p_average = ((7 * p_angle) + (2 *  p_clouds) + p_rain) / 10 %}
                   {# ##### Multiply our average percentage by 10 and round it for our final result #}
                   {{ (p_average * 10) | round }}
-          #- service: notify.pushbullet
-          #  data_template:
-          #    title: Light
-          #    message: 'Darkness: {{ states.input_slider.darkness.state }}, Solar Angle: {{ states.sensor.solar_angle.state }}, Cloud Cover: {{ states.sensor.dark_sky_cloud_coverage.state }}, Precip: {{ states.sensor.dark_sky_precip_intensity.state }}'
-          #- service: persistent_notification.create
-          #  data:
-          #      title: "Darkness Math"
-          #      notification_id: "darkness_math"
-          #      message: >
-          #        {# ##### Max Angle is Appx Sun in the Sky, Min Angle is Appx Night Time #}
-          #        {% set min_angle = -30 %}
-          #        {% set max_angle =  15 %}
-          #        {# ##### Our Starting Values #}
-          #        {% set angle  = states.sensor.solar_angle.state               | float %}
-          #        {% set clouds = states.sensor.dark_sky_cloud_coverage.state   | float %}
-          #        {% set p_rain = states.sensor.dark_sky_precip_intensity.state | float %}
-          #        {# ##### Crop our Angle to our Range #}
-          #        {% if angle > max_angle %}
-          #            {% set angle = max_angle %}
-          #        {% elif angle < min_angle %}
-          #            {% set angle = min_angle %}
-          #        {% endif %}
-          #        {# ##### Figure out the percentage our angle falls within our range, and then subtract if from 1 for it to mean 'darkness' rather than 'brightness' #}
-          #        {% set p_angle   = 1 - ((angle - min_angle) / (max_angle - min_angle)) %}
-          #        {% set p_clouds  = clouds / 100 %}
-          #        {# ##### Get the average of the three, with adjustments for importance in our final value #}
-          #        {% set p_average = ((7 * p_angle) + (2 *  p_clouds) + p_rain) / 10 %}
-          #        {# ##### Multiply our average percentage by 10 and round it for our final result #}
-          #        Limited Angle: {{ angle }}<br />
-          #        Angle %: {{ p_angle }}<br />
-          #        Cloud %: {{ p_clouds }}<br />
-          #        Rain %: {{ p_rain }}<br />
-          #        Average %: (7 * {{ p_angle }}) + (2 * {{ p_clouds }}) + {{ p_rain }}) / 10 = {{ p_average }}<br />
-          #        Darkness: {{ (p_average * 10) | round }}
 
