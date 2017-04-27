@@ -1,0 +1,10 @@
+
+# Internet Speed Test
+- platform: speedtest
+  minute:
+    - 15
+    - 45
+  monitored_conditions:
+    - ping
+    - download
+    - upload

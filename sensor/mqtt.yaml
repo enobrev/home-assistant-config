@@ -1,0 +1,4 @@
+- platform: mqtt
+  state_topic: 'armendariz/location/mark'
+  name: mark_location
+  value_template: '{{value_json.location }}'

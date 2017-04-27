@@ -1,67 +1,5 @@
-# Dark Sky weather prediction
-- platform: darksky
-  api_key: !secret darksky_api_key
-  monitored_conditions:
-    # - summary
-    # - icon
-    # - nearest_storm_distance
-    # - nearest_storm_bearing
-    - precip_type
-    - precip_intensity
-    - precip_probability
-    - temperature
-    - apparent_temperature
-    # - dew_point
-    # - wind_speed
-    # - wind_bearing
-    - cloud_cover
-    - humidity
-    # - pressure
-    # visibility
-    # - ozone
-    # minutely_summary
-    # hourly_summary
-    # daily_summary
-    - temperature_max
-    - temperature_min
-    # - apparent_temperature_max
-    # - apparent_temperature_min
-    # - precip_intensity_max
-
-# Time & Date
-- platform: time_date
-  display_options:
-    - 'time'
-    - 'date'
-
-# Internet Speed Test
-- platform: speedtest
-  minute:
-    - 15
-    - 45
-  monitored_conditions:
-    - ping
-    - download
-    - upload
-
-- platform: systemmonitor
-  resources:
-  - type: disk_use_percent
-    arg: /
-  - type: memory_free
-  - type: processor_use
-  - type: network_in
-    arg: eth0
-  - type: network_out
-    arg: eth0
-  - type: last_boot
-
 - platform: template
   sensors:
-      solar_angle:
-          value_template: '{{ "%+.1f"|format(states.sun.sun.attributes.elevation) }}'
-          friendly_name: 'Sun Angle'
-          unit_of_measurement: '°'
       darkness:
           friendly_name: 'Darkness'
           unit_of_measurement: '%'
@@ -86,8 +24,3 @@
               {% set p_average = ((6 * p_angle) + (3 *  p_clouds) + p_rain) / 10 %}
               {# ##### Multiply our average percentage by 10 and round it for our final result #}
               {{ (p_average * 100) }}
-
-- platform: mqtt
-  state_topic: 'armendariz/location/mark'
-  name: mark_location
-  value_template: '{{value_json.location }}'
