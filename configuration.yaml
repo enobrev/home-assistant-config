@@ -48,6 +48,7 @@ sun:
 
 recorder:
     db_url: !secret db_url
+    purge_days: 8
 
 # Text to speech
 tts:
