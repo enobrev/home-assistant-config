@@ -212,13 +212,6 @@ mark:
         - input_select.presence_room_mark
         - sensor.mark_location
 
-cat_pan:
-    view: no
-    name: Cat Pan
-    entities:
-        - calendar.house_cat_pan_mark
-        - calendar.house_cat_pan_lauren
-
 view_all_of_it:
     view: yes
     name: Kitchen Sink
@@ -237,7 +230,6 @@ view_all_of_it:
         - group.all_devices
         - group.all_covers
         - group.all_locks
-        - group.calendar
         - group.modes
         - group.batteries
 
