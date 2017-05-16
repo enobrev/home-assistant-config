@@ -1,3 +1,35 @@
+    - alias: "Living Room Light On when somebody is there"
+      trigger:
+          platform: state
+          entity_id: input_boolean.presence_room_living
+          to: 'on'
+      condition:
+          condition: and
+          conditions:
+              - condition: state
+                entity_id: input_boolean.mode_home_party
+                state: 'off'
+              - condition: numeric_state
+                entity_id: input_slider.darkness
+                above: 2
+      action:
+          service: light.turn_on
+          entity_id: light.living_rooom    # find-living_room-light
+          data:
+              brightness: 255
+
+    - alias: "Living Room Light Off when nobody is there"
+      trigger:
+          platform: state
+          entity_id: input_boolean.presence_room_living
+          to: 'off'
+      condition:
+          condition: state
+          entity_id: input_boolean.mode_home_party
+          state: 'off'
+      action:
+          service: light.turn_off
+          entity_id: light.living_rooom   # find-living_room-light
 
     - alias: "Living Room Fade in During Party Mode"
       trigger:
@@ -10,6 +42,5 @@
       action:
           service: light.turn_on
           data_template:
-              entity_id: light.living_room
+              entity_id: light.living_rooom   # find-living_room-light
               brightness: '{{ states.input_slider.darkness.state | int * 50 }}'
-
