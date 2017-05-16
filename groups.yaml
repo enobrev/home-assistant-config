@@ -39,8 +39,8 @@ party:
         - sensor.darkness
         - light.bedroom
         - light.living_room
-        - light.ge_12724_3way_dimmer_switch_level_4_0          # find-dining_room-light
-        - light.ge_12724_3way_dimmer_switch_level_5_0          # find-kitchen-light
+        - light.ge_12724_3way_dimmer_switch_level_5_0          # find-dining_room-light
+        - light.ge_12724_3way_dimmer_switch_level_4_0          # find-kitchen-light
         - switch.ge_12720_outdoor_smart_switch_switch_3_0      # find-deck-switch
 
 batteries:
@@ -169,8 +169,8 @@ dining_room:
     name: Dining Room
     entities:
         - input_boolean.presence_room_dining
-        - light.ge_12724_3way_dimmer_switch_level_4_0       # find-dining_room-light
-        - binary_sensor.ecolink_motion_detector_sensor_8_0  # find-dining_room-motion
+        - light.ge_12724_3way_dimmer_switch_level_5_0       # find-dining_room-light
+        - binary_sensor.ecolink_motion_detector_sensor_7_0  # find-dining_room-motion
         - input_slider.darkness
 
 
@@ -179,8 +179,8 @@ kitchen:
     name: Kitchen
     entities:
         - input_boolean.presence_room_kitchen
-        - light.ge_12724_3way_dimmer_switch_level_5_0       # find-kitchen-light
-        - binary_sensor.ecolink_motion_detector_sensor_7_0  # find-kitchen-motion
+        - light.ge_12724_3way_dimmer_switch_level_4_0       # find-kitchen-light
+        - binary_sensor.ecolink_motion_detector_sensor_8_0  # find-kitchen-motion
 
 
 garage:
@@ -309,8 +309,8 @@ lights:
         - light.front_porch
         - light.living_room
         - light.garage_door
-        - light.ge_12724_3way_dimmer_switch_level_4_0                       # find-dining_room-light
-        - light.ge_12724_3way_dimmer_switch_level_5_0                       # find-kitchen-light
+        - light.ge_12724_3way_dimmer_switch_level_5_0                       # find-dining_room-light
+        - light.ge_12724_3way_dimmer_switch_level_4_0                       # find-kitchen-light
         - switch.ge_12720_outdoor_smart_switch_switch_3_0                   # find-deck-switch
 devices:
     view: no
