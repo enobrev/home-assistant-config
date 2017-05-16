@@ -25,6 +25,7 @@ light_delays:
     view: no
     name: Light Fade-Out Timing
     entities:
+        - input_select.delay_living_room
         - input_select.delay_dining_room
         - input_select.delay_kitchen
         - input_select.timer_bedroom
