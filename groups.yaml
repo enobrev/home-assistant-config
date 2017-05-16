@@ -10,7 +10,7 @@ default_view:
         - group.garage
         - group.presence_people
         - group.room_sensors
-        - lock.lock
+        - zwave.kwikset_touchpad_electronic_deadbolt_9
         - group.modes
         - group.now
           
