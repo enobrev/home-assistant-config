@@ -8,10 +8,25 @@
           entity_id: media_player.roku_6325ae219771    # find-roku
           to: 'playing'
       action:
-        - service: input_select.select_option
-          data:
-            entity_id: input_select.delay_living_room
-            option: "30 Minutes"
+          - service: light.turn_on
+            data:
+                entity_id: light.living_room
+                brightness: 65
+          - service: input_select.select_option
+            data:
+                entity_id: input_select.delay_dining_room
+                option: "Immediate"
+          - service: input_select.select_option
+            data:
+                entity_id: input_select.delay_kitchen
+                option: "Immediate"
+          - service: input_select.select_option
+            data:
+                entity_id: input_select.delay_living_room
+                option: "30 Minutes"
+          - service: input_boolean.turn_off
+            data:
+                entity_id: input_boolean.mode_movie
 
     - alias: "Roku Stopped Reset Presence"
       condition:
@@ -23,7 +38,22 @@
           entity_id: media_player.roku_6325ae219771    # find-roku
           from: 'playing'
       action:
-        - service: input_select.select_option
-          data:
-            entity_id: input_select.delay_living_room
-            option: "2 Minutes"
+          - service: light.turn_on
+            data:
+                entity_id: light.living_room
+                brightness: 255
+          - service: input_select.select_option
+            data:
+                entity_id: input_select.delay_dining_room
+                option: "2 Minutes"
+          - service: input_select.select_option
+            data:
+                entity_id: input_select.delay_kitchen
+                option: "2 Minutes"
+          - service: input_select.select_option
+            data:
+                entity_id: input_select.delay_living_room
+                option: "2 Minutes"
+          - service: input_boolean.turn_off
+            data:
+                entity_id: input_boolean.mode_movie

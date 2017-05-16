@@ -11,12 +11,10 @@
                 state: 'off'
               - condition: numeric_state
                 entity_id: input_slider.darkness
-                above: 2
+                above: 1
       action:
           service: light.turn_on
           entity_id: light.living_room    # find-living_room-light
-          data:
-              brightness: 255
 
     - alias: "Living Room Light Off when nobody is there"
       trigger:
