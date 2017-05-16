@@ -1,7 +1,7 @@
     - alias: "Dining Room Presence On"
       trigger:
           platform: state
-          entity_id: binary_sensor.ecolink_motion_detector_sensor_7_0    # find-dining_room-motion
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_8_0    # find-dining_room-motion
           to: 'on'
       action:
         - service: homeassistant.turn_on
@@ -14,7 +14,7 @@
           state: "Immediate"
       trigger:
           platform: state
-          entity_id: binary_sensor.ecolink_motion_detector_sensor_7_0    # find-dining_room-motion
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_8_0    # find-dining_room-motion
           to: 'off'
       action:
         - service: homeassistant.turn_off
@@ -27,7 +27,7 @@
           state: "2 Minutes"
       trigger:
           platform: state
-          entity_id: binary_sensor.ecolink_motion_detector_sensor_7_0    # find-dining_room-motion
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_8_0    # find-dining_room-motion
           to: 'off'
           for:
               minutes: 2
@@ -42,7 +42,7 @@
           state: "5 Minutes"
       trigger:
           platform: state
-          entity_id: binary_sensor.ecolink_motion_detector_sensor_7_0    # find-dining_room-motion
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_8_0    # find-dining_room-motion
           to: 'off'
           for:
               minutes: 5
@@ -57,7 +57,7 @@
           state: "30 Minutes"
       trigger:
           platform: state
-          entity_id: binary_sensor.ecolink_motion_detector_sensor_7_0    # find-dining_room-motion
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_8_0    # find-dining_room-motion
           to: 'off'
           for:
               minutes: 30

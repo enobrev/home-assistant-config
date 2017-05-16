@@ -170,7 +170,7 @@ dining_room:
     entities:
         - input_boolean.presence_room_dining
         - light.ge_12724_3way_dimmer_switch_level_4_0       # find-dining_room-light
-        - binary_sensor.ecolink_motion_detector_sensor_7_0  # find-dining_room-motion
+        - binary_sensor.ecolink_motion_detector_sensor_8_0  # find-dining_room-motion
         - input_slider.darkness
 
 
@@ -180,7 +180,7 @@ kitchen:
     entities:
         - input_boolean.presence_room_kitchen
         - light.ge_12724_3way_dimmer_switch_level_5_0       # find-kitchen-light
-        - binary_sensor.ecolink_motion_detector_sensor_8_0  # find-kitchen-motion
+        - binary_sensor.ecolink_motion_detector_sensor_7_0  # find-kitchen-motion
 
 
 garage:
