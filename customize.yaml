@@ -68,35 +68,35 @@ media_player.galaxy_s6:
 sensor.solar_angle:
     icon: mdi:weather-sunny
 
-sensor.motion_alarm_type_6_0:
+sensor.ecolink_motion_detector_alarm_type_6_0:
     hidden: true
-sensor.motion_alarm_level_6_1:
+sensor.ecolink_motion_detector_alarm_level_6_1:
     hidden: true
-sensor.motion_sourcenodeid_6_2:
+sensor.ecolink_motion_detector_sourcenodeid_6_2:
     hidden: true
-sensor.motion_burglar_6_10:
+sensor.ecolink_motion_detector_burglar_6_10:
     hidden: true
-sensor.motion_power_management_6_11:
-    hidden: true
-
-sensor.motion_alarm_type_7_0:
-    hidden: true
-sensor.motion_alarm_level_7_1:
-    hidden: true
-sensor.motion_sourcenodeid_7_2:
-    hidden: true
-sensor.motion_burglar_7_10:
-    hidden: true
-sensor.motion_power_management_7_11:
+sensor.ecolink_motion_detector_power_management_6_11:
     hidden: true
 
-sensor.motion_alarm_type_8_0:
+sensor.ecolink_motion_detector_alarm_type_7_0:
     hidden: true
-sensor.motion_alarm_level_8_1:
+sensor.ecolink_motion_detector_alarm_level_7_1:
     hidden: true
-sensor.motion_sourcenodeid_8_2:
+sensor.ecolink_motion_detector_sourcenodeid_7_2:
     hidden: true
-sensor.motion_burglar_8_10:
+sensor.ecolink_motion_detector_burglar_7_10:
     hidden: true
-sensor.motion_power_management_8_11:
+sensor.ecolink_motion_detector_power_management_7_11:
+    hidden: true
+
+sensor.ecolink_motion_detector_alarm_type_8_0:
+    hidden: true
+sensor.ecolink_motion_detector_alarm_level_8_1:
+    hidden: true
+sensor.ecolink_motion_detector_sourcenodeid_8_2:
+    hidden: true
+sensor.ecolink_motion_detector_burglar_8_10:
+    hidden: true
+sensor.ecolink_motion_detector_power_management_8_11:
     hidden: true
