@@ -156,6 +156,14 @@ guest_room:
     entities:
         - media_player.johnny_5_guestroom
 
+living_room:
+    view: no
+    name: Living Room
+    entities:
+        - input_boolean.presence_room_living
+        - light.living_room                                   # find-living_room-light
+        - binary_sensor.ecolink_motion_detector_sensor_6_0    # find-living_room-motion
+
 dining_room:
     view: no
     name: Dining Room
@@ -165,13 +173,15 @@ dining_room:
         - binary_sensor.ecolink_motion_detector_sensor_7_0  # find-dining_room-motion
         - input_slider.darkness
 
-living_room:
+
+kitchen:
     view: no
-    name: Living Room
+    name: Kitchen
     entities:
-        - input_boolean.presence_room_living
-        - light.living_room
-        - binary_sensor.ecolink_motion_detector_sensor_6_0    # find-living_room-motion
+        - input_boolean.presence_room_kitchen
+        - light.ge_12724_3way_dimmer_switch_level_5_0       # find-kitchen-light
+        - binary_sensor.ecolink_motion_detector_sensor_8_0  # find-kitchen-motion
+
 
 garage:
     view: no
@@ -191,14 +201,6 @@ outside:
         - sensor.solar_angle
         - sensor.dark_sky_cloud_coverage
         - sensor.dark_sky_precip_probability
-
-kitchen:
-    view: no
-    name: Kitchen
-    entities:
-        - input_boolean.presence_room_kitchen
-        - light.ge_12724_3way_dimmer_switch_level_5_0       # find-kitchen-light
-        - binary_sensor.ecolink_motion_detector_sensor_8_0  # find-kitchen-motion
 
 lauren:
     view: no
@@ -234,7 +236,6 @@ view_all_of_it:
         - group.all_locks
         - group.modes
         - group.batteries
-
 
 inputs:
     view: no
