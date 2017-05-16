@@ -10,7 +10,7 @@ default_view:
         - group.garage
         - group.presence_people
         - group.room_sensors
-        - zwave.kwikset_touchpad_electronic_deadbolt_9
+        - lock.kwikset_touchpad_electronic_deadbolt_locked_9_0
         - group.modes
         - group.now
           
@@ -47,10 +47,10 @@ batteries:
     view: no
     name: Batteries
     entities:
-        - zwave.ecolink_motion_detector_6
-        - zwave.ecolink_motion_detector_7
-        - zwave.ecolink_motion_detector_8
-        - zwave.kwikset_touchpad_electronic_deadbolt_9
+        - sensor.battery_lock_rear
+        - sensor.battery_motion_dining_room
+        - sensor.battery_motion_kitchen
+        - sensor.battery_motion_living_room
 
 presence_people:
     view: no
