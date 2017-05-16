@@ -1,0 +1,29 @@
+    - alias: "Roku Playing Keep Lights On"
+      condition:
+          condition: state
+          entity_id: input_boolean.presence_room_living
+          state: "on"
+      trigger:
+          platform: state
+          entity_id: media_player.roku_6325ae219771    # find-roku
+          to: 'playing'
+      action:
+        - service: input_select.select_option
+          data:
+            entity_id: input_select.delay_living_room
+            option: "30 Minutes"
+
+    - alias: "Roku Stopped Reset Presence"
+      condition:
+          condition: state
+          entity_id: input_boolean.presence_room_living
+          state: "on"
+      trigger:
+          platform: state
+          entity_id: media_player.roku_6325ae219771    # find-roku
+          from: 'playing'
+      action:
+        - service: input_select.select_option
+          data:
+            entity_id: input_select.delay_living_room
+            option: "2 Minutes"
