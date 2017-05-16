@@ -13,9 +13,7 @@ homeassistant:
     # https://github.com/andrey-git/home-assistant-custom-ui
     customize_glob:
         light.*:
-            custom_ui_state_card: custom_light
-            state_card_mode: break-slider
-            stretch_slider: true
+            custom_ui_state_card: custom-ui
 
 # Show links to resources in log and frontend
 # introduction:
