@@ -50,7 +50,7 @@ batteries:
         - zwave.ecolink_motion_detector_6
         - zwave.ecolink_motion_detector_7
         - zwave.ecolink_motion_detector_8
-        - zwave.kwikset_touchpad_electronic_deadbolt_2
+        - zwave.kwikset_touchpad_electronic_deadbolt_9
 
 presence_people:
     view: no
@@ -122,6 +122,7 @@ view_floor_1:
         - group.kitchen
         - group.thermostat
         - group.speedtest
+        - lock.kwikset_touchpad_electronic_deadbolt_locked_9_0
 
 view_floor_2:
     view: yes
@@ -201,6 +202,7 @@ outside:
         - sensor.solar_angle
         - sensor.dark_sky_cloud_coverage
         - sensor.dark_sky_precip_probability
+        - lock.kwikset_touchpad_electronic_deadbolt_locked_9_0
 
 lauren:
     view: no
