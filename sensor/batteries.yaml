@@ -1,0 +1,27 @@
+- platform: template
+  sensors:
+      battery_motion_living_room:
+          value_template: '{{ states.zwave.ecolink_motion_detector_6.battery_level }}'
+          friendly_name: 'Living Room Sensor Battery Level'
+          unit_of_measurement: '%'
+
+- platform: template
+  sensors:
+      battery_motion_dining_room:
+          value_template: '{{ states.zwave.ecolink_motion_detector_7.battery_level }}'
+          friendly_name: 'Dining Room Sensor Battery Level'
+          unit_of_measurement: '%'
+
+- platform: template
+  sensors:
+      battery_motion_kitchen:
+          value_template: '{{ states.zwave.ecolink_motion_detector_8.battery_level }}'
+          friendly_name: 'Kitchen Sensor Battery Level'
+          unit_of_measurement: '%'
+
+- platform: template
+  sensors:
+      battery_lock_rear:
+          value_template: '{{ states.zwave.kwikset_touchpad_electronic_deadbolt_9.battery_level }}'
+          friendly_name: 'Kitchen Sensor Battery Level'
+          unit_of_measurement: '%'
