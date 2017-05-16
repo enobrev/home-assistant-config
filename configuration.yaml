@@ -14,6 +14,8 @@ homeassistant:
     customize_glob:
         light.*:
             custom_ui_state_card: custom_light
+            state_card_mode: break-slider
+            stretch_slider: true
 
 # Show links to resources in log and frontend
 # introduction:
