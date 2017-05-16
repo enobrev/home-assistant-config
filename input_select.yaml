@@ -62,6 +62,16 @@ delay_dining_room:
     initial: "2 Minutes"
     icon: mdi:clock
 
+delay_living_room:
+    name: Living Room
+    options:
+        - "Immediate"
+        - "2 Minutes"
+        - "5 Minutes"
+        - "Half Hour"
+    initial: "2 Minutes"
+    icon: mdi:clock
+
 delay_kitchen:
     name: Kitchen
     options:

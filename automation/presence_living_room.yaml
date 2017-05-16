@@ -1,0 +1,66 @@
+    - alias: "Living Room Presence On"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_6_0    # find-living_room-motion
+          to: 'on'
+      action:
+        - service: homeassistant.turn_on
+          entity_id: input_boolean.presence_room_living
+   
+    - alias: "Living Room Presence Off Immediate"
+      condition: 
+          condition: state
+          entity_id: input_select.delay_living_room
+          state: "Immediate"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_6_0    # find-living_room-motion
+          to: 'off'
+      action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_room_living
+
+    - alias: "Living Room Presence Off 2 Minutes"
+      condition: 
+          condition: state
+          entity_id: input_select.delay_living_room
+          state: "2 Minutes"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_6_0    # find-living_room-motion
+          to: 'off'
+          for:
+              minutes: 2
+      action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_room_living
+
+    - alias: "Living Room Presence Off 5 Minutes"
+      condition: 
+          condition: state
+          entity_id: input_select.delay_living_room
+          state: "5 Minutes"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_6_0    # find-living_room-motion
+          to: 'off'
+          for:
+              minutes: 5
+      action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_room_living
+
+    - alias: "Living Room Presence Off 30 Minutes"
+      condition: 
+          condition: state
+          entity_id: input_select.delay_living_room
+          state: "30 Minutes"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.ecolink_motion_detector_sensor_6_0    # find-living_room-motion
+          to: 'off'
+          for:
+              minutes: 30
+      action:
+        - service: homeassistant.turn_off
+          entity_id: input_boolean.presence_room_living

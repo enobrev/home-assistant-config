@@ -22,23 +22,26 @@ light.bedroom:
     entity_picture: /local/lamp.jpg
 light.front_porch:
     entity_picture: /local/porch-light.jpg
-light.ge_12724_3way_dimmer_switch_level_3_0:
+switch.ge_12720_outdoor_smart_switch_switch_3_0:
+    friendly_name: Deck
+    entity_picture: /local/globe.jpg
+switch.switch_switch_3_0:
+    friendly_name: Deck
+    entity_picture: /local/globe.jpg
+light.ge_12724_3way_dimmer_switch_level_4_0:
     entity_picture: /local/jar-light.jpg
     friendly_name: Dining Room
-light.switch_level_3_0:
+light.switch_level_4_0:
     entity_picture: /local/jar-light.jpg
     friendly_name: Dining Room
-light.ge_12724_3way_dimmer_switch_level_6_0:
+light.ge_12724_3way_dimmer_switch_level_5_0:
     entity_picture: /local/track-light.jpg
     friendly_name: Kitchen
-light.switch_level_6_0:
+light.switch_level_5_0:
     entity_picture: /local/track-light.jpg
     friendly_name: Kitchen
 lock.lock:
     friendly_name: Back Door
-switch.switch_switch_7_0:
-    friendly_name: Deck
-    entity_picture: /local/globe.jpg
 
 group.all_automations:
     hidden: false
@@ -65,24 +68,35 @@ media_player.galaxy_s6:
 sensor.solar_angle:
     icon: mdi:weather-sunny
 
-sensor.motion_alarm_type_2_0:
+sensor.motion_alarm_type_6_0:
     hidden: true
-sensor.motion_alarm_level_2_1:
+sensor.motion_alarm_level_6_1:
     hidden: true
-sensor.motion_sourcenodeid_2_2:
+sensor.motion_sourcenodeid_6_2:
     hidden: true
-sensor.motion_burglar_2_10:
+sensor.motion_burglar_6_10:
     hidden: true
-sensor.motion_power_management_2_11:
+sensor.motion_power_management_6_11:
     hidden: true
 
-sensor.motion_alarm_type_4_0:
+sensor.motion_alarm_type_7_0:
     hidden: true
-sensor.motion_alarm_level_4_1:
+sensor.motion_alarm_level_7_1:
     hidden: true
-sensor.motion_sourcenodeid_4_2:
+sensor.motion_sourcenodeid_7_2:
     hidden: true
-sensor.motion_burglar_4_10:
+sensor.motion_burglar_7_10:
     hidden: true
-sensor.motion_power_management_4_11:
+sensor.motion_power_management_7_11:
+    hidden: true
+
+sensor.motion_alarm_type_8_0:
+    hidden: true
+sensor.motion_alarm_level_8_1:
+    hidden: true
+sensor.motion_sourcenodeid_8_2:
+    hidden: true
+sensor.motion_burglar_8_10:
+    hidden: true
+sensor.motion_power_management_8_11:
     hidden: true
