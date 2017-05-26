@@ -24,4 +24,4 @@
               {# ##### Get the average of the three, with adjustments for importance in our final value #}
               {% set p_average = ((6 * p_angle) + (3 *  p_clouds) + p_rain) / 10 %}
               {# ##### Multiply our average percentage by 10 and round it for our final result #}
-              {{ (p_average * 100) }}
+              {{ round(p_average * 100, 2) }}
