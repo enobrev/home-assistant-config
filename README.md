@@ -19,3 +19,7 @@ I don't ever want to touch a light switch again.
 ## Documentation
 
 If I do anything weird or interesting, I'll try to document it in the [Notes directory](./notes/)
+
+## TODO
+
+- [] If Light is turned off, reset the status of Room Presence.
