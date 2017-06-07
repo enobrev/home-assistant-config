@@ -101,6 +101,18 @@ media_player:
       client_id: !secret spotify_id
       client_secret: !secret spotify_secret
 
+emulated_hue:
+    type: alexa
+    expose_by_default: true
+    exposed_domains:
+        - light
+        - switch
+
+remote:
+  - platform: harmony
+    name: Living Room
+    host: 192.168.1.239
+
 device_tracker: !include device_tracker.yaml
 input_select: !include input_select.yaml
 input_boolean: !include input_boolean.yaml
