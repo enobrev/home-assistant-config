@@ -71,7 +71,7 @@ zwave:
 wink:
     email: !secret wink_email
     password: !secret wink_password
-#    access_token: !secret wink_token
+    access_token: !secret wink_token
 #    refresh_token: !secret wink_refresh
 #    client_id: !secret wink_client_id
 #    client_secret: !secret wink_client_secret
