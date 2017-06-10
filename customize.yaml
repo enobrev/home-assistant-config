@@ -43,6 +43,14 @@ light.switch_level_5_0:
 lock.lock:
     friendly_name: Back Door
 
+binary_sensor.ecolink_motion_detector_sensor_6_0:
+    friendly_name: Living Room Sensor
+binary_sensor.ecolink_motion_detector_sensor_7_0:
+    friendly_name: Dining Room Sensor
+binary_sensor.ecolink_motion_detector_sensor_8_0:
+    friendly_name: Kitchen Sensor
+
+
 group.all_automations:
     hidden: false
 group.all_devices:

@@ -164,6 +164,7 @@ living_room:
         - input_boolean.presence_room_living
         - light.living_room                                   # find-living_room-light
         - binary_sensor.ecolink_motion_detector_sensor_6_0    # find-living_room-motion
+        - input_slider.darkness
 
 dining_room:
     view: no
