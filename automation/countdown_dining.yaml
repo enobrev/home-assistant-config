@@ -1,0 +1,26 @@
+
+    - alias: "Dining Room Presence Stop Waiting"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.dining_room_sensor_7_0    # find-dining_room-motion
+          to: 'on'
+      action:
+        - service: script.turn_off
+          data:
+              entity_id: script.dining_wait
+   
+
+    - alias: "Dining Room Presence Start Waiting"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.dining_room_sensor_7_0    # find-dining_room-motion
+          to: 'off'
+      action:
+        - service: input_slider.select_value
+          data_template:
+              entity_id: input_slider.countdown_dining
+              value: '{{ states.input_slider.countdown_dining.state | int + 1 }}'
+        - service: script.turn_on
+          data:
+              entity_id: script.dining_wait
+   

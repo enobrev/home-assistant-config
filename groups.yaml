@@ -13,6 +13,17 @@ default_view:
         - lock.kwikset_touchpad_electronic_deadbolt_locked_9_0
         - group.modes
         - group.now
+
+test:
+    view: yes
+    name: Test
+    entities:
+        - input_slider.countdown_dining
+        - input_boolean.presence_room_dining
+        - light.dining_room_level_5_0       # find-dining_room-light
+        - binary_sensor.dining_room_sensor_7_0  # find-dining_room-motion
+        - input_slider.darkness
+        - group.all_scripts
           
 now:
     view: no
@@ -238,6 +249,7 @@ view_all_of_it:
         - group.all_devices
         - group.all_covers
         - group.all_locks
+        - group.all_scripts
         - group.modes
         - group.batteries
 
