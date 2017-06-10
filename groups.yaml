@@ -39,8 +39,8 @@ party:
         - sensor.darkness
         - light.bedroom
         - light.living_room
-        - light.ge_12724_3way_dimmer_switch_level_5_0          # find-dining_room-light
-        - light.ge_12724_3way_dimmer_switch_level_4_0          # find-kitchen-light
+        - light.dining_room_level_5_0          # find-dining_room-light
+        - light.kitchen_level_4_0          # find-kitchen-light
         - switch.ge_12720_outdoor_smart_switch_switch_3_0      # find-deck-switch
 
 batteries:
@@ -91,6 +91,7 @@ room_sensors:
     view: no
     name: Room Sensors
     entities:
+        - input_boolean.presence_room_living
         - input_boolean.presence_room_dining
         - input_boolean.presence_room_kitchen
 
@@ -163,7 +164,7 @@ living_room:
     entities:
         - input_boolean.presence_room_living
         - light.living_room                                   # find-living_room-light
-        - binary_sensor.ecolink_motion_detector_sensor_6_0    # find-living_room-motion
+        - binary_sensor.living_room_sensor_6_0    # find-living_room-motion
         - input_slider.darkness
 
 dining_room:
@@ -171,8 +172,8 @@ dining_room:
     name: Dining Room
     entities:
         - input_boolean.presence_room_dining
-        - light.ge_12724_3way_dimmer_switch_level_5_0       # find-dining_room-light
-        - binary_sensor.ecolink_motion_detector_sensor_7_0  # find-dining_room-motion
+        - light.dining_room_level_5_0       # find-dining_room-light
+        - binary_sensor.dining_room_sensor_7_0  # find-dining_room-motion
         - input_slider.darkness
 
 
@@ -181,8 +182,8 @@ kitchen:
     name: Kitchen
     entities:
         - input_boolean.presence_room_kitchen
-        - light.ge_12724_3way_dimmer_switch_level_4_0       # find-kitchen-light
-        - binary_sensor.ecolink_motion_detector_sensor_8_0  # find-kitchen-motion
+        - light.kitchen_level_4_0       # find-kitchen-light
+        - binary_sensor.kitchen_sensor_8_0  # find-kitchen-motion
 
 
 garage:
@@ -312,8 +313,8 @@ lights:
         - light.front_porch
         - light.living_room
         - light.garage_door
-        - light.ge_12724_3way_dimmer_switch_level_5_0                       # find-dining_room-light
-        - light.ge_12724_3way_dimmer_switch_level_4_0                       # find-kitchen-light
+        - light.dining_room_level_5_0                       # find-dining_room-light
+        - light.kitchen_level_4_0                       # find-kitchen-light
         - switch.ge_12720_outdoor_smart_switch_switch_3_0                   # find-deck-switch
 devices:
     view: no

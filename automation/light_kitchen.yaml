@@ -9,7 +9,7 @@
           state: 'off'
       action:
           service: light.turn_on
-          entity_id: light.ge_12724_3way_dimmer_switch_level_4_0     # find-kitchen-light
+          entity_id: light.kitchen_level_4_0     # find-kitchen-light
           data:
               brightness: 255
 
@@ -24,7 +24,7 @@
           state: 'off'
       action:
           service: light.turn_off
-          entity_id: light.ge_12724_3way_dimmer_switch_level_4_0     # find-kitchen-light
+          entity_id: light.kitchen_level_4_0     # find-kitchen-light
     
     - alias: "Kitchen Fade in During Party Mode"
       trigger:
@@ -37,5 +37,5 @@
       action:
           service: light.turn_on
           data_template:
-              entity_id: light.ge_12724_3way_dimmer_switch_level_4_0     # find-kitchen-light
+              entity_id: light.kitchen_level_4_0     # find-kitchen-light
               brightness: '{{ states.input_slider.darkness.state | int * 50 }}'

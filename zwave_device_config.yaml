@@ -1,8 +1,8 @@
-light.ge_12724_3way_dimmer_switch_level_4_0:
+light.kitchen_level_4_0:
   refresh_value: true
   delay: 2
   polling_intensity: 1
-light.ge_12724_3way_dimmer_switch_level_5_0:
+light.dining_room_level_5_0:
   refresh_value: true
   delay: 2
   polling_intensity: 1
