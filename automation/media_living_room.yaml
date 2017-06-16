@@ -5,7 +5,7 @@
           state: "on"
       trigger:
           platform: state
-          entity_id: media_player.roku_6325ae219771    # find-roku
+          entity_id: media_player.roku_6325ae219771 # find-roku
           to: 'playing'
       action:
           - service: light.turn_on
@@ -23,7 +23,7 @@
           state: "on"
       trigger:
           platform: state
-          entity_id: media_player.roku_6325ae219771    # find-roku
+          entity_id: media_player.roku_6325ae219771 # find-roku
           from: 'playing'
       action:
           - service: light.turn_on
