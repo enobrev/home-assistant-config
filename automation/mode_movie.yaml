@@ -6,7 +6,7 @@
       action:
           - service: light.turn_on
             data:
-                entity_id: light.living_room_level_10_0 # find-living_room-light
+                entity_id: light.living_room_level_10_0 # find-light-living_room
                 brightness: 65
           - service: input_select.select_option
             data:

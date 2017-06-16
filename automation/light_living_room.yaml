@@ -14,7 +14,7 @@
                 above: 1
       action:
           service: light.turn_on
-          entity_id: light.living_room_level_10_0 # find-living_room-light
+          entity_id: light.living_room_level_10_0 # find-light-living_room
 
     - alias: "Living Room Light Off when nobody is there"
       trigger:
@@ -27,7 +27,7 @@
           state: 'off'
       action:
           service: light.turn_off
-          entity_id: light.living_room_level_10_0 # find-living_room-light
+          entity_id: light.living_room_level_10_0 # find-light-living_room
 
     - alias: "Living Room Fade in During Party Mode"
       trigger:
@@ -40,5 +40,5 @@
       action:
           service: light.turn_on
           data_template:
-              entity_id: light.living_room_level_10_0 # find-living_room-light
+              entity_id: light.living_room_level_10_0 # find-light-living_room
               brightness: '{{ states.input_slider.darkness.state | int * 50 }}'
