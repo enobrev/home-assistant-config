@@ -20,10 +20,10 @@
             entity_id: climate.dining_room
             away_mode: true
         - service: light.turn_off
-          entity_id: light.dining_room
+          entity_id: light.dining_room_level_5_0 # find-light-dining_room
         - service: light.turn_off
           entity_id: light.living_room_level_10_0 # find-light-living_room
         - service: light.turn_off
-          entity_id: light.kitchen
+          entity_id: light.kitchen_level_4_0 # find-light-kitchen
         - service: light.turn_off
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
