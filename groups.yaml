@@ -49,7 +49,7 @@ party:
         - input_slider.darkness
         - sensor.darkness
         - light.bedroom
-        - light.living_room
+        - light.living_room_level_10_0 # find-living_room-light
         - light.dining_room_level_5_0          # find-dining_room-light
         - light.kitchen_level_4_0          # find-kitchen-light
         - switch.ge_12720_outdoor_smart_switch_switch_3_0      # find-deck-switch
@@ -174,7 +174,7 @@ living_room:
     name: Living Room
     entities:
         - input_boolean.presence_room_living
-        - light.living_room                                   # find-living_room-light
+        - light.living_room_level_10_0 # find-living_room-light
         - binary_sensor.living_room_sensor_6_0    # find-living_room-motion
         - input_slider.darkness
 
@@ -323,7 +323,7 @@ lights:
     entities:
         - light.bedroom
         - light.front_porch
-        - light.living_room
+        - light.living_room_level_10_0 # find-living_room-light
         - light.garage_door
         - light.dining_room_level_5_0                       # find-dining_room-light
         - light.kitchen_level_4_0                       # find-kitchen-light

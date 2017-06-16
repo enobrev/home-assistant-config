@@ -10,7 +10,7 @@
       action:
           - service: light.turn_on
             data:
-                entity_id: light.living_room
+                entity_id: light.living_room_level_10_0 # find-living_room-light
                 brightness: 70
           - service: input_boolean.turn_off
             data:
@@ -28,7 +28,7 @@
       action:
           - service: light.turn_on
             data:
-                entity_id: light.living_room
+                entity_id: light.living_room_level_10_0 # find-living_room-light
                 brightness: 255
           - service: input_boolean.turn_off
             data:

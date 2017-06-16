@@ -16,7 +16,7 @@ climate.dining_room:
     entity_picture: /local/nest.jpg
 cover.garage_door_opener:
     entity_picture: /local/garage.jpg
-light.living_room:
+light.living_room_level_10_0: # find-living_room-light
     entity_picture: /local/lamp.jpg
 light.bedroom:
     entity_picture: /local/lamp.jpg
