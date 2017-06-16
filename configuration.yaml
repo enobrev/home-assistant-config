@@ -61,6 +61,7 @@ zwave:
     polling_interval: 60000
     # debug: 1
     # autoheal: False
+    new_entity_ids: true
     device_config: !include zwave_device_config.yaml
 
 mqtt:
