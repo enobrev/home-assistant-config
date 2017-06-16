@@ -75,7 +75,7 @@ Here are the solar angle and darkness sensors.  It looks hairier than it is. I'l
               value_template: '{{ states.input_slider.darkness.state | int < 1 }}'
           action:
               service: light.turn_off
-              entity_id: light.front_porch
+              entity_id: light.front_porch_level_11_0 # find-light-front_porch
 
         - alias: "Front Porch Light On"
           trigger:
@@ -87,7 +87,7 @@ Here are the solar angle and darkness sensors.  It looks hairier than it is. I'l
           action:
               service: light.turn_on
               data_template:
-                  entity_id: light.front_porch
+                  entity_id: light.front_porch_level_11_0 # find-light-front_porch
                   brightness: '{{ states.input_slider.darkness.state | int * 15 }}'
 
 
