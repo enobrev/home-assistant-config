@@ -18,10 +18,16 @@ cover.garage_door_opener:
     entity_picture: /local/garage.jpg
 light.living_room_level_10_0: # find-light-living_room
     entity_picture: /local/lamp.jpg
+    friendly_name: Living Room
 light.master_bedroom_level_14_0: # find-light-master_bedroom
     entity_picture: /local/lamp.jpg
+    friendly_name: Master Bedroom
 light.front_porch_level_11_0: # find-light-front_porch
     entity_picture: /local/porch-light.jpg
+    friendly_name: Front Porch
+light.garage_level_12_0: # find-light-garage
+    entity_picture: /local/porch-light.jpg
+    friendly_name: Garage
 switch.ge_12720_outdoor_smart_switch_switch_3_0:
     friendly_name: Deck
     entity_picture: /local/globe.jpg

@@ -210,7 +210,7 @@ outside:
         - input_slider.darkness
         - sensor.darkness
         - light.front_porch_level_11_0 # find-light-front_porch
-        - light.garage_door
+        - light.garage_level_12_0 # find-light-garage
         - switch.ge_12720_outdoor_smart_switch_switch_3_0 # find-switch-deck
         - sensor.solar_angle
         - sensor.dark_sky_cloud_coverage
@@ -324,7 +324,7 @@ lights:
         - light.master_bedroom_level_14_0 # find-light-master_bedroom
         - light.front_porch_level_11_0 # find-light-front_porch
         - light.living_room_level_10_0 # find-light-living_room
-        - light.garage_door
+        - light.garage_level_12_0 # find-light-garage
         - light.dining_room_level_5_0 # find-light-dining_room
         - light.kitchen_level_4_0 # find-light-kitchen
         - switch.ge_12720_outdoor_smart_switch_switch_3_0 # find-switch-deck
