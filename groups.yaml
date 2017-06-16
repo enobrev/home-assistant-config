@@ -48,7 +48,7 @@ party:
         - input_boolean.mode_home_party
         - input_slider.darkness
         - sensor.darkness
-        - light.bedroom
+        - light.master_bedroom_level_14_0 # find-light-master_bedroom
         - light.living_room_level_10_0 # find-light-living_room
         - light.dining_room_level_5_0 # find-light-dining_room
         - light.kitchen_level_4_0 # find-light-kitchen
@@ -160,7 +160,7 @@ master_bedroom:
     view: no
     name: Master Bedroom
     entities:
-        - light.bedroom
+        - light.master_bedroom_level_14_0 # find-light-master_bedroom
         - media_player.samsung_wireless_audio_spkwam1500
 
 guest_room:
@@ -321,7 +321,7 @@ lights:
     view: no
     name: Lights
     entities:
-        - light.bedroom
+        - light.master_bedroom_level_14_0 # find-light-master_bedroom
         - light.front_porch
         - light.living_room_level_10_0 # find-light-living_room
         - light.garage_door

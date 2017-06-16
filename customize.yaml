@@ -18,7 +18,7 @@ cover.garage_door_opener:
     entity_picture: /local/garage.jpg
 light.living_room_level_10_0: # find-light-living_room
     entity_picture: /local/lamp.jpg
-light.bedroom:
+light.master_bedroom_level_14_0: # find-light-master_bedroom
     entity_picture: /local/lamp.jpg
 light.front_porch:
     entity_picture: /local/porch-light.jpg

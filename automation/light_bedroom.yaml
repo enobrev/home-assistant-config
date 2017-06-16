@@ -5,13 +5,13 @@
           state: "30 Seconds"
       trigger:
           platform: state
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
           to: 'on'
           for:
               seconds: 30
       action:
           service: light.turn_off
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
 
     - alias: "Bedroom Light 2 Minutes"
       condition:
@@ -20,13 +20,13 @@
           state: "2 Minutes"
       trigger:
           platform: state
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
           to: 'on'
           for:
               minutes: 2
       action:
           service: light.turn_off
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
 
     - alias: "Bedroom Light 5 Minutes"
       condition:
@@ -35,13 +35,13 @@
           state: "5 Minutes"
       trigger:
           platform: state
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
           to: 'on'
           for:
               minutes: 5
       action:
           service: light.turn_off
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
 
     - alias: "Bedroom Light Half Hour"
       condition:
@@ -50,13 +50,13 @@
           state: "Half Hour"
       trigger:
           platform: state
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
           to: 'on'
           for:
               minutes: 30
       action:
           service: light.turn_off
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
 
     - alias: "Bedroom Light One Hour"
       condition:
@@ -65,13 +65,13 @@
           state: "One Hour"
       trigger:
           platform: state
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
           to: 'on'
           for:
               hours: 1
       action:
           service: light.turn_off
-          entity_id: light.bedroom
+          entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
 
     - alias: "Bedroom Fade in During Party Mode"
       trigger:
@@ -84,6 +84,6 @@
       action:
           service: light.turn_on
           data_template:
-              entity_id: light.bedroom
+              entity_id: light.master_bedroom_level_14_0 # find-light-master_bedroom
               brightness: '{{ states.input_slider.darkness.state | int * 25 }}'
 
