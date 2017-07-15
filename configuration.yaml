@@ -27,7 +27,7 @@ http:
 updater:
 
 # Discover some devices automatically
-discovery:
+# discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -98,9 +98,6 @@ remote:
 device_tracker:
     - platform: netgear
       password: !secret netgear_password
-      # host: 192.168.1.1
-      # username: !secret netgear_username
-      # password: !secret netgear_password
 
 input_select: !include input_select.yaml
 input_boolean: !include input_boolean.yaml
