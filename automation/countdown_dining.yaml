@@ -2,7 +2,7 @@
     - alias: "Dining Room Presence Stop Waiting"
       trigger:
           platform: state
-          entity_id: binary_sensor.dining_room_sensor_7_0 # find-dining_room-motion
+          entity_id: binary_sensor.dining_room_sensor # find-dining_room-motion
           to: 'on'
       action:
         - service: input_slider.select_value
@@ -17,7 +17,7 @@
     - alias: "Dining Room Presence Start Waiting"
       trigger:
           platform: state
-          entity_id: binary_sensor.dining_room_sensor_7_0 # find-dining_room-motion
+          entity_id: binary_sensor.dining_room_sensor # find-dining_room-motion
           to: 'off'
       action:
         - service: script.turn_on

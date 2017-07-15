@@ -1,9 +1,9 @@
-light.kitchen_level_4_0:
+light.kitchen_level:
   refresh_value: true
   delay: 2
   polling_intensity: 0
   ignored: false
-light.dining_room_level_5_0:
+light.dining_room_level:
   refresh_value: true
   delay: 2
   polling_intensity: 0
@@ -11,15 +11,15 @@ light.dining_room_level_5_0:
 zwave.kwikset_touchpad_electronic_deadbolt_9:
   ignored: false
   polling_intensity: 1
-light.front_porch_level_11_0:
+light.front_porch_level:
   ignored: false
   polling_intensity: 0
-light.living_room_level_10_0:
+light.living_room_level:
   ignored: false
   polling_intensity: 0
-light.garage_level_12_0:
+light.garage_level:
   ignored: false
   polling_intensity: 0
-light.master_bedroom_level_14_0:
+light.master_bedroom_level:
   ignored: false
   polling_intensity: 0

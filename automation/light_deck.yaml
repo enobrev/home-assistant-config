@@ -14,7 +14,7 @@
       action:
           service: homeassistant.turn_on
           data_template:
-              entity_id: switch.ge_12720_outdoor_smart_switch_switch_3_0 # find-switch-deck
+              entity_id: switch.deck_switch # find-switch-deck
 
     - alias: "Deck Lights off During Party Mode"
       trigger:
@@ -30,5 +30,5 @@
                 value_template: '{{ states.input_slider.darkness.state | int < 5 }}'
       action:
           service: homeassistant.turn_off
-          entity_id: switch.ge_12720_outdoor_smart_switch_switch_3_0 # find-switch-deck
+          entity_id: switch.deck_switch # find-switch-deck
 

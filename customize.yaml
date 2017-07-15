@@ -7,7 +7,6 @@ media_player.johnny_5_guestroom:
 media_player.walle_living_room:
     friendly_name: Chromecast Living Room
 
-
 input_boolean.presence_home_mark:
     entity_picture: /local/mark.jpg
 input_boolean.presence_home_lauren:
@@ -16,38 +15,38 @@ climate.dining_room:
     entity_picture: /local/nest.jpg
 cover.garage_door_opener:
     entity_picture: /local/garage.jpg
-light.living_room_level_10_0: # find-light-living_room
+light.living_room_level: # find-light-living_room
     entity_picture: /local/lamp.jpg
     friendly_name: Living Room
-light.master_bedroom_level_14_0: # find-light-master_bedroom
+light.master_bedroom_level: # find-light-master_bedroom
     entity_picture: /local/lamp.jpg
     friendly_name: Master Bedroom
-light.front_porch_level_11_0: # find-light-front_porch
+light.front_porch_level: # find-light-front_porch
     entity_picture: /local/porch-light.jpg
     friendly_name: Front Porch
-light.garage_level_12_0: # find-light-garage
+light.garage_level: # find-light-garage
     entity_picture: /local/porch-light.jpg
     friendly_name: Garage
-switch.ge_12720_outdoor_smart_switch_switch_3_0:
+switch.deck_switch:
     friendly_name: Deck
     entity_picture: /local/globe.jpg
 switch.switch_switch_3_0:
     friendly_name: Deck
     entity_picture: /local/globe.jpg
-light.dining_room_level_5_0: # find-light-dining_room
+light.dining_room_level: # find-light-dining_room
     entity_picture: /local/jar-light.jpg
     friendly_name: Dining Room
-light.kitchen_level_4_0: # find-light-kitchen
+light.kitchen_level: # find-light-kitchen
     entity_picture: /local/track-light.jpg
     friendly_name: Kitchen
-lock.lock:
+lock.kwikset_touchpad_electronic_deadbolt_locked: # find-lock-back_door
     friendly_name: Back Door
 
-binary_sensor.living_room_sensor_6_0: # find-motion-living_room
+binary_sensor.living_room_sensor: # find-motion-living_room
     friendly_name: Living Room Sensor
-binary_sensor.dining_room_sensor_7_0: # find-motion-dining_room
+binary_sensor.dining_room_sensor: # find-motion-dining_room
     friendly_name: Dining Room Sensor
-binary_sensor.kitchen_sensor_8_0: # find-motion-kitchen
+binary_sensor.kitchen_sensor: # find-motion-kitchen
     friendly_name: Kitchen Sensor
 
 
@@ -76,35 +75,35 @@ media_player.galaxy_s6:
 sensor.solar_angle:
     icon: mdi:weather-sunny
 
-sensor.ecolink_motion_detector_alarm_type_6_0:
+sensor.living_room_alarm_type:
     hidden: true
-sensor.ecolink_motion_detector_alarm_level_6_1:
+sensor.living_room_alarm_level:
     hidden: true
-sensor.ecolink_motion_detector_sourcenodeid_6_2:
+sensor.living_room_sourcenodeid:
     hidden: true
-sensor.ecolink_motion_detector_burglar_6_10:
+sensor.living_room_burglar:
     hidden: true
-sensor.ecolink_motion_detector_power_management_6_11:
-    hidden: true
-
-sensor.ecolink_motion_detector_alarm_type_7_0:
-    hidden: true
-sensor.ecolink_motion_detector_alarm_level_7_1:
-    hidden: true
-sensor.ecolink_motion_detector_sourcenodeid_7_2:
-    hidden: true
-sensor.ecolink_motion_detector_burglar_7_10:
-    hidden: true
-sensor.ecolink_motion_detector_power_management_7_11:
+sensor.living_room_power_management:
     hidden: true
 
-sensor.ecolink_motion_detector_alarm_type_8_0:
+sensor.dining_room_alarm_type:
     hidden: true
-sensor.ecolink_motion_detector_alarm_level_8_1:
+sensor.dining_room_alarm_level:
     hidden: true
-sensor.ecolink_motion_detector_sourcenodeid_8_2:
+sensor.dining_room_sourcenodeid:
     hidden: true
-sensor.ecolink_motion_detector_burglar_8_10:
+sensor.dining_room_burglar:
     hidden: true
-sensor.ecolink_motion_detector_power_management_8_11:
+sensor.dining_room_power_management:
+    hidden: true
+
+sensor.kitchen_alarm_type:
+    hidden: true
+sensor.kitchen_alarm_level:
+    hidden: true
+sensor.kitchen_sourcenodeid:
+    hidden: true
+sensor.kitchen_burglar:
+    hidden: true
+sensor.kitchen_power_management:
     hidden: true

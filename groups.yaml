@@ -20,8 +20,8 @@ test:
     entities:
         - input_slider.countdown_dining
         - input_boolean.presence_room_dining
-        - light.dining_room_level_5_0 # find-light-dining_room
-        - binary_sensor.dining_room_sensor_7_0 # find-motion-dining_room
+        - light.dining_room_level # find-light-dining_room
+        - binary_sensor.dining_room_sensor # find-motion-dining_room
         - input_slider.darkness
         - group.all_scripts
           
@@ -48,11 +48,11 @@ party:
         - input_boolean.mode_home_party
         - input_slider.darkness
         - sensor.darkness
-        - light.master_bedroom_level_14_0 # find-light-master_bedroom
-        - light.living_room_level_10_0 # find-light-living_room
-        - light.dining_room_level_5_0 # find-light-dining_room
-        - light.kitchen_level_4_0 # find-light-kitchen
-        - switch.ge_12720_outdoor_smart_switch_switch_3_0 # find-switch-deck
+        - light.master_bedroom_level # find-light-master_bedroom
+        - light.living_room_level # find-light-living_room
+        - light.dining_room_level # find-light-dining_room
+        - light.kitchen_level # find-light-kitchen
+        - switch.deck_switch # find-switch-deck
 
 batteries:
     view: no
@@ -159,7 +159,7 @@ master_bedroom:
     view: no
     name: Master Bedroom
     entities:
-        - light.master_bedroom_level_14_0 # find-light-master_bedroom
+        - light.master_bedroom_level # find-light-master_bedroom
         - media_player.samsung_wireless_audio_spkwam1500
 
 guest_room:
@@ -173,8 +173,8 @@ living_room:
     name: Living Room
     entities:
         - input_boolean.presence_room_living
-        - light.living_room_level_10_0 # find-light-living_room
-        - binary_sensor.living_room_sensor_6_0 # find-motion-living_room
+        - light.living_room_level # find-light-living_room
+        - binary_sensor.living_room_sensor # find-motion-living_room
         - input_slider.darkness
 
 dining_room:
@@ -182,8 +182,8 @@ dining_room:
     name: Dining Room
     entities:
         - input_boolean.presence_room_dining
-        - light.dining_room_level_5_0 # find-light-dining_room
-        - binary_sensor.dining_room_sensor_7_0 # find-motion-dining_room
+        - light.dining_room_level # find-light-dining_room
+        - binary_sensor.dining_room_sensor # find-motion-dining_room
         - input_slider.darkness
 
 
@@ -192,8 +192,8 @@ kitchen:
     name: Kitchen
     entities:
         - input_boolean.presence_room_kitchen
-        - light.kitchen_level_4_0 # find-light-kitchen
-        - binary_sensor.kitchen_sensor_8_0 # find-motion-kitchen
+        - light.kitchen_level # find-light-kitchen
+        - binary_sensor.kitchen_sensor # find-motion-kitchen
 
 
 garage:
@@ -208,9 +208,9 @@ outside:
     entities:
         - input_slider.darkness
         - sensor.darkness
-        - light.front_porch_level_11_0 # find-light-front_porch
-        - light.garage_level_12_0 # find-light-garage
-        - switch.ge_12720_outdoor_smart_switch_switch_3_0 # find-switch-deck
+        - light.front_porch_level # find-light-front_porch
+        - light.garage_level # find-light-garage
+        - switch.deck_switch # find-switch-deck
         - sensor.solar_angle
         - sensor.dark_sky_cloud_coverage
         - sensor.dark_sky_precip_probability
@@ -320,13 +320,13 @@ lights:
     view: no
     name: Lights
     entities:
-        - light.master_bedroom_level_14_0 # find-light-master_bedroom
-        - light.front_porch_level_11_0 # find-light-front_porch
-        - light.living_room_level_10_0 # find-light-living_room
-        - light.garage_level_12_0 # find-light-garage
-        - light.dining_room_level_5_0 # find-light-dining_room
-        - light.kitchen_level_4_0 # find-light-kitchen
-        - switch.ge_12720_outdoor_smart_switch_switch_3_0 # find-switch-deck
+        - light.master_bedroom_level # find-light-master_bedroom
+        - light.front_porch_level # find-light-front_porch
+        - light.living_room_level # find-light-living_room
+        - light.garage_level # find-light-garage
+        - light.dining_room_level # find-light-dining_room
+        - light.kitchen_level # find-light-kitchen
+        - switch.deck_switch # find-switch-deck
 devices:
     view: no
     name: Devices
