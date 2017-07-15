@@ -147,13 +147,9 @@ office:
     view: no
     name: Office
     entities:
-        - device_tracker.computer_enobrev
-        - device_tracker.computer_mac_mini
+        - device_tracker.computer_office
         - device_tracker.hdhr_office
-        - device_tracker.brother_printer
-        - device_tracker.iphone_mark
-        - device_tracker.wink_hub_wifi
-        - device_tracker.wink_hub_lan
+        - device_tracker.printer_office
 
 master_bedroom:
     view: no
@@ -327,27 +323,3 @@ lights:
         - light.dining_room_level # find-light-dining_room
         - light.kitchen_level # find-light-kitchen
         - switch.deck_switch # find-switch-deck
-devices:
-    view: no
-    name: Devices
-    entities:
-        - device_tracker.roku_living_room
-        - device_tracker.nest_dining_room
-        - device_tracker.computer_enobrev
-        - device_tracker.computer_mac_mini
-        - device_tracker.hdhr_office
-        - device_tracker.asus_android_lauren
-        - device_tracker.netgear_android_lauren
-        - device_tracker.asus_android_mark
-        - device_tracker.netgear_android_mark
-        - device_tracker.iphone_mark
-        - device_tracker.brother_printer
-        - device_tracker.brother_document_scanner
-        - device_tracker.chromecast_guest_room
-        - device_tracker.chromecast_living_room
-        - device_tracker.wink_hub_wifi
-        - device_tracker.wink_hub_lan
-        - device_tracker.netgear_extender
-        - device_tracker.samsung_laptop
-        - device_tracker.myq_garage
-
