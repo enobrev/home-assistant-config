@@ -215,7 +215,6 @@ mark:
     entities:
         - input_boolean.presence_home_mark
         - input_select.presence_room_mark
-        - sensor.mark_location
 
 view_all_of_it:
     view: yes
