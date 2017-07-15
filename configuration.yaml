@@ -84,11 +84,6 @@ notify:
       platform: pushbullet
       api_key: !secret pushbullet_key
 
-media_player:
-    - platform: spotify
-      client_id: !secret spotify_id
-      client_secret: !secret spotify_secret
-
 emulated_hue:
     type: alexa
     expose_by_default: true
