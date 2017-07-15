@@ -140,16 +140,7 @@ view_floor_2:
     name: Second Floor
     entities:
         - group.master_bedroom
-        - group.office
         - group.guest_room
-
-office:
-    view: no
-    name: Office
-    entities:
-        - device_tracker.computer_office
-        - device_tracker.hdhr_office
-        - device_tracker.printer_office
 
 master_bedroom:
     view: no
