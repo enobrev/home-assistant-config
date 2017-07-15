@@ -99,7 +99,7 @@ emulated_hue:
 remote:
   - platform: harmony
     name: Living Room
-    host: 192.168.1.239
+    host: 192.168.1.6
 
 device_tracker: !include device_tracker.yaml
 input_select: !include input_select.yaml
