@@ -91,11 +91,17 @@ emulated_hue:
         - switch
 
 remote:
-  - platform: harmony
-    name: Living Room
-    host: 192.168.1.6
+    - platform: harmony
+      name: Living Room
+      host: 192.168.1.6
 
-device_tracker: !include device_tracker.yaml
+device_tracker:
+    - platform: netgear
+      password: !secret netgear_password
+      # host: 192.168.1.1
+      # username: !secret netgear_username
+      # password: !secret netgear_password
+
 input_select: !include input_select.yaml
 input_boolean: !include input_boolean.yaml
 input_slider: !include input_slider.yaml
