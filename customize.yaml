@@ -41,6 +41,12 @@ light.kitchen_level: # find-light-kitchen
     friendly_name: Kitchen
 lock.kwikset_touchpad_electronic_deadbolt_locked: # find-lock-back_door
     friendly_name: Back Door
+light.hallway_level: # find-light-hallway
+    friendly_name: Hallway
+switch.hallway_closet: # find-switch-hallway_closet
+    friendly_name: Hallway Closet
+light.main_bathroom_level: # find-light-main_bathroom
+    friendly_name: Main Bathroom
 
 binary_sensor.living_room_sensor: # find-motion-living_room
     friendly_name: Living Room Sensor

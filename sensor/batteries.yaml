@@ -1,14 +1,14 @@
 - platform: template
   sensors:
       battery_motion_living_room:
-          value_template: '{{ states.zwave.living_room_2.attributes.battery_level }}'
+          value_template: '{{ states.zwave.living_room.attributes.battery_level }}'
           friendly_name: 'Living Room Sensor Battery Level'
           unit_of_measurement: '%'
 
 - platform: template
   sensors:
       battery_motion_dining_room:
-          value_template: '{{ states.zwave.dining_room_2.attributes.battery_level }}'
+          value_template: '{{ states.zwave.dining_room.attributes.battery_level }}'
           friendly_name: 'Dining Room Sensor Battery Level'
           unit_of_measurement: '%'
 

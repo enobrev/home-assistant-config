@@ -161,6 +161,8 @@ living_room:
     entities:
         - input_boolean.presence_room_living
         - light.living_room_level # find-light-living_room
+        - light.hallway_level # find-light-hallway
+        - switch.hallway_closet_level # find-light-hallway_closet
         - binary_sensor.living_room_sensor # find-motion-living_room
         - input_slider.darkness
 
@@ -308,7 +310,10 @@ lights:
         - light.master_bedroom_level # find-light-master_bedroom
         - light.front_porch_level # find-light-front_porch
         - light.living_room_level # find-light-living_room
+        - light.hallway_level # find-light-hallway
+        - switch.hallway_closet_switch # find-switch-hallway_closet
         - light.garage_level # find-light-garage
         - light.dining_room_level # find-light-dining_room
         - light.kitchen_level # find-light-kitchen
+        - light.main_bathroom_level # find-light-main_bathroom
         - switch.deck_switch # find-switch-deck
