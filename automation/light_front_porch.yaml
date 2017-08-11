@@ -4,7 +4,7 @@
           entity_id: input_slider.darkness
       condition:
           condition: template
-          value_template: '{{ states.input_slider.darkness.state | int < 1 }}'
+          value_template: '{{ states.input_slider.darkness.state | int < 3 }}'
       action:
           service: light.turn_off
           entity_id: light.front_porch_level # find-light-front_porch
@@ -15,7 +15,7 @@
           entity_id: input_slider.darkness
       condition:
           condition: template
-          value_template: '{{ states.input_slider.darkness.state | int > 0 }}'
+          value_template: '{{ states.input_slider.darkness.state | int >= 3 }}'
       action:
           service: light.turn_on
           data_template:

@@ -4,7 +4,7 @@
           entity_id: input_slider.darkness
       condition:
           condition: template
-          value_template: '{{ states.input_slider.darkness.state | int < 1 }}'
+          value_template: '{{ states.input_slider.darkness.state | int < 3 }}'
       action:
           service: light.turn_off
           entity_id: light.garage_level # find-light-garage
@@ -15,9 +15,9 @@
           entity_id: input_slider.darkness
       condition:
           condition: template
-          value_template: '{{ states.input_slider.darkness.state | int > 0 }}'
+          value_template: '{{ states.input_slider.darkness.state | int >= 3 }}'
       action:
           service: light.turn_on
           data_template:
               entity_id: light.garage_level # find-light-garage
-              brightness: '{{ states.input_slider.darkness.state | int * 10 }}'
+              brightness: '{{ states.input_slider.darkness.state | int * 25 }}'
