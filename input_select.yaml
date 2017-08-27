@@ -93,3 +93,12 @@ timer_bedroom:
         - "Stay On"
     initial: "Stay On"
     icon: mdi:clock
+
+delay_upstairs:
+    name: Up Stairs
+    options:
+        - "Immediate"
+        - "2 Minutes"
+        - "5 Minutes"
+    initial: "Immediate"
+    icon: mdi:clock

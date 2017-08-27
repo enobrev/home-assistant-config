@@ -21,6 +21,13 @@
 
 - platform: template
   sensors:
+      battery_motion_upstairs:
+          value_template: '{{ states.zwave.upstairs.attributes.battery_level }}'
+          friendly_name: 'Up Stairs Sensor Battery Level'
+          unit_of_measurement: '%'
+
+- platform: template
+  sensors:
       battery_lock_back:
           value_template: '{{ states.zwave.back_door.attributes.battery_level }}'
           friendly_name: 'Back Door Lock Battery Level'

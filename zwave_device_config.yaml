@@ -26,3 +26,15 @@ light.master_bedroom_level:
 switch.hallway_closet_switch:
   ignored: false
   polling_intensity: 1
+light.upstairs_light_1_level:
+  ignored: false
+  polling_intensity: 1
+light.upstairs_light_2_level:
+  ignored: false
+  polling_intensity: 1
+zwave.upstairs_light_2:
+  ignored: false
+  polling_intensity: 1
+zwave.upstairs_light_1:
+  ignored: false
+  polling_intensity: 1

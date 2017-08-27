@@ -33,6 +33,11 @@ presence_room_living:
     initial: off
     icon: mdi:human-handsup
 
+presence_upstairs:
+    name: "Someone is on the Up Stairs"
+    initial: off
+    icon: mdi:human-handsup
+
 mode_sleep:
     name: "Sleep Mode"
     initial: off

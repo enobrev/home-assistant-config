@@ -50,6 +50,7 @@ light_delays:
         - input_select.delay_dining_room
         - input_select.delay_kitchen
         - input_select.timer_bedroom
+        - input_select.delay_upstairs
 
 party:
     view: yes
@@ -108,6 +109,7 @@ presence_places:
         - input_boolean.presence_room_living
         - input_boolean.presence_room_dining
         - input_boolean.presence_room_kitchen
+        - input_boolean.presence_upstairs
 
 room_sensors:
     view: no
@@ -116,6 +118,16 @@ room_sensors:
         - input_boolean.presence_room_living
         - input_boolean.presence_room_dining
         - input_boolean.presence_room_kitchen
+        - input_boolean.presence_upstairs
+
+motion_sensors:
+    view: yes
+    name: Motion
+    entities:
+        - binary_sensor.living_room_sensor
+        - binary_sensor.kitchen_sensor
+        - binary_sensor.dining_room_sensor
+        - binary_sensor.upstairs_motion
 
 media:
     view: yes
@@ -153,6 +165,7 @@ view_floor_2:
     entities:
         - group.master_bedroom
         - group.guest_room
+        - group.upstairs
 
 master_bedroom:
     view: no
@@ -160,6 +173,17 @@ master_bedroom:
     entities:
         - light.master_bedroom_level # find-light-master_bedroom
         - media_player.samsung_wireless_audio_spkwam1500
+
+upstairs:
+    view: no
+    name: Up Stairs
+    entities:
+        - light.upstairs_light_1_level
+        - light.upstairs_light_2_level
+        - input_boolean.presence_upstairs
+        - binary_sensor.upstairs_motion
+        - sensor.upstairs_temperature
+        - sensor.upstairs_luminance
 
 guest_room:
     view: no
@@ -267,6 +291,7 @@ inputs:
         - input_boolean.presence_room_living
         - input_select.presence_room_mark
         - input_select.presence_room_lauren
+        - input_select.presence_upstairs
 weather:
     view: no
     name: Weather
@@ -332,3 +357,5 @@ lights:
         - light.kitchen_level # find-light-kitchen
         - light.main_bathroom_level # find-light-main_bathroom
         - switch.deck_switch # find-switch-deck
+        - light.upstairs_light_1_level
+        - light.upstairs_light_2_level

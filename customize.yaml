@@ -49,6 +49,10 @@ switch.hallway_closet: # find-switch-hallway_closet
     friendly_name: Hallway Closet
 light.main_bathroom_level: # find-light-main_bathroom
     friendly_name: Main Bathroom
+light.upstairs_light_1_level:
+    friendly_name: Up Stairs 1
+light.upstairs_light_2_level:
+    friendly_name: Up Stairs 2
 
 binary_sensor.living_room_sensor: # find-motion-living_room
     friendly_name: Living Room Sensor
@@ -56,6 +60,8 @@ binary_sensor.dining_room_sensor: # find-motion-dining_room
     friendly_name: Dining Room Sensor
 binary_sensor.kitchen_sensor: # find-motion-kitchen
     friendly_name: Kitchen Sensor
+binary_sensor.upstairs_motion:
+    friendly_name: Up Stairs Sensor
 
 
 group.all_automations:
