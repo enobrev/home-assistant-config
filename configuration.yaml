@@ -78,6 +78,20 @@ cover:
       password: !secret myq_password
       type: chamberlain
 
+camera:
+    - platform: foscam
+      username: !secret foscam_username
+      password: !secret foscam_password
+      ip: 192.168.1.23
+      name: Living Room Camera
+    - platform: foscam
+      username: !secret foscam_username
+      password: !secret foscam_password
+      ip: 192.168.1.26
+      name: Front Porch Camera
+    
+    
+
 notify:
     - name: pushbullet
       platform: pushbullet
