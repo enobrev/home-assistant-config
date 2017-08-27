@@ -15,13 +15,20 @@
 - platform: template
   sensors:
       battery_motion_kitchen:
-          value_template: '{{ states.zwave.kitchen_2.attributes.battery_level }}'
+          value_template: '{{ states.zwave.kitchen.attributes.battery_level }}'
           friendly_name: 'Kitchen Sensor Battery Level'
           unit_of_measurement: '%'
 
 - platform: template
   sensors:
-      battery_lock_rear:
-          value_template: '{{ states.zwave.kwikset_touchpad_electronic_deadbolt.attributes.battery_level }}'
+      battery_lock_back:
+          value_template: '{{ states.zwave.back_door.attributes.battery_level }}'
           friendly_name: 'Back Door Lock Battery Level'
+          unit_of_measurement: '%'
+
+- platform: template
+  sensors:
+      battery_lock_garage:
+          value_template: '{{ states.zwave.garage_door.attributes.battery_level }}'
+          friendly_name: 'Garage Door Lock Battery Level'
           unit_of_measurement: '%'

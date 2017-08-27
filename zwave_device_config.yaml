@@ -23,3 +23,6 @@ light.garage_level:
 light.master_bedroom_level:
   ignored: false
   polling_intensity: 0
+switch.hallway_closet_switch:
+  ignored: false
+  polling_intensity: 1

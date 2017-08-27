@@ -1,7 +1,7 @@
 
 default_view:
     view: yes
-    name: Home
+    name: Hamlin
     entities:
         - persistent_notification.update_available
         - climate.dining_room
@@ -10,9 +10,12 @@ default_view:
         - group.garage
         - group.presence_people
         - group.room_sensors
-        - lock.kwikset_touchpad_electronic_deadbolt_locked_9_0
+        - lock.garage_door_locked
+        - lock.back_door_locked
         - group.modes
         - group.now
+        - camera.front_porch_camera
+        - camera.living_room_camera
 
 test:
     view: yes
@@ -24,6 +27,13 @@ test:
         - binary_sensor.dining_room_sensor # find-motion-dining_room
         - input_slider.darkness
         - group.all_scripts
+
+cameras:
+    view: yes
+    name: Cameras
+    entities:
+        - camera.front_porch_camera
+        - camera.living_room_camera
           
 now:
     view: no
@@ -58,7 +68,8 @@ batteries:
     view: no
     name: Batteries
     entities:
-        - sensor.battery_lock_rear
+        - sensor.battery_lock_back
+        - sensor.battery_lock_garage
         - sensor.battery_motion_dining_room
         - sensor.battery_motion_kitchen
         - sensor.battery_motion_living_room
@@ -133,7 +144,8 @@ view_floor_1:
         - group.kitchen
         - group.thermostat
         - group.speedtest
-        - lock.kwikset_touchpad_electronic_deadbolt_locked_9_0
+        - lock.garage_door_locked
+        - lock.back_door_locked
 
 view_floor_2:
     view: yes
@@ -165,6 +177,7 @@ living_room:
         - switch.hallway_closet_level # find-light-hallway_closet
         - binary_sensor.living_room_sensor # find-motion-living_room
         - input_slider.darkness
+        - camera.living_room_camera
 
 dining_room:
     view: no
@@ -203,7 +216,9 @@ outside:
         - sensor.solar_angle
         - sensor.dark_sky_cloud_coverage
         - sensor.dark_sky_precip_probability
-        - lock.kwikset_touchpad_electronic_deadbolt_locked_9_0
+        - lock.garage_door_locked
+        - lock.back_door_locked
+        - camera.front_porch_camera
 
 lauren:
     view: no

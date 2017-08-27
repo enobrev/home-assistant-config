@@ -39,7 +39,9 @@ light.dining_room_level: # find-light-dining_room
 light.kitchen_level: # find-light-kitchen
     entity_picture: /local/track-light.jpg
     friendly_name: Kitchen
-lock.kwikset_touchpad_electronic_deadbolt_locked: # find-lock-back_door
+lock.garage_door_locked: # find-lock-garage
+    friendly_name: Garage Door
+lock.back_door_locked: # find-lock-back_door
     friendly_name: Back Door
 light.hallway_level: # find-light-hallway
     friendly_name: Hallway
