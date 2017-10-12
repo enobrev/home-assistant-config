@@ -53,8 +53,8 @@ test_kitchen:
     entities:
         - input_slider.countdown_kitchen
         - input_boolean.presence_room_kitchen
-        - light.kitchen_room_level # find-light-kitchen_room
-        - binary_sensor.kitchen_room_sensor # find-motion-kitchen_room
+        - light.kitchen_level # find-light-kitchen_room
+        - binary_sensor.kitchen_sensor # find-motion-kitchen_room
         - input_slider.darkness
         - group.all_scripts
 
