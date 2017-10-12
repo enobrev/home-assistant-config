@@ -24,6 +24,7 @@ test:
         - group.test_dining
         - group.test_living
         - group.test_kitchen
+        - group.test_up_stairs
 
 test_dining:
     view: no
@@ -54,12 +55,25 @@ test_kitchen:
     name: Test Kitchen
     entities:
         - input_slider.countdown_kitchen
-        - input_boolean.presence_room_kitchen
+        - input_boolean.presence_kitchen
         - light.kitchen_level # find-light-kitchen_room
         - binary_sensor.kitchen_sensor # find-motion-kitchen_room
         - input_slider.darkness
         - script.kitchen_decrement
         - script.kitchen_wait
+
+test_up_stairs:
+    view: no
+    name: Test Up_stairs
+    entities:
+        - input_slider.countdown_up_stairs
+        - input_boolean.presence_upstairs
+        - light.upstairs_light_1_level
+        - light.upstairs_light_2_level
+        - binary_sensor.upstairs_motion
+        - input_slider.darkness
+        - script.up_stairs_decrement
+        - script.up_stairs_wait
 
 cameras:
     view: yes

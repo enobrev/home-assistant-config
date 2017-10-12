@@ -25,3 +25,10 @@ countdown_kitchen:
     min: 1
     max: 20
     step: 1
+
+countdown_up_stairs:
+    name: Up Stairs Countdown
+    initial: 1
+    min: 1
+    max: 20
+    step: 1
