@@ -10,4 +10,18 @@ countdown_dining:
     initial: 1
     min: 1
     max: 20
-    step: 1   
+    step: 1
+
+countdown_living:
+    name: Living Room Countdown
+    initial: 1
+    min: 1
+    max: 20
+    step: 1
+
+countdown_kitchen:
+    name: Kitchen Countdown
+    initial: 1
+    min: 1
+    max: 20
+    step: 1
