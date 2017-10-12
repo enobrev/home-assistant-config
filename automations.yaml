@@ -71,7 +71,7 @@
     trigger:
         - platform: state
           entity_id: input_boolean.presence_home_mark
-          state: 'off'
+          to: 'off'
     action:
         - service: input_select.select_option
           data:
@@ -87,7 +87,7 @@
     trigger:
         - platform: state
           entity_id: device_tracker.phone_mark
-          state: 'home'
+          to: 'home'
     action:
         - service: homeassistant.turn_on
           entity_id: input_boolean.presence_home_mark
@@ -101,7 +101,7 @@
     trigger:
         - platform: state
           entity_id: device_tracker.phone_mark
-          state: 'not_home'
+          to: 'not_home'
           for:
               minutes: 3
     action:
