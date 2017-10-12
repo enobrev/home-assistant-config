@@ -1,0 +1,12 @@
+living_wait:
+    sequence:
+        # Cancel ev. old timers
+        - service: script.turn_off
+          data:
+              entity_id: script.living_decrement
+        - delay: '00:00:{{ states.input_slider.countdown_living.state | int + 5 }}'
+        # Set new timer
+        - service: script.turn_on
+          data:
+              entity_id: script.living_decrement
+

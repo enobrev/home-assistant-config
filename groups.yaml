@@ -21,10 +21,40 @@ test:
     view: yes
     name: Test
     entities:
+        - group.test_dining
+        - group.test_living
+        - group.test_kitchen
+
+test_dining:
+    view: no
+    name: Test Dining
+    entities:
         - input_slider.countdown_dining
         - input_boolean.presence_room_dining
         - light.dining_room_level # find-light-dining_room
         - binary_sensor.dining_room_sensor # find-motion-dining_room
+        - input_slider.darkness
+        - group.all_scripts
+        
+test_living:
+    view: no
+    name: Test Living
+    entities:
+        - input_slider.countdown_living
+        - input_boolean.presence_room_living
+        - light.living_room_level # find-light-living_room
+        - binary_sensor.living_room_sensor # find-motion-living_room
+        - input_slider.darkness
+        - group.all_scripts
+        
+test_kitchen:
+    view: no
+    name: Test Kitchen
+    entities:
+        - input_slider.countdown_kitchen
+        - input_boolean.presence_room_kitchen
+        - light.kitchen_room_level # find-light-kitchen_room
+        - binary_sensor.kitchen_room_sensor # find-motion-kitchen_room
         - input_slider.darkness
         - group.all_scripts
 

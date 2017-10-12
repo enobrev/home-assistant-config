@@ -1,0 +1,26 @@
+
+    - alias: "Kitchen Room Presence Stop Waiting"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.kitchen_room_sensor # find-kitchen_room-motion
+          to: 'on'
+      action:
+        - service: input_slider.select_value
+          data_template:
+              entity_id: input_slider.countdown_kitchen
+              value: '{{ states.input_slider.countdown_kitchen.state | int + 1 }}'
+        - service: script.turn_off
+          data:
+              entity_id: script.kitchen_wait
+   
+
+    - alias: "Kitchen Room Presence Start Waiting"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.kitchen_room_sensor # find-kitchen_room-motion
+          to: 'off'
+      action:
+        - service: script.turn_on
+          data:
+              entity_id: script.kitchen_wait
+   
