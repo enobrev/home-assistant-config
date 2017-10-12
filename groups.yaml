@@ -74,6 +74,7 @@ test_upstairs:
         - input_slider.darkness
         - script.upstairs_decrement
         - script.upstairs_wait
+        - script.upstairs_off
 
 cameras:
     view: yes
