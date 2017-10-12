@@ -34,7 +34,8 @@ test_dining:
         - light.dining_room_level # find-light-dining_room
         - binary_sensor.dining_room_sensor # find-motion-dining_room
         - input_slider.darkness
-        - group.all_scripts
+        - script.dining_decrement
+        - script.dining_wait
         
 test_living:
     view: no
@@ -45,7 +46,8 @@ test_living:
         - light.living_room_level # find-light-living_room
         - binary_sensor.living_room_sensor # find-motion-living_room
         - input_slider.darkness
-        - group.all_scripts
+        - script.living_decrement
+        - script.living_wait
         
 test_kitchen:
     view: no
@@ -56,7 +58,8 @@ test_kitchen:
         - light.kitchen_level # find-light-kitchen_room
         - binary_sensor.kitchen_sensor # find-motion-kitchen_room
         - input_slider.darkness
-        - group.all_scripts
+        - script.kitchen_decrement
+        - script.kitchen_wait
 
 cameras:
     view: yes
