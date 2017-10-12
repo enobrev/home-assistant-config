@@ -38,3 +38,6 @@ zwave.upstairs_light_2:
 zwave.upstairs_light_1:
   ignored: false
   polling_intensity: 1
+light.main_bathroom_level:
+  ignored: false
+  polling_intensity: 1

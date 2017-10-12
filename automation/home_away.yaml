@@ -2,7 +2,7 @@
     trigger:
         platform: state
         entity_id: input_boolean.presence_home_all
-        state: 'on'
+        on: 'on'
     action:
         service: climate.set_away_mode
         data:
@@ -13,12 +13,12 @@
     trigger:
         platform: state
         entity_id: input_boolean.presence_home_all
-        state: 'off'
+        on: 'off'
     action:
         - service: climate.set_away_mode
           data:
-            entity_id: climate.dining_room
-            away_mode: true
+            entity_id: climate.nest
+            away_mode: 'on'
         - service: light.turn_off
           entity_id: light.dining_room_level # find-light-dining_room
         - service: light.turn_off
