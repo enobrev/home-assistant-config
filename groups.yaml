@@ -24,7 +24,7 @@ test:
         - group.test_dining
         - group.test_living
         - group.test_kitchen
-        - group.test_up_stairs
+        - group.test_upstairs
 
 test_dining:
     view: no
@@ -62,18 +62,18 @@ test_kitchen:
         - script.kitchen_decrement
         - script.kitchen_wait
 
-test_up_stairs:
+test_upstairs:
     view: no
-    name: Test Up_stairs
+    name: Test Up Stairs
     entities:
-        - input_slider.countdown_up_stairs
+        - input_slider.countdown_upstairs
         - input_boolean.presence_upstairs
         - light.upstairs_light_1_level
         - light.upstairs_light_2_level
         - binary_sensor.upstairs_motion
         - input_slider.darkness
-        - script.up_stairs_decrement
-        - script.up_stairs_wait
+        - script.upstairs_decrement
+        - script.upstairs_wait
 
 cameras:
     view: yes
