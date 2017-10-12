@@ -30,7 +30,7 @@
           entity_id: device_tracker.phone_lauren
           on: 'home'
     action:
-        - service: homeassistant.turn_on
+        - service: input_boolean.turn_on
           entity_id: input_boolean.presence_home_lauren
 
 
@@ -46,5 +46,5 @@
           for:
               minutes: 3
     action:
-        - service: homeassistant.turn_off
+        - service: input_boolean.turn_off
           entity_id: input_boolean.presence_home_lauren

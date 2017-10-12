@@ -12,8 +12,8 @@
               - condition: template
                 value_template: '{{ states.input_slider.darkness.state | int >= 5 }}'
       action:
-          service: homeassistant.turn_on
-          data_template:
+          service: switch.turn_on
+          data:
               entity_id: switch.deck_switch # find-switch-deck
 
     - alias: "Deck Lights off During Party Mode"
@@ -29,6 +29,7 @@
               - condition: template
                 value_template: '{{ states.input_slider.darkness.state | int < 5 }}'
       action:
-          service: homeassistant.turn_off
-          entity_id: switch.deck_switch # find-switch-deck
+          service: switch.turn_off
+          data:
+              entity_id: switch.deck_switch # find-switch-deck
 
