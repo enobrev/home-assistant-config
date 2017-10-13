@@ -13,6 +13,21 @@
               entity_id: light.kitchen_level # find-light-kitchen
               brightness: 255
 
+    - alias: "Kitchen Light Off when nobody is there"
+      trigger:
+          platform: state
+          entity_id: input_boolean.presence_room_kitchen
+          to: 'off'
+      condition:
+          condition: state
+          entity_id: input_boolean.mode_home_party
+          state: 'off'
+      action:
+          service: light.turn_off
+          data:
+              entity_id: light.kitchen_level # find-light-kitchen
+              transition: 5
+
     - alias: "Kitchen Fade in During Party Mode"
       trigger:
           platform: state

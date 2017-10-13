@@ -26,6 +26,26 @@
                     {% set percentage = (100 - states.sensor.darkness.state | float) %}
                     {{ ((percentage * (maximum - minimum) / 100) + minimum) | int }}
 
+    - alias: "Up Stairs Light Off when nobody is there"
+      trigger:
+          platform: state
+          entity_id: input_boolean.presence_upstairs
+          to: 'off'
+      condition:
+          condition: state
+          entity_id: input_boolean.mode_home_party
+          state: 'off'
+      action:
+          - service: light.turn_off
+            data:
+                entity_id: light.upstairs_light_1_level
+                transition: 5
+
+          - service: light.turn_off
+            data:
+                entity_id: light.upstairs_light_2_level
+                transition: 5
+
     - alias: "Up Stairs Fade in During Party Mode"
       trigger:
           platform: state
