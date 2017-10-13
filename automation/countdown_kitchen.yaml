@@ -1,5 +1,5 @@
 
-    - alias: "Kitchen Room Presence Stop Waiting"
+    - alias: "Kitchen Presence Stop Waiting"
       trigger:
           platform: state
           entity_id: binary_sensor.kitchen_sensor # find-kitchen-motion
@@ -14,7 +14,7 @@
               entity_id: script.kitchen_wait
    
 
-    - alias: "Kitchen Room Presence Start Waiting"
+    - alias: "Kitchen Presence Start Waiting"
       trigger:
           platform: state
           entity_id: binary_sensor.kitchen_sensor # find-kitchen-motion

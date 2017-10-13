@@ -1,26 +1,26 @@
 
-    - alias: "Kitchen Room Presence Stop Waiting"
+    - alias: "Living Room Presence Stop Waiting"
       trigger:
           platform: state
-          entity_id: binary_sensor.kitchen_room_sensor # find-kitchen_room-motion
+          entity_id: binary_sensor.living_room_sensor # find-living_room-motion
           to: 'on'
       action:
         - service: input_slider.select_value
           data_template:
-              entity_id: input_slider.countdown_kitchen
-              value: '{{ states.input_slider.countdown_kitchen.state | int + 1 }}'
+              entity_id: input_slider.countdown_living
+              value: '{{ states.input_slider.countdown_living.state | int + 1 }}'
         - service: script.turn_off
           data:
-              entity_id: script.kitchen_wait
+              entity_id: script.living_wait
    
 
-    - alias: "Kitchen Room Presence Start Waiting"
+    - alias: "Living Room Presence Start Waiting"
       trigger:
           platform: state
-          entity_id: binary_sensor.kitchen_room_sensor # find-kitchen_room-motion
+          entity_id: binary_sensor.living_room_sensor # find-living_room-motion
           to: 'off'
       action:
         - service: script.turn_on
           data:
-              entity_id: script.kitchen_wait
+              entity_id: script.living_wait
    
