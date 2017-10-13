@@ -99,6 +99,10 @@ light_delays:
         - input_select.delay_kitchen
         - input_select.timer_bedroom
         - input_select.delay_upstairs
+        - input_slider.countdown_dining
+        - input_slider.countdown_living
+        - input_slider.countdown_kitchen
+        - input_slider.countdown_upstairs
 
 party:
     view: yes

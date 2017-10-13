@@ -5,8 +5,14 @@ kitchen_wait:
           data:
               entity_id: script.kitchen_decrement
         - delay: '00:00:{{ states.input_slider.countdown_kitchen.state | int + 5 }}'
+
         # Set new timer
         - service: script.turn_on
           data:
               entity_id: script.kitchen_decrement
+
+        # Turn Lights Off when Complete
+        - service: script.turn_on
+          data:
+              entity_id: script.kitchen_off
 
