@@ -18,31 +18,16 @@
               entity_id: light.dining_room_level # find-light-dining_room
               brightness: 255
 
-#    - alias: "Dining Room Light Off when nobody is there"
-#      trigger:
-#          platform: state
-#          entity_id: input_boolean.presence_room_dining
-#          to: 'off'
-#      condition:
-#          condition: state
-#          entity_id: input_boolean.mode_home_party
-#          state: 'off'
-#      action:
-#          service: light.turn_off
-#          data:
-#              entity_id: light.dining_room_level # find-light-dining_room
-#
-#    - alias: "Dining Room Fade in During Party Mode"
-#      trigger:
-#          platform: state
-#          entity_id: input_slider.darkness
-#      condition:
-#          condition: state
-#          entity_id: input_boolean.mode_home_party
-#          state: 'on'
-#      action:
-#          service: light.turn_on
-#          data_template:
-#              entity_id: light.dining_room_level # find-light-dining_room
-#              brightness: '{{ states.input_slider.darkness.state | int * 50 }}'
-#
+    - alias: "Dining Room Fade in During Party Mode"
+      trigger:
+          platform: state
+          entity_id: input_slider.darkness
+      condition:
+          condition: state
+          entity_id: input_boolean.mode_home_party
+          state: 'on'
+      action:
+          service: light.turn_on
+          data_template:
+              entity_id: light.dining_room_level # find-light-dining_room
+              brightness: '{{ states.input_slider.darkness.state | int * 50 }}'

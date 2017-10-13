@@ -94,11 +94,7 @@ light_delays:
     view: no
     name: Light Fade-Out Timing
     entities:
-        - input_select.delay_living_room
-        - input_select.delay_dining_room
-        - input_select.delay_kitchen
         - input_select.timer_bedroom
-        - input_select.delay_upstairs
         - input_slider.countdown_dining
         - input_slider.countdown_living
         - input_slider.countdown_kitchen

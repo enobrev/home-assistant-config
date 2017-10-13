@@ -52,36 +52,6 @@ presence_room_lauren:
     initial: "At Home"
     icon: mdi:face
 
-delay_dining_room:
-    name: Dining Room
-    options:
-        - "Immediate"
-        - "2 Minutes"
-        - "5 Minutes"
-        - "Half Hour"
-    initial: "2 Minutes"
-    icon: mdi:clock
-
-delay_living_room:
-    name: Living Room
-    options:
-        - "Immediate"
-        - "2 Minutes"
-        - "5 Minutes"
-        - "Half Hour"
-    initial: "2 Minutes"
-    icon: mdi:clock
-
-delay_kitchen:
-    name: Kitchen
-    options:
-        - "Immediate"
-        - "2 Minutes"
-        - "5 Minutes"
-        - "Half Hour"
-    initial: "2 Minutes"
-    icon: mdi:clock
-
 timer_bedroom:
     name: Bedroom
     options:
@@ -92,13 +62,4 @@ timer_bedroom:
         - "One Hour"
         - "Stay On"
     initial: "Stay On"
-    icon: mdi:clock
-
-delay_upstairs:
-    name: Up Stairs
-    options:
-        - "Immediate"
-        - "2 Minutes"
-        - "5 Minutes"
-    initial: "Immediate"
     icon: mdi:clock
