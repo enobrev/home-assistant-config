@@ -1,0 +1,11 @@
+kitchen_off:
+    sequence:
+        - condition: numeric_state
+          entity_id: input_slider.countdown_kitchen
+          below: 2
+
+        - service: light.turn_off
+          data:
+              entity_id: light.kitchen_level
+              transition: 5
+
