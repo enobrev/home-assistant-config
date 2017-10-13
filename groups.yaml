@@ -13,7 +13,6 @@ default_view:
         - lock.garage_door_locked
         - lock.back_door_locked
         - group.modes
-        - group.now
         - camera.front_porch_camera
         - camera.living_room_camera
 
@@ -82,13 +81,6 @@ cameras:
     entities:
         - camera.front_porch_camera
         - camera.living_room_camera
-          
-now:
-    view: no
-    name: Now
-    entities:
-        - sensor.date
-        - sensor.time
 
 light_delays:
     view: no
@@ -309,7 +301,6 @@ view_all_of_it:
     view: yes
     name: Kitchen Sink
     entities:
-        - group.now
         - group.weather
         - group.system
         - group.thermostat
