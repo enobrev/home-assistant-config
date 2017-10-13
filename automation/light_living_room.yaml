@@ -14,7 +14,8 @@
                 above: 1
       action:
           service: light.turn_on
-          entity_id: light.living_room_level # find-light-living_room
+          data:
+              entity_id: light.living_room_level # find-light-living_room
 
     - alias: "Living Room Light Off when nobody is there"
       trigger:

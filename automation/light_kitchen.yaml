@@ -9,8 +9,8 @@
           state: 'off'
       action:
           service: light.turn_on
-          entity_id: light.kitchen_level # find-light-kitchen
           data:
+              entity_id: light.kitchen_level # find-light-kitchen
               brightness: 255
 
     - alias: "Kitchen Light Off when nobody is there"
@@ -24,7 +24,8 @@
           state: 'off'
       action:
           service: light.turn_off
-          entity_id: light.kitchen_level # find-light-kitchen
+          data:
+              entity_id: light.kitchen_level # find-light-kitchen
     
     - alias: "Kitchen Fade in During Party Mode"
       trigger:

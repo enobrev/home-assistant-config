@@ -11,7 +11,8 @@
               seconds: 30
       action:
           service: light.turn_off
-          entity_id: light.master_bedroom_level # find-light-master_bedroom
+          data:
+              entity_id: light.master_bedroom_level # find-light-master_bedroom
 
     - alias: "Bedroom Light 2 Minutes"
       condition:
@@ -26,7 +27,8 @@
               minutes: 2
       action:
           service: light.turn_off
-          entity_id: light.master_bedroom_level # find-light-master_bedroom
+          data:
+              entity_id: light.master_bedroom_level # find-light-master_bedroom
 
     - alias: "Bedroom Light 5 Minutes"
       condition:
@@ -41,7 +43,8 @@
               minutes: 5
       action:
           service: light.turn_off
-          entity_id: light.master_bedroom_level # find-light-master_bedroom
+          data:
+              entity_id: light.master_bedroom_level # find-light-master_bedroom
 
     - alias: "Bedroom Light Half Hour"
       condition:
@@ -56,7 +59,8 @@
               minutes: 30
       action:
           service: light.turn_off
-          entity_id: light.master_bedroom_level # find-light-master_bedroom
+          data:
+              entity_id: light.master_bedroom_level # find-light-master_bedroom
 
     - alias: "Bedroom Light One Hour"
       condition:
@@ -71,7 +75,8 @@
               hours: 1
       action:
           service: light.turn_off
-          entity_id: light.master_bedroom_level # find-light-master_bedroom
+          data:
+              entity_id: light.master_bedroom_level # find-light-master_bedroom
 
     - alias: "Bedroom Fade in During Party Mode"
       trigger:

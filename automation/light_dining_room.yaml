@@ -14,8 +14,8 @@
                 above: 1
       action:
           service: light.turn_on
-          entity_id: light.dining_room_level # find-light-dining_room
           data:
+              entity_id: light.dining_room_level # find-light-dining_room
               brightness: 255
 
     - alias: "Dining Room Light Off when nobody is there"
@@ -29,7 +29,8 @@
           state: 'off'
       action:
           service: light.turn_off
-          entity_id: light.dining_room_level # find-light-dining_room
+          data:
+              entity_id: light.dining_room_level # find-light-dining_room
     
     - alias: "Dining Room Fade in During Party Mode"
       trigger:

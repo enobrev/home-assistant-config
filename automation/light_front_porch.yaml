@@ -7,7 +7,8 @@
           value_template: '{{ states.input_slider.darkness.state | int < 3 }}'
       action:
           service: light.turn_off
-          entity_id: light.front_porch_level # find-light-front_porch
+          data:
+              entity_id: light.front_porch_level # find-light-front_porch
 
     - alias: "Front Porch Light On"
       trigger:
