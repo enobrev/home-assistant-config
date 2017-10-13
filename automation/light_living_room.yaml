@@ -16,6 +16,7 @@
           service: light.turn_on
           data:
               entity_id: light.living_room_level # find-light-living_room
+              brightness: 255
 
     - alias: "Living Room Fade in During Party Mode"
       trigger:
