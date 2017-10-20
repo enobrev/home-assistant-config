@@ -2,7 +2,7 @@ living_off:
     sequence:
         - condition: numeric_state
           entity_id: input_slider.countdown_living
-          below: 2
+          below: 1
 
         - service: input_boolean.turn_off
           entity_id: input_boolean.presence_room_living

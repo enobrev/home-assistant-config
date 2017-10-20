@@ -2,7 +2,7 @@ dining_off:
     sequence:
         - condition: numeric_state
           entity_id: input_slider.countdown_dining
-          below: 2
+          below: 1
 
         - service: input_boolean.turn_off
           entity_id: input_boolean.presence_room_dining

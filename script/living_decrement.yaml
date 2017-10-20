@@ -2,7 +2,7 @@ living_decrement:
     sequence:
         - condition: numeric_state
           entity_id: input_slider.countdown_living
-          above: 1 
+          above: 0
 
         - service: input_slider.select_value
           data_template:

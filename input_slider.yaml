@@ -7,28 +7,28 @@ darkness:
 
 countdown_dining:
     name: Dining Room Countdown
-    initial: 1
-    min: 10
+    initial: 0
+    min: 0
     max: 3600
     step: 10
 
 countdown_living:
     name: Living Room Countdown
-    initial: 1
-    min: 10
+    initial: 0
+    min: 0
     max: 3600
     step: 10
 
 countdown_kitchen:
     name: Kitchen Countdown
-    initial: 1
-    min: 10
+    initial: 0
+    min: 0
     max: 3600
     step: 10
 
 countdown_upstairs:
     name: Up Stairs Countdown
-    initial: 1
-    min: 10
+    initial: 0
+    min: 0
     max: 120
     step: 10
