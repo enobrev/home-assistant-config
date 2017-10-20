@@ -1,0 +1,15 @@
+- alias: "Dining Room Smoke Alarm Notification"
+  initial_state: ''
+  trigger:
+      platform: state
+      entity_id: sensor.dining_room_smoke_alarm
+  action:
+      - service: notify.pushbullet
+        data:
+            message: "The Dinging Room Smoke Alarm status changed to {{ states.sensor.dining_room_smoke_alarm.state }}"
+            title: "Dining Room Smoke Alarm"
+      - service: persistent_notification.create
+        data:
+            title: "Dining Room Smoke Alarm"
+            notification_id: "dining_room_smoke_alarm"
+            message: "The Dinging Room Smoke Alarm status changed to {{ states.sensor.dining_room_smoke_alarm.state }}"
