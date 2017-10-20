@@ -1,5 +1,5 @@
 - alias: "Dining Room Smoke Alarm Notification"
-  initial_state: ''
+  initial_state: 'on'
   trigger:
       platform: state
       entity_id: sensor.dining_room_smoke_alarm
