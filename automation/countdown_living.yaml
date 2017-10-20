@@ -8,7 +8,7 @@
         - service: input_slider.select_value
           data_template:
               entity_id: input_slider.countdown_living
-              value: '{{ states.input_slider.countdown_living.state | int + 10 }}'
+              value: '{{ states.input_slider.countdown_living.state | int * 2 + 10 }}'
         - service: script.turn_off
           data:
               entity_id: script.living_wait
