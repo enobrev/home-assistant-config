@@ -26,7 +26,7 @@
           service: light.turn_off
           data:
               entity_id: light.kitchen_level # find-light-kitchen
-              transition: 5
+              transition: 10
 
     - alias: "Kitchen Fade in During Party Mode"
       trigger:

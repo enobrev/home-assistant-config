@@ -4,14 +4,9 @@
           entity_id: input_boolean.presence_room_dining
           to: 'on'
       condition:
-          condition: and
-          conditions:
-              - condition: state
-                entity_id: input_boolean.mode_home_party
-                state: 'off'
-              - condition: numeric_state
-                entity_id: input_slider.darkness
-                above: 1
+          condition: state
+          entity_id: input_boolean.mode_home_party
+          state: 'off'
       action:
           service: light.turn_on
           data:
@@ -31,7 +26,7 @@
           service: light.turn_off
           data:
               entity_id: light.dining_room_level # find-light-dining_room
-              transition: 5
+              transition: 10
 
     - alias: "Dining Room Fade in During Party Mode"
       trigger:
