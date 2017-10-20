@@ -4,7 +4,7 @@ kitchen_wait:
         - service: script.turn_off
           data:
               entity_id: script.kitchen_decrement
-        - delay: '00:00:{{ states.input_slider.countdown_kitchen.state | int * 4 }}'
+        - delay: '00:00:10'
 
         # Set new timer
         - service: script.turn_on

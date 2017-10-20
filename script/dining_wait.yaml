@@ -4,7 +4,7 @@ dining_wait:
         - service: script.turn_off
           data:
               entity_id: script.dining_decrement
-        - delay: '00:00:{{ states.input_slider.countdown_dining.state | int * 5 }}'
+        - delay: '00:00:10'
 
         # Set new timer
         - service: script.turn_on

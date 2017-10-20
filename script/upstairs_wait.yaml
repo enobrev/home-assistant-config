@@ -4,7 +4,7 @@ upstairs_wait:
         - service: script.turn_off
           data:
               entity_id: script.upstairs_decrement
-        - delay: '00:00:{{ states.input_slider.countdown_upstairs.state | int * 2 }}'
+        - delay: '00:00:10'
 
         # Set new timer
         - service: script.turn_on
