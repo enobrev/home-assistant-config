@@ -1,18 +1,18 @@
 - platform: template
   sensors:
       dining_room_smoke_alarm:
-      value_template: >
-            {% if is_state("sensor.dining_room_smoke_alarm_level", "0") %}
-                Idle
-            {% elif is_state("sensor.dining_room_smoke_alarm_type", "1") %}
-                Fire
-            {% elif is_state("sensor.dining_room_smoke_alarm_type", "2") %}
-                C02
-            {% elif is_state("sensor.dining_room_smoke_alarm_type", "12") %}
-                Testing
-            {% elif is_state("sensor.dining_room_smoke_alarm_type", "13") %}
-                Idle
-            {% else %}
-                Unknown
-            {% endif %}
-      friendly_name: 'Dining Room Smoke Alarm'
+          friendly_name: 'Dining Room Smoke Alarm'
+          value_template: >
+                {% if is_state("sensor.dining_room_smoke_alarm_level", "0") %}
+                    Idle
+                {% elif is_state("sensor.dining_room_smoke_alarm_type", "1") %}
+                    Fire
+                {% elif is_state("sensor.dining_room_smoke_alarm_type", "2") %}
+                    C02
+                {% elif is_state("sensor.dining_room_smoke_alarm_type", "12") %}
+                    Testing
+                {% elif is_state("sensor.dining_room_smoke_alarm_type", "13") %}
+                    Idle
+                {% else %}
+                    Unknown
+                {% endif %}
