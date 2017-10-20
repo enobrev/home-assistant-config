@@ -2,7 +2,7 @@
     trigger:
         platform: state
         entity_id: input_boolean.presence_home_all
-        on: 'on'
+        to: 'on'
     action:
         service: climate.set_away_mode
         data:
@@ -13,7 +13,7 @@
     trigger:
         platform: state
         entity_id: input_boolean.presence_home_all
-        on: 'off'
+        to: 'off'
     action:
         - service: climate.set_away_mode
           data:
