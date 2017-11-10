@@ -59,7 +59,7 @@ Here are the solar angle and darkness sensors.  It looks hairier than it is. I'l
               platform: state
               entity_id: sensor.darkness
           action:
-              - service: input_number.select_value
+              - service: input_number.set_value
                 data_template:
                   entity_id: input_number.darkness
                   value: '{{ states.sensor.darkness.state | int / 10 | round }}'

@@ -4,7 +4,7 @@ dining_decrement:
           entity_id: input_number.countdown_dining
           above: 0
 
-        - service: input_number.select_value
+        - service: input_number.set_value
           data_template:
               entity_id: input_number.countdown_dining
               value: '{{ states.input_number.countdown_dining.state | int - 10 }}'

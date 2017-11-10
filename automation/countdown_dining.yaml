@@ -5,7 +5,7 @@
           entity_id: binary_sensor.dining_room_sensor # find-dining_room-motion
           to: 'on'
       action:
-        - service: input_number.select_value
+        - service: input_number.set_value
           data_template:
               entity_id: input_number.countdown_dining
               value: '{{ states.input_number.countdown_dining.state | int * 2 + 10 }}'

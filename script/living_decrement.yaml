@@ -4,7 +4,7 @@ living_decrement:
           entity_id: input_number.countdown_living
           above: 0
 
-        - service: input_number.select_value
+        - service: input_number.set_value
           data_template:
               entity_id: input_number.countdown_living
               value: '{{ states.input_number.countdown_living.state | int - 10 }}'
