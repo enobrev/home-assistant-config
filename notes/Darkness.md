@@ -6,7 +6,7 @@ I have a sensor for tracking the sun angle. This was directly from the docs [som
 
 A cloudy afternoon would be about a 30%.  Midnight, Overcast, and Raining is 100%.  Sunny Day, Clear Sky is 0.
 
-I use an input_slider to track that percentage, and my lights are based upon the input-slider for whether they should be on, and how bright they should be.  The outside lights use the whole scale from 0 to 10, while my indoor motion sensors don’t start affecting lights until darkness is at least 2 (20%).  I like using the slider rather than directly using the darkness sensor, as it allows me to adjust the slider in the interface to test the brightness while looking at the lights.
+I use an input_number to track that percentage, and my lights are based upon the input-slider for whether they should be on, and how bright they should be.  The outside lights use the whole scale from 0 to 10, while my indoor motion sensors don’t start affecting lights until darkness is at least 2 (20%).  I like using the slider rather than directly using the darkness sensor, as it allows me to adjust the slider in the interface to test the brightness while looking at the lights.
 
 ## Sensors
 
@@ -59,9 +59,9 @@ Here are the solar angle and darkness sensors.  It looks hairier than it is. I'l
               platform: state
               entity_id: sensor.darkness
           action:
-              - service: input_slider.select_value
+              - service: input_number.select_value
                 data_template:
-                  entity_id: input_slider.darkness
+                  entity_id: input_number.darkness
                   value: '{{ states.sensor.darkness.state | int / 10 | round }}'
 
 ## Light Automation Example
@@ -69,10 +69,10 @@ Here are the solar angle and darkness sensors.  It looks hairier than it is. I'l
         - alias: "Front Porch Light Off"
           trigger:
               platform: state
-              entity_id: input_slider.darkness
+              entity_id: input_number.darkness
           condition:
               condition: template
-              value_template: '{{ states.input_slider.darkness.state | int < 1 }}'
+              value_template: '{{ states.input_number.darkness.state | int < 1 }}'
           action:
               service: light.turn_off
               entity_id: light.front_porch_level # find-light-front_porch
@@ -80,15 +80,15 @@ Here are the solar angle and darkness sensors.  It looks hairier than it is. I'l
         - alias: "Front Porch Light On"
           trigger:
               platform: state
-              entity_id: input_slider.darkness
+              entity_id: input_number.darkness
           condition:
               condition: template
-              value_template: '{{ states.input_slider.darkness.state | int > 0 }}'
+              value_template: '{{ states.input_number.darkness.state | int > 0 }}'
           action:
               service: light.turn_on
               data_template:
                   entity_id: light.front_porch_level # find-light-front_porch
-                  brightness: '{{ states.input_slider.darkness.state | int * 15 }}'
+                  brightness: '{{ states.input_number.darkness.state | int * 15 }}'
 
 
 

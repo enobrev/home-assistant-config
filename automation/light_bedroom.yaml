@@ -81,7 +81,7 @@
     - alias: "Bedroom Fade in During Party Mode"
       trigger:
           platform: state
-          entity_id: input_slider.darkness
+          entity_id: input_number.darkness
       condition:
           condition: state
           entity_id: input_boolean.mode_home_party
@@ -90,5 +90,5 @@
           service: light.turn_on
           data_template:
               entity_id: light.master_bedroom_level # find-light-master_bedroom
-              brightness: '{{ states.input_slider.darkness.state | int * 25 }}'
+              brightness: '{{ states.input_number.darkness.state | int * 25 }}'
 

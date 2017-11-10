@@ -5,10 +5,10 @@
           entity_id: binary_sensor.living_room_sensor # find-living_room-motion
           to: 'on'
       action:
-        - service: input_slider.select_value
+        - service: input_number.select_value
           data_template:
-              entity_id: input_slider.countdown_living
-              value: '{{ states.input_slider.countdown_living.state | int * 2 + 10 }}'
+              entity_id: input_number.countdown_living
+              value: '{{ states.input_number.countdown_living.state | int * 2 + 10 }}'
         - service: script.turn_off
           data:
               entity_id: script.living_wait

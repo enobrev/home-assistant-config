@@ -1,7 +1,7 @@
 dining_off:
     sequence:
         - condition: numeric_state
-          entity_id: input_slider.countdown_dining
+          entity_id: input_number.countdown_dining
           below: 1
 
         - service: input_boolean.turn_off

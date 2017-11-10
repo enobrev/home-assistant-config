@@ -29,11 +29,11 @@ test_dining:
     view: no
     name: Test Dining
     entities:
-        - input_slider.countdown_dining
+        - input_number.countdown_dining
         - input_boolean.presence_room_dining
         - light.dining_room_level # find-light-dining_room
         - binary_sensor.dining_room_sensor # find-motion-dining_room
-        - input_slider.darkness
+        - input_number.darkness
         - script.dining_decrement
         - script.dining_wait
         
@@ -41,11 +41,11 @@ test_living:
     view: no
     name: Test Living
     entities:
-        - input_slider.countdown_living
+        - input_number.countdown_living
         - input_boolean.presence_room_living
         - light.living_room_level # find-light-living_room
         - binary_sensor.living_room_sensor # find-motion-living_room
-        - input_slider.darkness
+        - input_number.darkness
         - script.living_decrement
         - script.living_wait
         
@@ -53,11 +53,11 @@ test_kitchen:
     view: no
     name: Test Kitchen
     entities:
-        - input_slider.countdown_kitchen
+        - input_number.countdown_kitchen
         - input_boolean.presence_room_kitchen
         - light.kitchen_level # find-light-kitchen_room
         - binary_sensor.kitchen_sensor # find-motion-kitchen_room
-        - input_slider.darkness
+        - input_number.darkness
         - script.kitchen_decrement
         - script.kitchen_wait
 
@@ -65,12 +65,12 @@ test_upstairs:
     view: no
     name: Test Up Stairs
     entities:
-        - input_slider.countdown_upstairs
+        - input_number.countdown_upstairs
         - input_boolean.presence_upstairs
         - light.upstairs_light_1_level
         - light.upstairs_light_2_level
         - binary_sensor.upstairs_motion
-        - input_slider.darkness
+        - input_number.darkness
         - script.upstairs_decrement
         - script.upstairs_wait
         - script.upstairs_off
@@ -87,17 +87,17 @@ light_delays:
     name: Light Fade-Out Timing
     entities:
         - input_select.timer_bedroom
-        - input_slider.countdown_dining
-        - input_slider.countdown_living
-        - input_slider.countdown_kitchen
-        - input_slider.countdown_upstairs
+        - input_number.countdown_dining
+        - input_number.countdown_living
+        - input_number.countdown_kitchen
+        - input_number.countdown_upstairs
 
 party:
     view: yes
     name: Party
     entities:
         - input_boolean.mode_home_party
-        - input_slider.darkness
+        - input_number.darkness
         - sensor.darkness
         - light.master_bedroom_level # find-light-master_bedroom
         - light.living_room_level # find-light-living_room
@@ -240,7 +240,7 @@ living_room:
         - light.hallway_level # find-light-hallway
         - switch.hallway_closet_level # find-light-hallway_closet
         - binary_sensor.living_room_sensor # find-motion-living_room
-        - input_slider.darkness
+        - input_number.darkness
         - camera.living_room_camera
 
 dining_room:
@@ -250,7 +250,7 @@ dining_room:
         - input_boolean.presence_room_dining
         - light.dining_room_level # find-light-dining_room
         - binary_sensor.dining_room_sensor # find-motion-dining_room
-        - input_slider.darkness
+        - input_number.darkness
 
 
 kitchen:
@@ -272,7 +272,7 @@ outside:
     view: no
     name: Outside
     entities:
-        - input_slider.darkness
+        - input_number.darkness
         - sensor.darkness
         - light.front_porch_level # find-light-front_porch
         - light.garage_level # find-light-garage

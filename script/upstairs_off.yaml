@@ -1,7 +1,7 @@
 upstairs_off:
     sequence:
         - condition: numeric_state
-          entity_id: input_slider.countdown_upstairs
+          entity_id: input_number.countdown_upstairs
           below: 1
 
         - service: input_boolean.turn_off

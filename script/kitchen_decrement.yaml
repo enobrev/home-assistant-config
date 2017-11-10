@@ -1,13 +1,13 @@
 kitchen_decrement: 
     sequence:
         - condition: numeric_state
-          entity_id: input_slider.countdown_kitchen
+          entity_id: input_number.countdown_kitchen
           above: 0
 
-        - service: input_slider.select_value
+        - service: input_number.select_value
           data_template:
-              entity_id: input_slider.countdown_kitchen
-              value: '{{ states.input_slider.countdown_kitchen.state | int - 10 }}'
+              entity_id: input_number.countdown_kitchen
+              value: '{{ states.input_number.countdown_kitchen.state | int - 10 }}'
 
         - service: script.turn_on
           data:

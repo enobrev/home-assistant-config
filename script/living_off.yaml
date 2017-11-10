@@ -1,7 +1,7 @@
 living_off:
     sequence:
         - condition: numeric_state
-          entity_id: input_slider.countdown_living
+          entity_id: input_number.countdown_living
           below: 1
 
         - service: input_boolean.turn_off

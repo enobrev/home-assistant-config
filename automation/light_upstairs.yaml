@@ -49,7 +49,7 @@
     - alias: "Up Stairs Fade in During Party Mode"
       trigger:
           platform: state
-          entity_id: input_slider.darkness
+          entity_id: input_number.darkness
       condition:
           condition: state
           entity_id: input_boolean.mode_home_party
@@ -58,8 +58,8 @@
           - service: light.turn_on
             data_template:
                 entity_id: light.upstairs_light_1_level # find-light-upstairs
-                brightness: '{{ states.input_slider.darkness.state | int * 50 }}'
+                brightness: '{{ states.input_number.darkness.state | int * 50 }}'
           - service: light.turn_on
             data_template:
                 entity_id: light.upstairs_light_2_level # find-light-upstairs
-                brightness: '{{ states.input_slider.darkness.state | int * 50 }}'
+                brightness: '{{ states.input_number.darkness.state | int * 50 }}'
