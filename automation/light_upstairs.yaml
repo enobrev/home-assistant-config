@@ -11,20 +11,12 @@
           - service: light.turn_on
             data_template:
                 entity_id: light.upstairs_light_1_level # find-light-upstairs
-                brightness: >
-                    {% set minimum = 10 %}
-                    {% set maximum = 255 %}
-                    {% set percentage = (100 - states.sensor.darkness.state | float) %}
-                    {{ ((percentage * (maximum - minimum) / 100) + minimum) | int }}
+                brightness: 200
 
           - service: light.turn_on
             data_template:
                 entity_id: light.upstairs_light_2_level # find-light-upstairs
-                brightness: >
-                    {% set minimum = 10 %}
-                    {% set maximum = 255 %}
-                    {% set percentage = (100 - states.sensor.darkness.state | float) %}
-                    {{ ((percentage * (maximum - minimum) / 100) + minimum) | int }}
+                brightness: 200
 
     - alias: "Up Stairs Light Off when nobody is there"
       trigger:
