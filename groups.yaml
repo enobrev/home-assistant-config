@@ -48,6 +48,7 @@ test_living:
         - input_number.darkness
         - script.living_decrement
         - script.living_wait
+        - timer.living_room
         
 test_kitchen:
     view: no
@@ -91,6 +92,7 @@ light_delays:
         - input_number.countdown_living
         - input_number.countdown_kitchen
         - input_number.countdown_upstairs
+        - timer.living_room
 
 party:
     view: yes
