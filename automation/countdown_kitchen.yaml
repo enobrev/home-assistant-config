@@ -1,26 +1,51 @@
 
-    - alias: "Kitchen Presence Stop Waiting"
+    - alias: "Kitchen Presence Increment Timer"
       trigger:
           platform: state
           entity_id: binary_sensor.kitchen_sensor # find-kitchen-motion
           to: 'on'
       action:
+        # Pause Countdown
+        - service: timer.pause
+          data:
+              entity_id: timer.kitchen
+
+        # Increment Duration
         - service: input_number.set_value
           data_template:
               entity_id: input_number.countdown_kitchen
               value: '{{ states.input_number.countdown_kitchen.state | int * 2 + 10 }}'
-        - service: script.turn_off
-          data:
-              entity_id: script.kitchen_wait
-   
 
-    - alias: "Kitchen Presence Start Waiting"
+    - alias: "Kitchen Presence Start Timer"
       trigger:
           platform: state
           entity_id: binary_sensor.kitchen_sensor # find-kitchen-motion
           to: 'off'
       action:
-        - service: script.turn_on
+        # Start Countdown for Duration
+        - service: timer.start
+          data_template:
+              entity_id: timer.kitchen
+              duration: '{{ states.input_number.countdown_kitchen.state | int }}'
+
+    - alias: "Kitchen Presence Timer Finished"
+      trigger:
+        - platform: event
+          event_type: timer.finished
+          event_data:
+              entity_id: timer.kitchen
+
+        - platform: event
+          event_type: timer.canceled
+          event_data:
+              entity_id: timer.kitchen
+      action:
+        # Presence Off
+        - service: input_boolean.turn_off
+          entity_id: input_boolean.presence_kitchen
+
+        # Reset Countdown to 0
+        - service: input_number.set_value
           data:
-              entity_id: script.kitchen_wait
-   
+              entity_id: input_number.countdown_kitchen
+              value: 0

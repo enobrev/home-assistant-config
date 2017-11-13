@@ -1,26 +1,51 @@
 
-    - alias: "Up Stairs Room Presence Stop Waiting"
+    - alias: "Up Stairs Presence Increment Timer"
       trigger:
           platform: state
           entity_id: binary_sensor.upstairs_motion
           to: 'on'
       action:
+        # Pause Countdown
+        - service: timer.pause
+          data:
+              entity_id: timer.upstairs
+
+        # Increment Duration
         - service: input_number.set_value
           data_template:
               entity_id: input_number.countdown_upstairs
               value: '{{ states.input_number.countdown_upstairs.state | int + 10 }}'
-        - service: script.turn_off
-          data:
-              entity_id: script.upstairs_wait
-   
 
-    - alias: "Up Stairs Room Presence Start Waiting"
+    - alias: "Up Stairs Presence Start Timer"
       trigger:
           platform: state
           entity_id: binary_sensor.upstairs_motion
           to: 'off'
       action:
-        - service: script.turn_on
+        # Start Countdown for Duration
+        - service: timer.start
+          data_template:
+              entity_id: timer.upstairs
+              duration: '{{ states.input_number.countdown_upstairs.state | int }}'
+
+    - alias: "Up Stairs Presence Timer Finished"
+      trigger:
+        - platform: event
+          event_type: timer.finished
+          event_data:
+              entity_id: timer.upstairs
+
+        - platform: event
+          event_type: timer.canceled
+          event_data:
+              entity_id: timer.upstairs
+      action:
+        # Presence Off
+        - service: input_boolean.turn_off
+          entity_id: input_boolean.presence_upstairs
+
+        # Reset Countdown to 0
+        - service: input_number.set_value
           data:
-              entity_id: script.upstairs_wait
-   
+              entity_id: input_number.countdown_upstairs
+              value: 0

@@ -126,9 +126,13 @@ script: !include_dir_merge_named script
 timer:
     living_room:
         name: Living Room
+        icon: mdi:timer
     dining_room:
         name: Dining Room
+        icon: mdi:timer
     kitchen:
         name: Kitchen
+        icon: mdi:timer
     upstairs:
         name: Up Stairs
+        icon: mdi:timer

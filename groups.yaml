@@ -34,8 +34,7 @@ test_dining:
         - light.dining_room_level # find-light-dining_room
         - binary_sensor.dining_room_sensor # find-motion-dining_room
         - input_number.darkness
-        - script.dining_decrement
-        - script.dining_wait
+        - timer.dining_room
         
 test_living:
     view: no
@@ -46,8 +45,6 @@ test_living:
         - light.living_room_level # find-light-living_room
         - binary_sensor.living_room_sensor # find-motion-living_room
         - input_number.darkness
-        - script.living_decrement
-        - script.living_wait
         - timer.living_room
         
 test_kitchen:
@@ -59,8 +56,7 @@ test_kitchen:
         - light.kitchen_level # find-light-kitchen_room
         - binary_sensor.kitchen_sensor # find-motion-kitchen_room
         - input_number.darkness
-        - script.kitchen_decrement
-        - script.kitchen_wait
+        - timer.kitchen
 
 test_upstairs:
     view: no
@@ -73,9 +69,7 @@ test_upstairs:
         - binary_sensor.upstairs_motion
         - sensor.upstairs_burglar
         - input_number.darkness
-        - script.upstairs_decrement
-        - script.upstairs_wait
-        - script.upstairs_off
+        - timer.upstairs
 
 cameras:
     view: yes
@@ -94,6 +88,9 @@ light_delays:
         - input_number.countdown_kitchen
         - input_number.countdown_upstairs
         - timer.living_room
+        - timer.dining_room
+        - timer.upstairs
+        - timer.kitchen
 
 party:
     view: yes

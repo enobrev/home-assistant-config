@@ -1,5 +1,5 @@
 
-    - alias: "Living Room Presence Stop Waiting"
+    - alias: "Living Room Presence Increment Timer"
       trigger:
           platform: state
           entity_id: binary_sensor.living_room_sensor # find-living_room-motion
@@ -16,12 +16,7 @@
               entity_id: input_number.countdown_living
               value: '{{ states.input_number.countdown_living.state | int * 2 + 10 }}'
 
-        # - service: script.turn_off
-        #  data:
-        #      entity_id: script.living_wait
-   
-
-    - alias: "Living Room Presence Start Waiting"
+    - alias: "Living Room Presence Start Timer"
       trigger:
           platform: state
           entity_id: binary_sensor.living_room_sensor # find-living_room-motion
@@ -33,18 +28,24 @@
               entity_id: timer.living_room
               duration: '{{ states.input_number.countdown_living.state | int }}'
 
-
-        # - service: script.turn_on
-        #  data:
-        #      entity_id: script.living_wait
-   
-
-    - alias: "Living Room Timer Finished"
+    - alias: "Living Room Presence Timer Finished"
       trigger:
-          platform: event
+        - platform: event
           event_type: timer.finished
           event_data:
               entity_id: timer.living_room
+
+        - platform: event
+          event_type: timer.canceled
+          event_data:
+              entity_id: timer.living_room
       action:
+        # Presence Off
         - service: input_boolean.turn_off
           entity_id: input_boolean.presence_room_living
+
+        # Reset Countdown to 0
+        - service: input_number.set_value
+          data:
+              entity_id: input_number.countdown_living
+              value: 0
