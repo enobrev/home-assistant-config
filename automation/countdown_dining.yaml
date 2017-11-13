@@ -5,16 +5,16 @@
           entity_id: binary_sensor.dining_room_sensor # find-dining_room-motion
           to: 'on'
       action:
-        # Pause Countdown
-        - service: timer.pause
-          data:
-              entity_id: timer.dining_room
-
         # Increment Duration
         - service: input_number.set_value
           data_template:
               entity_id: input_number.countdown_dining
               value: '{{ states.input_number.countdown_dining.state | int * 2 + 10 }}'
+
+        # Pause Countdown
+        - service: timer.pause
+          data:
+              entity_id: timer.dining_room
 
     - alias: "Dining Room Presence Start Timer"
       trigger:
@@ -25,8 +25,8 @@
         # Start Countdown for Duration
         - service: timer.start
           data_template:
-              entity_id: timer.living_room
-              duration: '{{ states.input_number.countdown_living.state | int }}'
+              entity_id: timer.dining_room
+              duration: '{{ states.input_number.countdown_dining.state | int }}'
 
     - alias: "Dining Room Presence Timer Finished"
       trigger:
@@ -35,18 +35,38 @@
           event_data:
               entity_id: timer.dining_room
 
-        - platform: event
-          event_type: timer.canceled
-          event_data:
-              entity_id: timer.dining_room
-
       action:
-        # Presence Off
-        - service: input_boolean.turn_off
-          entity_id: input_boolean.presence_room_dining
-
         # Reset Countdown to 0
         - service: input_number.set_value
           data:
               entity_id: input_number.countdown_dining
               value: 0
+
+    - alias: "Dining Room Presence Timer Change"
+      trigger:
+          platform: template
+          value_template: "{{(states.input_number.countdown_dining.state | int) > 0}}"
+      action:
+        # Presence On
+        - service: input_boolean.turn_on
+          entity_id: input_boolean.presence_room_dining
+
+        # Start Countdown for Duration
+        - service: timer.start
+          data_template:
+              entity_id: timer.dining_room
+              duration: '{{ states.input_number.countdown_dining.state | int }}'
+
+    - alias: "Dining Room Presence Timer Off"
+      trigger:
+          platform: template
+          value_template: "{{(states.input_number.countdown_dining.state | int) <= 0}}"
+      action:
+        # Presence Off
+        - service: input_boolean.turn_off
+          entity_id: input_boolean.presence_room_dining
+
+        # Pause Countdown
+        - service: timer.cancel
+          data:
+              entity_id: timer.dining_room

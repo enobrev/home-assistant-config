@@ -87,10 +87,6 @@ light_delays:
         - input_number.countdown_living
         - input_number.countdown_kitchen
         - input_number.countdown_upstairs
-        - timer.living_room
-        - timer.dining_room
-        - timer.upstairs
-        - timer.kitchen
 
 party:
     view: yes
