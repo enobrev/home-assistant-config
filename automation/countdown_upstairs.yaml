@@ -58,6 +58,10 @@
               entity_id: timer.upstairs
               duration: '{{ states.input_number.countdown_upstairs.state | int }}'
 
+        # Presence On
+        - service: input_boolean.turn_on
+          entity_id: input_boolean.presence_upstairs
+
     - alias: "Up Stairs Presence Timer Change"
       trigger:
           platform: state
