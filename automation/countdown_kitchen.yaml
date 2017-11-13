@@ -48,7 +48,7 @@
       action:
         # Presence On
         - service: input_boolean.turn_on
-          entity_id: input_boolean.presence_kitchen
+          entity_id: input_boolean.presence_room_kitchen
 
         # Start Countdown for Duration
         - service: timer.start
@@ -63,7 +63,7 @@
       action:
         # Presence Off
         - service: input_boolean.turn_off
-          entity_id: input_boolean.presence_kitchen
+          entity_id: input_boolean.presence_room_kitchen
 
         # Pause Countdown
         - service: timer.cancel
