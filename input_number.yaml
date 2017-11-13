@@ -14,7 +14,7 @@ countdown_dining:
     step: 10
     mode: box
     unit_of_measurement: seconds
-    icon: mdi:timelaps
+    icon: mdi:timelapse
 
 countdown_living:
     name: Living Room Countdown
@@ -24,7 +24,7 @@ countdown_living:
     step: 10
     mode: box
     unit_of_measurement: seconds
-    icon: mdi:timelaps
+    icon: mdi:timelapse
 
 countdown_kitchen:
     name: Kitchen Countdown
@@ -34,7 +34,7 @@ countdown_kitchen:
     step: 10
     mode: box
     unit_of_measurement: seconds
-    icon: mdi:timelaps
+    icon: mdi:timelapse
 
 countdown_upstairs:
     name: Up Stairs Countdown
@@ -44,4 +44,4 @@ countdown_upstairs:
     step: 10
     mode: box
     unit_of_measurement: seconds
-    icon: mdi:timelaps
+    icon: mdi:timelapse
