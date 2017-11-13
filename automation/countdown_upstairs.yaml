@@ -48,9 +48,8 @@
 
     - alias: "Up Stairs Presence Timer Change"
       trigger:
-          platform: state
-          entity_id: input_number.countdown_upstairs
-          above: 0
+          platform: template
+          value_template: "{{(states.input_number.countdown_upstairs.state | int) > 0}}"
       action:
         # Start Countdown for Duration
         - service: timer.start
@@ -64,9 +63,8 @@
 
     - alias: "Up Stairs Presence Timer Off"
       trigger:
-          platform: state
-          entity_id: input_number.countdown_upstairs
-          to: 0
+          platform: template
+          value_template: "{{(states.input_number.countdown_upstairs.state | int) <= 0}}"
       action:
         # Presence Off
         - service: input_boolean.turn_off
