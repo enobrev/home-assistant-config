@@ -9,7 +9,7 @@
         - service: input_number.set_value
           data_template:
               entity_id: input_number.countdown_dining
-              value: '{{ states.input_number.countdown_dining.state | int * 2 + 10 }}'
+              value: '{% if states.input_number.countdown_kitchen.state | int == 0 %}10{% else %}{{ states.input_number.countdown_kitchen.state | int * 2 }}{% endif %}'
 
         # Pause Countdown
         - service: timer.pause
