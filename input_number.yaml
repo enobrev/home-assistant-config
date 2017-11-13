@@ -4,6 +4,7 @@ darkness:
     min: 0
     max: 10
     step: 1
+    mode: slider
 
 countdown_dining:
     name: Dining Room Countdown
@@ -11,6 +12,9 @@ countdown_dining:
     min: 0
     max: 3600
     step: 10
+    mode: slider
+    unit_of_measurement: seconds
+    icon: mdi:timer
 
 countdown_living:
     name: Living Room Countdown
@@ -18,6 +22,9 @@ countdown_living:
     min: 0
     max: 3600
     step: 10
+    mode: slider
+    unit_of_measurement: seconds
+    icon: mdi:timer
 
 countdown_kitchen:
     name: Kitchen Countdown
@@ -25,6 +32,9 @@ countdown_kitchen:
     min: 0
     max: 3600
     step: 10
+    mode: box
+    unit_of_measurement: seconds
+    icon: mdi:timer
 
 countdown_upstairs:
     name: Up Stairs Countdown
@@ -32,3 +42,6 @@ countdown_upstairs:
     min: 0
     max: 120
     step: 10
+    mode: slider
+    unit_of_measurement: seconds
+    icon: mdi:timer
