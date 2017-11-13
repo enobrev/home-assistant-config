@@ -34,11 +34,6 @@
           event_type: timer.finished
           event_data:
               entity_id: timer.upstairs
-
-        - platform: event
-          event_type: timer.canceled
-          event_data:
-              entity_id: timer.upstairs
       action:
         # Reset Countdown to 0
         - service: input_number.set_value
@@ -69,3 +64,8 @@
         # Presence Off
         - service: input_boolean.turn_off
           entity_id: input_boolean.presence_upstairs
+
+        # Pause Countdown
+        - service: timer.cancel
+          data:
+              entity_id: timer.upstairs
