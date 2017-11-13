@@ -4,15 +4,14 @@ default_view:
     name: Hamlin
     entities:
         - persistent_notification.update_available
-        - climate.dining_room
-        - group.lights
         - group.light_delays
+        - climate.nest
         - group.garage
         - group.presence_people
-        - group.room_sensors
         - lock.garage_door_locked
         - lock.back_door_locked
         - group.modes
+        - group.lights
         - camera.front_porch_camera
         - camera.living_room_camera
 
@@ -349,7 +348,7 @@ thermostat:
     view: no
     name: Thermostat
     entities:
-        - climate.dining_room
+        - climate.nest
         - sensor.dining_room_thermostat_target
         - sensor.dining_room_thermostat_temperature
         - sensor.dining_room_thermostat_humidity
