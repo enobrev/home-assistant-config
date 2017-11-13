@@ -71,6 +71,7 @@ test_upstairs:
         - light.upstairs_light_1_level
         - light.upstairs_light_2_level
         - binary_sensor.upstairs_motion
+        - sensor.upstairs_burglar
         - input_number.darkness
         - script.upstairs_decrement
         - script.upstairs_wait
@@ -207,7 +208,7 @@ view_floor_2:
     entities:
         - group.master_bedroom
         - group.guest_room
-        - group.upstairs
+        - group.up_stairs
 
 master_bedroom:
     view: no
@@ -216,7 +217,7 @@ master_bedroom:
         - light.master_bedroom_level # find-light-master_bedroom
         - media_player.samsung_wireless_audio_spkwam1500
 
-upstairs:
+up_stairs:
     view: no
     name: Up Stairs
     entities:
@@ -226,6 +227,7 @@ upstairs:
         - binary_sensor.upstairs_motion
         - sensor.upstairs_temperature
         - sensor.upstairs_luminance
+        - sensor.upstairs_burglar
 
 guest_room:
     view: no
