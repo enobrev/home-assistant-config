@@ -4,6 +4,6 @@
           value_template: '{{ is_state("sensor.upstairs_burglar", "8") }}'
           friendly_name: 'Upstairs Motion'
       upstairs_tamper:
-          value_template: '{{ is_state("sensor.upstairs.burglar", "3") }}'
+          value_template: '{{ is_state("sensor.upstairs_burglar", "3") }}'
           friendly_name: 'Upstairs Tampering'
 
