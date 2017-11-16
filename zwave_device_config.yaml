@@ -41,3 +41,12 @@ zwave.upstairs_light_1:
 light.main_bathroom_level:
   ignored: false
   polling_intensity: 1
+zwave.power_meter:
+  ignored: false
+  polling_intensity: 1
+sensor.power_meter_power:
+  polling_intensity: 1
+sensor.power_meter_previous_reading:
+  polling_intensity: 1
+sensor.power_meter_energy:
+  polling_intensity: 1

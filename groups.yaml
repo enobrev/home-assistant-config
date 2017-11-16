@@ -6,6 +6,7 @@ default_view:
         - persistent_notification.update_available
         - group.light_delays
         - climate.nest
+        - group.power
         - group.garage
         - group.presence_people
         - lock.garage_door_locked
@@ -14,6 +15,14 @@ default_view:
         - group.lights
         - camera.front_porch_camera
         - camera.living_room_camera
+
+power:
+    view: no
+    name: Power
+    entities:
+        - sensor.power_meter_power
+        - sensor.power_meter_energy
+        - sensor.power_meter_previous_reading
 
 test:
     view: yes
