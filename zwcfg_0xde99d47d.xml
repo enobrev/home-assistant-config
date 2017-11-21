@@ -870,7 +870,7 @@
 			</CommandClass>
 			<CommandClass id="38" name="COMMAND_CLASS_SWITCH_MULTILEVEL" version="1" innif="true">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="99" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
 				<Value type="button" genre="user" instance="1" index="1" label="Bright" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="button" genre="user" instance="1" index="2" label="Dim" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="bool" genre="system" instance="1" index="3" label="Ignore Start Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
@@ -1109,7 +1109,7 @@
 			</CommandClass>
 		</CommandClasses>
 	</Node>
-	<Node id="27" name="Garage Door" location="" basic="4" generic="64" specific="3" type="Secure Keypad Door Lock" listening="false" frequentListening="true" beaming="true" routing="true" max_baud_rate="40000" version="4" query_stage="Complete">
+	<Node id="27" name="Garage Door" location="Garage" basic="4" generic="64" specific="3" type="Secure Keypad Door Lock" listening="false" frequentListening="true" beaming="true" routing="true" max_baud_rate="40000" version="4" query_stage="Complete">
 		<Manufacturer id="0" name="">
 			<Product type="0" id="0" name="" />
 		</Manufacturer>
@@ -1262,7 +1262,7 @@
 			</CommandClass>
 			<CommandClass id="38" name="COMMAND_CLASS_SWITCH_MULTILEVEL" version="1">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="255" value="10" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="255" value="11" />
 				<Value type="button" genre="user" instance="1" index="1" label="Bright" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="button" genre="user" instance="1" index="2" label="Dim" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="bool" genre="system" instance="1" index="3" label="Ignore Start Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
@@ -1319,7 +1319,7 @@
 			</CommandClass>
 			<CommandClass id="98" name="COMMAND_CLASS_DOOR_LOCK" version="1" request_flags="4" issecured="true" m_timeoutsupported="1" m_insidehandlemode="0" m_outsidehandlemode="0" m_timeoutmins="254" m_timeoutsecs="254">
 				<Instance index="1" />
-				<Value type="bool" genre="user" instance="1" index="0" label="Locked" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
+				<Value type="bool" genre="user" instance="1" index="0" label="Locked" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 				<Value type="list" genre="user" instance="1" index="1" label="Locked (Advanced)" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
 					<Item label="Unsecure" value="0" />
 					<Item label="Unsecured with Timeout" value="1" />
@@ -1486,7 +1486,7 @@
 			</CommandClass>
 		</CommandClasses>
 	</Node>
-	<Node id="37" name="Dining Room Smoke" location="" basic="4" generic="161" specific="0" type="Alarm Sensor" listening="false" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" secured="true" query_stage="Associations">
+	<Node id="37" name="Dining Room Smoke" location="" basic="4" generic="161" specific="0" type="Alarm Sensor" listening="false" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" secured="true" query_stage="CacheLoad">
 		<Manufacturer id="138" name="First Alert">
 			<Product type="1" id="2" name="ZCombo Smoke and Carbon Monoxide Detector" />
 		</Manufacturer>
@@ -1512,7 +1512,7 @@
 			</CommandClass>
 			<CommandClass id="128" name="COMMAND_CLASS_BATTERY" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="94" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="93" />
 			</CommandClass>
 			<CommandClass id="132" name="COMMAND_CLASS_WAKE_UP" version="1" request_flags="2">
 				<Instance index="1" />
@@ -1534,7 +1534,7 @@
 			</CommandClass>
 		</CommandClasses>
 	</Node>
-	<Node id="47" name="Upstairs" location="" basic="4" generic="7" specific="1" roletype="6" devicetype="3079" nodetype="0" type="Notification Sensor" listening="false" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" secured="true" query_stage="Complete">
+	<Node id="47" name="Upstairs" location="" basic="4" generic="7" specific="1" roletype="6" devicetype="3079" nodetype="0" type="Notification Sensor" listening="false" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" secured="true" query_stage="CacheLoad">
 		<Manufacturer id="10f" name="FIBARO System">
 			<Product type="801" id="2001" name="FGMS001-ZW5 Motion Sensor" />
 		</Manufacturer>
@@ -1552,84 +1552,131 @@
 				<SensorMap index="0" type="0" />
 				<SensorMap index="0" type="1" />
 				<SensorMap index="0" type="2" />
+				<SensorMap index="0" type="3" />
+				<SensorMap index="0" type="4" />
 				<SensorMap index="0" type="5" />
+				<SensorMap index="0" type="6" />
 				<SensorMap index="0" type="7" />
 				<SensorMap index="0" type="8" />
 				<SensorMap index="0" type="9" />
 				<SensorMap index="0" type="10" />
 				<SensorMap index="0" type="11" />
 				<SensorMap index="0" type="12" />
+				<SensorMap index="0" type="13" />
 				<SensorMap index="0" type="14" />
 				<SensorMap index="0" type="15" />
 				<SensorMap index="0" type="16" />
+				<SensorMap index="0" type="17" />
 				<SensorMap index="0" type="18" />
+				<SensorMap index="0" type="19" />
+				<SensorMap index="0" type="20" />
 				<SensorMap index="0" type="21" />
+				<SensorMap index="0" type="22" />
+				<SensorMap index="0" type="23" />
 				<SensorMap index="0" type="24" />
+				<SensorMap index="0" type="25" />
+				<SensorMap index="0" type="26" />
+				<SensorMap index="0" type="27" />
 				<SensorMap index="0" type="28" />
+				<SensorMap index="0" type="29" />
 				<SensorMap index="0" type="30" />
 				<SensorMap index="0" type="31" />
 				<SensorMap index="0" type="32" />
 				<SensorMap index="0" type="33" />
 				<SensorMap index="0" type="34" />
+				<SensorMap index="0" type="35" />
 				<SensorMap index="0" type="36" />
+				<SensorMap index="0" type="37" />
+				<SensorMap index="0" type="38" />
+				<SensorMap index="0" type="39" />
+				<SensorMap index="0" type="40" />
 				<SensorMap index="0" type="41" />
+				<SensorMap index="0" type="42" />
 				<SensorMap index="0" type="43" />
+				<SensorMap index="0" type="44" />
 				<SensorMap index="0" type="45" />
 				<SensorMap index="0" type="46" />
 				<SensorMap index="0" type="47" />
 				<SensorMap index="0" type="48" />
+				<SensorMap index="0" type="49" />
 				<SensorMap index="0" type="50" />
+				<SensorMap index="0" type="51" />
 				<SensorMap index="0" type="52" />
 				<SensorMap index="0" type="53" />
+				<SensorMap index="0" type="54" />
+				<SensorMap index="0" type="55" />
 				<SensorMap index="0" type="56" />
+				<SensorMap index="0" type="57" />
+				<SensorMap index="0" type="58" />
 				<SensorMap index="0" type="59" />
 				<SensorMap index="0" type="60" />
+				<SensorMap index="0" type="61" />
+				<SensorMap index="0" type="62" />
 				<SensorMap index="0" type="63" />
 				<SensorMap index="0" type="64" />
 				<SensorMap index="0" type="65" />
 				<SensorMap index="0" type="66" />
 				<SensorMap index="0" type="67" />
 				<SensorMap index="0" type="68" />
+				<SensorMap index="0" type="69" />
 				<SensorMap index="0" type="70" />
 				<SensorMap index="0" type="71" />
+				<SensorMap index="0" type="73" />
 				<SensorMap index="0" type="74" />
 				<SensorMap index="0" type="75" />
 				<SensorMap index="0" type="76" />
 				<SensorMap index="0" type="77" />
 				<SensorMap index="0" type="78" />
 				<SensorMap index="0" type="79" />
+				<SensorMap index="0" type="80" />
 				<SensorMap index="0" type="81" />
 				<SensorMap index="0" type="83" />
+				<SensorMap index="0" type="84" />
 				<SensorMap index="0" type="85" />
 				<SensorMap index="0" type="86" />
 				<SensorMap index="0" type="87" />
 				<SensorMap index="0" type="88" />
+				<SensorMap index="0" type="89" />
 				<SensorMap index="0" type="90" />
 				<SensorMap index="0" type="91" />
 				<SensorMap index="0" type="92" />
+				<SensorMap index="0" type="93" />
+				<SensorMap index="0" type="94" />
 				<SensorMap index="0" type="95" />
+				<SensorMap index="0" type="96" />
+				<SensorMap index="0" type="97" />
 				<SensorMap index="0" type="98" />
 				<SensorMap index="0" type="99" />
+				<SensorMap index="0" type="100" />
+				<SensorMap index="0" type="101" />
 				<SensorMap index="0" type="102" />
 				<SensorMap index="0" type="103" />
 				<SensorMap index="0" type="104" />
 				<SensorMap index="0" type="105" />
 				<SensorMap index="0" type="106" />
+				<SensorMap index="0" type="107" />
 				<SensorMap index="0" type="108" />
 				<SensorMap index="0" type="109" />
 				<SensorMap index="0" type="110" />
 				<SensorMap index="0" type="111" />
+				<SensorMap index="0" type="112" />
+				<SensorMap index="0" type="113" />
 				<SensorMap index="0" type="114" />
+				<SensorMap index="0" type="115" />
 				<SensorMap index="0" type="116" />
 				<SensorMap index="0" type="117" />
 				<SensorMap index="0" type="118" />
 				<SensorMap index="0" type="119" />
+				<SensorMap index="0" type="120" />
 				<SensorMap index="0" type="121" />
 				<SensorMap index="0" type="122" />
 				<SensorMap index="0" type="123" />
+				<SensorMap index="0" type="124" />
 				<SensorMap index="0" type="125" />
 				<SensorMap index="0" type="126" />
 				<SensorMap index="0" type="127" />
+				<SensorMap index="0" type="128" />
+				<SensorMap index="0" type="129" />
 				<SensorMap index="0" type="130" />
 				<SensorMap index="0" type="131" />
 				<SensorMap index="0" type="132" />
@@ -1638,9 +1685,11 @@
 				<SensorMap index="0" type="135" />
 				<SensorMap index="0" type="136" />
 				<SensorMap index="0" type="137" />
+				<SensorMap index="0" type="138" />
 				<SensorMap index="0" type="139" />
 				<SensorMap index="0" type="140" />
 				<SensorMap index="0" type="141" />
+				<SensorMap index="0" type="142" />
 				<SensorMap index="0" type="143" />
 				<SensorMap index="0" type="144" />
 				<SensorMap index="0" type="145" />
@@ -1649,42 +1698,72 @@
 				<SensorMap index="0" type="149" />
 				<SensorMap index="0" type="150" />
 				<SensorMap index="0" type="151" />
+				<SensorMap index="0" type="152" />
+				<SensorMap index="0" type="153" />
+				<SensorMap index="0" type="154" />
 				<SensorMap index="0" type="155" />
+				<SensorMap index="0" type="156" />
+				<SensorMap index="0" type="157" />
+				<SensorMap index="0" type="158" />
 				<SensorMap index="0" type="159" />
+				<SensorMap index="0" type="160" />
 				<SensorMap index="0" type="161" />
 				<SensorMap index="0" type="162" />
 				<SensorMap index="0" type="163" />
+				<SensorMap index="0" type="164" />
+				<SensorMap index="0" type="165" />
 				<SensorMap index="0" type="166" />
 				<SensorMap index="0" type="167" />
 				<SensorMap index="0" type="168" />
+				<SensorMap index="0" type="169" />
+				<SensorMap index="0" type="170" />
+				<SensorMap index="0" type="171" />
 				<SensorMap index="0" type="172" />
 				<SensorMap index="0" type="173" />
 				<SensorMap index="0" type="174" />
+				<SensorMap index="0" type="175" />
 				<SensorMap index="0" type="176" />
 				<SensorMap index="0" type="177" />
 				<SensorMap index="0" type="178" />
+				<SensorMap index="0" type="179" />
+				<SensorMap index="0" type="180" />
+				<SensorMap index="0" type="181" />
+				<SensorMap index="0" type="182" />
 				<SensorMap index="0" type="183" />
+				<SensorMap index="0" type="184" />
 				<SensorMap index="0" type="185" />
 				<SensorMap index="0" type="186" />
 				<SensorMap index="0" type="187" />
+				<SensorMap index="0" type="188" />
 				<SensorMap index="0" type="189" />
 				<SensorMap index="0" type="190" />
+				<SensorMap index="0" type="191" />
 				<SensorMap index="0" type="192" />
 				<SensorMap index="0" type="193" />
 				<SensorMap index="0" type="194" />
 				<SensorMap index="0" type="195" />
+				<SensorMap index="0" type="196" />
+				<SensorMap index="0" type="197" />
 				<SensorMap index="0" type="198" />
 				<SensorMap index="0" type="199" />
 				<SensorMap index="0" type="200" />
+				<SensorMap index="0" type="201" />
 				<SensorMap index="0" type="202" />
+				<SensorMap index="0" type="203" />
 				<SensorMap index="0" type="204" />
+				<SensorMap index="0" type="205" />
 				<SensorMap index="0" type="206" />
 				<SensorMap index="0" type="207" />
 				<SensorMap index="0" type="208" />
 				<SensorMap index="0" type="209" />
+				<SensorMap index="0" type="210" />
+				<SensorMap index="0" type="211" />
+				<SensorMap index="0" type="212" />
 				<SensorMap index="0" type="213" />
+				<SensorMap index="0" type="214" />
 				<SensorMap index="0" type="215" />
 				<SensorMap index="0" type="216" />
+				<SensorMap index="0" type="217" />
 				<SensorMap index="0" type="218" />
 				<SensorMap index="0" type="219" />
 				<SensorMap index="0" type="220" />
@@ -1692,30 +1771,41 @@
 				<SensorMap index="0" type="222" />
 				<SensorMap index="0" type="223" />
 				<SensorMap index="0" type="224" />
+				<SensorMap index="0" type="225" />
 				<SensorMap index="0" type="226" />
 				<SensorMap index="0" type="227" />
 				<SensorMap index="0" type="228" />
 				<SensorMap index="0" type="229" />
+				<SensorMap index="0" type="230" />
+				<SensorMap index="0" type="231" />
 				<SensorMap index="0" type="232" />
 				<SensorMap index="0" type="233" />
+				<SensorMap index="0" type="234" />
+				<SensorMap index="0" type="235" />
 				<SensorMap index="0" type="236" />
+				<SensorMap index="0" type="237" />
 				<SensorMap index="0" type="238" />
+				<SensorMap index="0" type="239" />
 				<SensorMap index="0" type="240" />
 				<SensorMap index="0" type="241" />
+				<SensorMap index="0" type="242" />
 				<SensorMap index="0" type="243" />
 				<SensorMap index="0" type="244" />
 				<SensorMap index="0" type="245" />
 				<SensorMap index="0" type="246" />
 				<SensorMap index="0" type="247" />
+				<SensorMap index="0" type="248" />
 				<SensorMap index="0" type="249" />
+				<SensorMap index="0" type="250" />
 				<SensorMap index="0" type="251" />
 				<SensorMap index="0" type="252" />
 				<SensorMap index="0" type="253" />
 				<SensorMap index="0" type="254" />
+				<SensorMap index="0" type="255" />
 			</CommandClass>
 			<CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="8" innif="true">
 				<Instance index="1" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="C" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="22.5" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="C" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="21.6" />
 				<Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="lux" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0" />
 				<Value type="decimal" genre="user" instance="1" index="25" label="Seismic Intensity" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.0" />
 			</CommandClass>
@@ -1881,7 +1971,7 @@
 				<Value type="byte" genre="user" instance="1" index="0" label="Alarm Type" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
 				<Value type="byte" genre="user" instance="1" index="1" label="Alarm Level" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
 				<Value type="byte" genre="user" instance="1" index="2" label="SourceNodeId" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
-				<Value type="byte" genre="user" instance="1" index="10" label="Burglar" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="254" />
+				<Value type="byte" genre="user" instance="1" index="10" label="Burglar" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
 			</CommandClass>
 			<CommandClass id="114" name="COMMAND_CLASS_MANUFACTURER_SPECIFIC" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
@@ -1999,30 +2089,30 @@
 				<Instance index="1" />
 				<Instance index="2" endpoint="1" />
 				<Instance index="3" endpoint="2" />
-				<Value type="decimal" genre="user" instance="1" index="4" label="Power-1_1" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="716.650" />
-				<Value type="decimal" genre="user" instance="2" index="4" label="Power-2_1" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="223.630" />
-				<Value type="decimal" genre="user" instance="3" index="4" label="Power-3_1" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="1062.380" />
+				<Value type="decimal" genre="user" instance="1" index="4" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="653.620" />
+				<Value type="decimal" genre="user" instance="2" index="4" label="Power-2_1" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="56.100" />
+				<Value type="decimal" genre="user" instance="3" index="4" label="Power-3_1" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="705.210" />
 			</CommandClass>
 			<CommandClass id="50" name="COMMAND_CLASS_METER" version="2" request_flags="3" innif="true">
 				<Instance index="1" />
 				<Instance index="2" endpoint="1" />
 				<Instance index="3" endpoint="2" />
-				<Value type="decimal" genre="user" instance="1" index="0" label="Energy-1" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="1.415" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Previous-1" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="1.222" />
-				<Value type="int" genre="user" instance="1" index="2" label="Interval-1" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="459" />
-				<Value type="decimal" genre="user" instance="1" index="8" label="Power-1_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="1286.010" />
-				<Value type="bool" genre="user" instance="1" index="32" label="Exporting-1" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+				<Value type="decimal" genre="user" instance="1" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="77.378" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="65.999" />
+				<Value type="int" genre="user" instance="1" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="47497" />
+				<Value type="decimal" genre="user" instance="1" index="8" label="Power-1_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="761.310" />
+				<Value type="bool" genre="user" instance="1" index="32" label="Exporting" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 				<Value type="button" genre="system" instance="1" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
-				<Value type="decimal" genre="user" instance="2" index="0" label="Energy-2" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="0.480" />
-				<Value type="decimal" genre="user" instance="2" index="1" label="Previous-2" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="0.428" />
-				<Value type="int" genre="user" instance="2" index="2" label="Interval-2" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="458" />
-				<Value type="decimal" genre="user" instance="2" index="8" label="Power-2_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="224.070" />
+				<Value type="decimal" genre="user" instance="2" index="0" label="Energy-2" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="28.010" />
+				<Value type="decimal" genre="user" instance="2" index="1" label="Previous-2" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="25.160" />
+				<Value type="int" genre="user" instance="2" index="2" label="Interval-2" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="47498" />
+				<Value type="decimal" genre="user" instance="2" index="8" label="Power-2_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="56.100" />
 				<Value type="bool" genre="user" instance="2" index="32" label="Exporting-2" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 				<Value type="button" genre="system" instance="2" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
-				<Value type="decimal" genre="user" instance="3" index="0" label="Energy-3" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="0.935" />
-				<Value type="decimal" genre="user" instance="3" index="1" label="Previous-3" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="0.794" />
-				<Value type="int" genre="user" instance="3" index="2" label="Interval-3" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="459" />
-				<Value type="decimal" genre="user" instance="3" index="8" label="Power-3_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="1062.050" />
+				<Value type="decimal" genre="user" instance="3" index="0" label="Energy-3" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="49.368" />
+				<Value type="decimal" genre="user" instance="3" index="1" label="Previous-3" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="40.839" />
+				<Value type="int" genre="user" instance="3" index="2" label="Interval-3" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="47498" />
+				<Value type="decimal" genre="user" instance="3" index="8" label="Power-3_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="718.410" />
 				<Value type="bool" genre="user" instance="3" index="32" label="Exporting-3" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 				<Value type="button" genre="system" instance="3" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 			</CommandClass>
@@ -2124,6 +2214,139 @@
 				<Value type="string" genre="system" instance="1" index="0" label="Library Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="3" />
 				<Value type="string" genre="system" instance="1" index="1" label="Protocol Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="2.78" />
 				<Value type="string" genre="system" instance="1" index="2" label="Application Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="3.67" />
+			</CommandClass>
+		</CommandClasses>
+	</Node>
+	<Node id="49" name="Office" location="" basic="4" generic="17" specific="1" roletype="5" devicetype="1536" nodetype="0" type="Multilevel Power Switch" listening="true" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" query_stage="Complete">
+		<Manufacturer id="63" name="GE">
+			<Product type="4944" id="3038" name="14294 In-Wall Smart Dimmer" />
+		</Manufacturer>
+		<CommandClasses>
+			<CommandClass id="32" name="COMMAND_CLASS_BASIC" version="1" request_flags="4" mapping="38">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="38" name="COMMAND_CLASS_SWITCH_MULTILEVEL" version="2" innif="true">
+				<Instance index="1" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="99" />
+				<Value type="button" genre="user" instance="1" index="1" label="Bright" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="button" genre="user" instance="1" index="2" label="Dim" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="bool" genre="system" instance="1" index="3" label="Ignore Start Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
+				<Value type="byte" genre="system" instance="1" index="4" label="Start Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
+				<Value type="byte" genre="system" instance="1" index="5" label="Dimming Duration" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="255" />
+			</CommandClass>
+			<CommandClass id="39" name="COMMAND_CLASS_SWITCH_ALL" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="list" genre="system" instance="1" index="0" label="Switch All" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="3" size="1">
+					<Item label="Disabled" value="0" />
+					<Item label="Off Enabled" value="1" />
+					<Item label="On Enabled" value="2" />
+					<Item label="On and Off Enabled" value="255" />
+				</Value>
+			</CommandClass>
+			<CommandClass id="43" name="COMMAND_CLASS_SCENE_ACTIVATION" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="86" name="COMMAND_CLASS_CRC_16_ENCAP" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="90" name="COMMAND_CLASS_DEVICE_RESET_LOCALLY" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="94" name="COMMAND_CLASS_ZWAVE_PLUS_INFO" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="byte" genre="system" instance="1" index="0" label="ZWave+ Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="1" />
+				<Value type="short" genre="system" instance="1" index="1" label="InstallerIcon" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="1536" />
+				<Value type="short" genre="system" instance="1" index="2" label="UserIcon" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="1536" />
+			</CommandClass>
+			<CommandClass id="112" name="COMMAND_CLASS_CONFIGURATION" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="list" genre="config" instance="1" index="3" label="LED Light" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="2" vindex="0" size="1">
+					<Help>Sets when the LED on the switch is lit.</Help>
+					<Item label="LED on when light off" value="0" />
+					<Item label="LED on when light on" value="1" />
+					<Item label="LED always off" value="2" />
+				</Value>
+				<Value type="list" genre="config" instance="1" index="4" label="Invert Switch" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+					<Help>Change the top of the switch to OFF and the bottom of the switch to ON, if the switch was installed upside down.</Help>
+					<Item label="No" value="0" />
+					<Item label="Yes" value="1" />
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="7" label="Z-Wave Command Dim Step" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="99" value="1">
+					<Help>Indicates how many levels the dimmer will change for each dimming step.</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="8" label="Z-Wave Command Dim Rate" units="x 10 milliseconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="255" value="3">
+					<Help>This value indicates in 10 millisecond resolution, how often the dim level will change. For example, if you set this parameter to 1, then every 10ms the dim level will change. If you set it to 255, then every 2.55 seconds the dim level will change.</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="9" label="Local Control Dim Step" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="99" value="1">
+					<Help>Indicates how many levels the dimmer will change for each dimming step.</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="10" label="Local Control Dim Rate" units="x 10 milliseconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="255" value="3">
+					<Help>This value indicates in 10 millisecond resolution, how often the dim level will change. For example, if you set this parameter to 1, then every 10ms the dim level will change. If you set it to 255, then every 2.55 seconds the dim level will change.</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="11" label="ALL ON/ALL OFF Dim Step" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="99" value="1">
+					<Help>Indicates how many levels the dimmer will change for each dimming step.</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="12" label="ALL ON/ALL OFF Dim Rate" units="x 10 milliseconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="1" max="255" value="3">
+					<Help>This value indicates in 10 millisecond resolution, how often the dim level will change. For example, if you set this parameter to 1, then every 10ms the dim level will change. If you set it to 255, then every 2.55 seconds the dim level will change.</Help>
+				</Value>
+			</CommandClass>
+			<CommandClass id="114" name="COMMAND_CLASS_MANUFACTURER_SPECIFIC" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="115" name="COMMAND_CLASS_POWERLEVEL" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="list" genre="system" instance="1" index="0" label="Powerlevel" units="dB" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
+					<Item label="Normal" value="0" />
+					<Item label="-1dB" value="1" />
+					<Item label="-2dB" value="2" />
+					<Item label="-3dB" value="3" />
+					<Item label="-4dB" value="4" />
+					<Item label="-5dB" value="5" />
+					<Item label="-6dB" value="6" />
+					<Item label="-7dB" value="7" />
+					<Item label="-8dB" value="8" />
+					<Item label="-9dB" value="9" />
+				</Value>
+				<Value type="byte" genre="system" instance="1" index="1" label="Timeout" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
+				<Value type="button" genre="system" instance="1" index="2" label="Set Powerlevel" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="byte" genre="system" instance="1" index="3" label="Test Node" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
+				<Value type="list" genre="system" instance="1" index="4" label="Test Powerlevel" units="dB" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
+					<Item label="Normal" value="0" />
+					<Item label="-1dB" value="1" />
+					<Item label="-2dB" value="2" />
+					<Item label="-3dB" value="3" />
+					<Item label="-4dB" value="4" />
+					<Item label="-5dB" value="5" />
+					<Item label="-6dB" value="6" />
+					<Item label="-7dB" value="7" />
+					<Item label="-8dB" value="8" />
+					<Item label="-9dB" value="9" />
+				</Value>
+				<Value type="short" genre="system" instance="1" index="5" label="Frame Count" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="0" />
+				<Value type="button" genre="system" instance="1" index="6" label="Test" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="button" genre="system" instance="1" index="7" label="Report" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="list" genre="system" instance="1" index="8" label="Test Status" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="0" size="1">
+					<Item label="Failed" value="0" />
+					<Item label="Success" value="1" />
+					<Item label="In Progress" value="2" />
+				</Value>
+				<Value type="short" genre="system" instance="1" index="9" label="Acked Frames" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="0" />
+			</CommandClass>
+			<CommandClass id="133" name="COMMAND_CLASS_ASSOCIATION" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Associations num_groups="3">
+					<Group index="1" max_associations="1" label="Lifeline" auto="true">
+						<Node id="1" />
+					</Group>
+					<Group index="2" max_associations="5" label="Group 2" auto="false" />
+					<Group index="3" max_associations="5" label="Group 3" auto="false" />
+				</Associations>
+			</CommandClass>
+			<CommandClass id="134" name="COMMAND_CLASS_VERSION" version="1" request_flags="4" innif="true">
+				<Instance index="1" />
+				<Value type="string" genre="system" instance="1" index="0" label="Library Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="3" />
+				<Value type="string" genre="system" instance="1" index="1" label="Protocol Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="4.34" />
+				<Value type="string" genre="system" instance="1" index="2" label="Application Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="5.26" />
 			</CommandClass>
 		</CommandClasses>
 	</Node>
