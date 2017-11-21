@@ -89,7 +89,7 @@ camera:
     - platform: foscam
       username: !secret foscam_username
       password: !secret foscam_password
-      ip: 192.168.1.26
+      ip: 192.168.1.33
       name: Front Porch Camera
     
     
