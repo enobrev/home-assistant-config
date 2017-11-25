@@ -3,7 +3,7 @@
       trigger:
           platform: numeric_state
           entity_id: sensor.laundry_washer_power
-          above: 6
+          above: 4
       action:
           service: input_select.select_option
           data:
@@ -14,7 +14,7 @@
       trigger:
           platform: numeric_state
           entity_id: sensor.laundry_washer_power
-          below: 7
+          below: 5
       action:
           service: input_select.select_option
           data:
