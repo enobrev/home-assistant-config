@@ -120,7 +120,7 @@ myq_garage:
   hide_if_away: false
   icon: mdi:garage
   mac: 64:52:99:23:CD:2B
-  name: MYQ
+  name: Garage Door
   picture:
   track: true
   vendor: Chamberlain
@@ -152,11 +152,11 @@ mac_mini_office:
   track: false
   vendor: Apple, Inc.
 
-google_home:
+google_home_living_room:
   hide_if_away: false
-  icon: mdi:google-home
+  icon: mdi:google-chrome
   mac: F4:F5:D8:DB:FC:74
-  name: GOOGLE HOME
+  name: Google Home Living Room
   picture:
   track: true
   vendor: Google, Inc.
@@ -208,10 +208,19 @@ phone_mark:
 
 ace:
   hide_if_away: false
-  icon: mdi:icon
-  mac: 02:0F:B5:E8:BC:81
-  name: ACE
+  icon: mdi:laptop
+  mac: 3C:95:09:E8:BC:81
+  name: Acer Laptop
   picture:
   track: true
-  vendor: Acer
+  vendor: Liteon Technology Corporation
+
+roku_living_room:
+  hide_if_away: false
+  icon: mdi:youtube-play
+  mac: B0:EE:7B:71:E5:8D
+  name: Living Room Roku
+  picture:
+  track: true
+  vendor: Roku
 
