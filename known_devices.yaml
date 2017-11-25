@@ -1,0 +1,217 @@
+
+scanner_living_room:
+  hide_if_away: false
+  icon: mdi:scanner 
+  mac: D8:5D:E2:3C:C7:53
+  name: Living Room Scanner
+  picture:
+  track: true
+  vendor: Hon Hai Precision Ind. Co.,Ltd.
+
+echo_dot_527d0260:
+  hide_if_away: false
+  icon: mdi:amazon
+  mac: 68:37:E9:37:49:BB
+  name: Amazon Echo Dot 527d0260
+  picture:
+  track: true
+  vendor: Amazon Technologies Inc.
+
+computer_office:
+  hide_if_away: false
+  icon: mdi:desktop-tower
+  mac: 90:2B:34:1C:E9:9F
+  name: Office Computer
+  picture:
+  track: true
+  vendor: GIGA-BYTE TECHNOLOGY CO.,LTD.
+
+chromecast_office:
+  hide_if_away: false
+  icon: mdi:google-chrome
+  mac: 6C:AD:F8:57:C0:4A
+  name: Office Chromecast
+  picture:
+  track: true
+  vendor: AzureWave Technology Inc.
+
+echo_dot_730e106cd:
+  hide_if_away: false
+  icon: mdi:amazon
+  mac: 40:B4:CD:4B:24:67
+  name: Amazon Echo Dot 730e106cd
+  picture:
+  track: true
+  vendor: Amazon Technologies Inc.
+
+echo_dot_7326fd7eb:
+  hide_if_away: false
+  icon: mdi:amazon
+  mac: 68:37:E9:FA:21:FF
+  name: Amazon Echo Dot 7326fd7eb
+  picture:
+  track: true
+  vendor: Amazon Technologies Inc.
+
+thermostat_dining_room:
+  hide_if_away: false
+  icon: mdi:nest-thermostat
+  mac: 18:B4:30:0E:A1:F9
+  name: Nest Thermostat
+  picture:
+  track: true
+  vendor: Nest Labs Inc.
+
+echo_dot_33E6E15D6:
+  hide_if_away: false
+  icon: mdi:amazon
+  mac: 68:37:E9:4D:98:AA
+  name: Amazon Echo Dot 33E6E15D6
+  picture:
+  track: true
+  vendor: Amazon Technologies Inc.
+
+printer_office:
+  hide_if_away: false
+  icon: mdi:printer
+  mac: AC:D1:B8:B4:7D:F8
+  name: Office Printer
+  picture:
+  track: true
+  vendor: unknown
+
+harmony_living_room:
+  hide_if_away: false
+  icon: mdi:remote
+  mac: 00:04:20:FD:74:BE
+  name: Harmony Hub
+  picture:
+  track: true
+  vendor: Logitech
+
+hassbian:
+  hide_if_away: false
+  icon: mdi:raspberrypi
+  mac: B8:27:EB:AF:BB:A0
+  name: Home Assistant Pi
+  picture:
+  track: true
+  vendor: Raspberry
+
+chromecast_living_room:
+  hide_if_away: false
+  icon: mdi:google-chrome
+  mac: B0:EE:45:69:0E:6F
+  name: Living Room Chromecast
+  picture:
+  track: true
+  vendor: Google
+
+hdhr_office:
+  hide_if_away: false
+  icon: mdi:youtube-play
+  mac: 00:18:DD:04:65:7F
+  name: HD Homerun
+  picture:
+  track: true
+  vendor: unknown
+
+myq_garage:
+  hide_if_away: false
+  icon: mdi:garage
+  mac: 64:52:99:23:CD:2B
+  name: MYQ
+  picture:
+  track: true
+  vendor: Chamberlain
+
+roku_guest_room:
+  hide_if_away: false
+  icon: mdi:youtube-play
+  mac: 08:05:81:73:3E:71
+  name: Guest Room Roku
+  picture:
+  track: true
+  vendor: Roku
+
+iphone_office:
+  hide_if_away: false
+  icon: mdi:iphone
+  mac: DC:41:5F:B6:2C:C9
+  name: Office iPhone
+  picture:
+  track: false
+  vendor: Apple, Inc.
+
+mac_mini_office:
+  hide_if_away: false
+  icon: mdi:apple
+  mac: 98:5A:EB:D5:43:5A
+  name: Office Mac Mini
+  picture:
+  track: false
+  vendor: Apple, Inc.
+
+google_home:
+  hide_if_away: false
+  icon: mdi:google-home
+  mac: F4:F5:D8:DB:FC:74
+  name: GOOGLE HOME
+  picture:
+  track: true
+  vendor: Google, Inc.
+
+sam:
+  hide_if_away: false
+  icon: mdi:laptop
+  mac: C4:85:08:C1:7B:9A
+  name: SAMSung Laptop
+  picture:
+  track: true
+  vendor: Intel Corporate
+
+foscam_r2:
+  hide_if_away: false
+  icon: mdi:camera
+  mac: 44:2C:05:FF:BA:4E
+  name: Foscam Indoor Camera
+  picture:
+  track: true
+  vendor: AMPAK Technology, Inc.
+
+phone_lauren:
+  hide_if_away: false
+  icon: mdi:android
+  mac: 94:65:2D:6E:43:2C
+  name: Lauren's Phone
+  picture:
+  track: true
+  vendor: OnePlus Technology (Shenzhen) Co., Ltd
+
+foscam_outdoor:
+  hide_if_away: false
+  icon: mdi:camera
+  mac: AC:83:F3:03:B7:9E
+  name: Foscam Front Porch Camera
+  picture:
+  track: true
+  vendor: AMPAK Technology, Inc.
+
+phone_mark:
+  hide_if_away: false
+  icon: mdi:android
+  mac: DC:EF:CA:72:E1:C9
+  name: Mark's Phone
+  picture:
+  track: true
+  vendor: Murata Manufacturing Co., Ltd.
+
+ace:
+  hide_if_away: false
+  icon: mdi:icon
+  mac: 02:0F:B5:E8:BC:81
+  name: ACE
+  picture:
+  track: true
+  vendor: Acer
+
