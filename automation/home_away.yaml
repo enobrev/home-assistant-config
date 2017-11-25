@@ -19,11 +19,12 @@
           data:
             entity_id: climate.nest
             away_mode: 'on'
-        - service: light.turn_off
-          entity_id: light.dining_room_level # find-light-dining_room
-        - service: light.turn_off
-          entity_id: light.living_room_level # find-light-living_room
-        - service: light.turn_off
-          entity_id: light.kitchen_level # find-light-kitchen
-        - service: light.turn_off
-          entity_id: light.master_bedroom_level # find-light-master_bedroom
+        - service: input_boolean.turn_off
+          entity_id: input_boolean.presence_room_dining
+        - service: input_boolean.turn_off
+          entity_id: input_boolean.presence_room_living
+        - service: input_boolean.turn_off
+          entity_id: input_boolean.presence_room_kitchen
+        - service: input_boolean.turn_off
+          entity_id: input_boolean.presence_upstairs
+        
