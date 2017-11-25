@@ -4,7 +4,11 @@
       platform: state
       entity_id: sensor.dining_room_smoke_alarm
   action:
-      - service: notify.pushbullet
+      - service: notify.pushbullet_mark
+        data:
+            message: "The Dining Room Smoke Alarm status changed to {{ states.sensor.dining_room_smoke_alarm.state }}"
+            title: "Dining Room Smoke Alarm"
+      - service: notify.pushbullet_lauren
         data:
             message: "The Dining Room Smoke Alarm status changed to {{ states.sensor.dining_room_smoke_alarm.state }}"
             title: "Dining Room Smoke Alarm"

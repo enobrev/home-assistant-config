@@ -95,9 +95,12 @@ camera:
     
 
 notify:
-    - name: pushbullet
+    - name: pushbullet_mark
       platform: pushbullet
-      api_key: !secret pushbullet_key
+      api_key: !secret pushbullet_key_mark
+    - name: pushbullet_lauren
+      platform: pushbullet
+      api_key: !secret pushbullet_key_lauren
 
 emulated_hue:
     type: alexa

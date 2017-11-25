@@ -6,7 +6,11 @@
       from: 'Running'
       to: 'Idle'
   action:
-      - service: notify.pushbullet
+      - service: notify.pushbullet_mark
+        data:
+            message: "The Washing Machine is Finished"
+            title: "Washing Machine Done"
+      - service: notify.pushbullet_lauren
         data:
             message: "The Washing Machine is Finished"
             title: "Washing Machine Done"
@@ -19,7 +23,11 @@
       from: 'Running'
       to: 'Idle'
   action:
-      - service: notify.pushbullet
+      - service: notify.pushbullet_mark
+        data:
+            message: "The Dryer is Finished"
+            title: "Dryer Done"
+      - service: notify.pushbullet_lauren
         data:
             message: "The Dryer is Finished"
             title: "Dryer Done"
