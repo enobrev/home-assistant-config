@@ -27,7 +27,7 @@
           state: 'off'
     trigger:
         - platform: state
-          entity_id: device_tracker.galaxys8
+          entity_id: device_tracker.phone_mark
           to: 'home'
     action:
         - service: input_boolean.turn_on
@@ -40,7 +40,7 @@
           state: 'on'
     trigger:
         - platform: state
-          entity_id: device_tracker.galaxys8
+          entity_id: device_tracker.phone_mark
           to: 'not_home'
     action:
         - service: input_boolean.turn_off
