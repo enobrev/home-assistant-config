@@ -7,18 +7,19 @@ default_view:
         - group.light_delays
         - climate.nest
         - group.home_laundry
-        - sensor.power_meter_power
+        - group.power
         - group.garage
         - group.presence_people
         - lock.garage_door_locked
         - lock.back_door_locked
-        - group.modes
-        - group.lights
+        - group.lights_main
+        - group.lights_upstairs
+        - group.lights_outside
         - camera.front_porch_camera
         - camera.living_room_camera
 
 power:
-    view: yes
+    view: no
     name: Power
     entities:
         - sensor.power_meter_power
@@ -32,9 +33,7 @@ home_laundry:
     view: no
     name: Laundry
     entities:
-        - sensor.laundry_washer_power
         - input_select.status_washer
-        - sensor.laundry_dryer_power
         - input_select.status_dryer
 
 laundry:
@@ -210,7 +209,7 @@ room_sensors:
         - input_boolean.presence_upstairs
 
 motion_sensors:
-    view: yes
+    view: no
     name: Motion
     entities:
         - binary_sensor.living_room_sensor
@@ -431,6 +430,33 @@ system:
         - sensor.received_eth0
         - sensor.sent_eth0
         - sensor.last_boot
+
+lights_upstairs:
+    view: no
+    name: Upstairs Lights
+    entities:
+        - light.master_bedroom_level # find-light-master_bedroom
+        - light.upstairs_light_1_level
+        - light.upstairs_light_2_level
+
+lights_main:
+    view: no
+    name: Main Floor Lights
+    entities:
+        - light.living_room_level # find-light-living_room
+        - light.hallway_level # find-light-hallway
+        - switch.hallway_closet_switch # find-switch-hallway_closet
+        - light.dining_room_level # find-light-dining_room
+        - light.kitchen_level # find-light-kitchen
+        - light.main_bathroom_level # find-light-main_bathroom
+
+lights_outside:
+    view: no
+    name: Outside Lights
+    entities:
+        - light.front_porch_level # find-light-front_porch
+        - light.garage_level # find-light-garage
+        - switch.deck_switch # find-switch-deck
 
 lights:
     view: no
