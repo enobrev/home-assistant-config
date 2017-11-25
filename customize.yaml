@@ -53,12 +53,24 @@ light.upstairs_light_1_level:
     friendly_name: Up Stairs 1
 light.upstairs_light_2_level:
     friendly_name: Up Stairs 2
-switch.laundry_washer_switch
+switch.laundry_washer_switch:
     friendly_name: Washing Machine Power Override
-switch.laundry_dryer_switch
+switch.laundry_dryer_switch:
     friendly_name: Dryer Power Override
-switch.laundry_freezer
+switch.laundry_freezer:
     friendly_name: Freezer Power Override
+sensor.laundry_washer_power:
+    icon: mdi:flash
+    friendly_name: Washing Machine Power
+sensor.laundry_dryer_power:
+    icon: mdi:flash
+    friendly_name: Dryer Power
+sensor.laundry_freezer_power:
+    icon: mdi:flash
+    friendly_name: Freezer Power
+sensor.power_meter_power:
+    icon: mdi:flash
+    friendly_name: Total Power Usage
 
 binary_sensor.living_room_sensor: # find-motion-living_room
     friendly_name: Living Room Sensor

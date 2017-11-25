@@ -1,14 +1,13 @@
 
-_default_view:
+default_view:
     view: yes
     name: Hamlin
     entities:
         - persistent_notification.update_available
         - group.light_delays
         - climate.nest
-        - groups.washer
-        - groups.dryer
-        - group.power
+        - group.home_laundry
+        - sensor.power_meter_power
         - group.garage
         - group.presence_people
         - lock.garage_door_locked
@@ -19,20 +18,32 @@ _default_view:
         - camera.living_room_camera
 
 power:
-    view: no
+    view: yes
     name: Power
     entities:
         - sensor.power_meter_power
         - sensor.power_meter_energy
         - sensor.power_meter_previous_reading
+        - sensor.laundry_washer_power
+        - sensor.laundry_dryer_power
+        - sensor.laundry_freezer_power
+
+home_laundry:
+    view: no
+    name: Laundry
+    entities:
+        - sensor.laundry_washer_power
+        - input_select.status_washer
+        - sensor.laundry_dryer_power
+        - input_select.status_dryer
 
 laundry:
     view: yes
     name: Laundry
     entities:
-        - groups.washer
-        - groups.dryer
-        - groups.freezer
+        - group.washer
+        - group.dryer
+        - group.freezer
 
 washer:
     view: no

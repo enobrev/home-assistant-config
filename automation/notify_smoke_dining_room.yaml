@@ -6,7 +6,7 @@
   action:
       - service: notify.pushbullet
         data:
-            message: "The Dinging Room Smoke Alarm status changed to {{ states.sensor.dining_room_smoke_alarm.state }}"
+            message: "The Dining Room Smoke Alarm status changed to {{ states.sensor.dining_room_smoke_alarm.state }}"
             title: "Dining Room Smoke Alarm"
       - service: persistent_notification.create
         data:
