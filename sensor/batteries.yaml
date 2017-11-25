@@ -40,10 +40,16 @@
           friendly_name: 'Garage Door Lock Battery Level'
           unit_of_measurement: '%'
 
-
 - platform: template
   sensors:
       battery_dining_room_smoke_alarm:
           value_template: '{{ states.zwave.dining_room_smoke.attributes.battery_level }}'
           friendly_name: 'Dining Room Smoke Alarm Battery'
+          unit_of_measurement: '%'
+
+- platform: template
+  sensors:
+      battery_closet_door:
+          value_template: '{{ states.zwave.closet_door.attributes.battery_level }}'
+          friendly_name: 'Closet Door Battery'
           unit_of_measurement: '%'

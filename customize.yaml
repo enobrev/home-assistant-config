@@ -139,3 +139,22 @@ sensor.kitchen_burglar:
     hidden: true
 sensor.kitchen_power_management:
     hidden: true
+
+sensor.closet_door_access_control:
+    hidden: true
+sensor.closet_door_power_management:
+    hidden: true
+sensor.closet_door_sourcenodeid:
+    hidden: true
+sensor.closet_door_system:
+    hidden: true
+sensor.closet_door_homehealth:
+    hidden: true
+sensor.closet_door_clock:
+    hidden: true
+sensor.closet_door_burglar:
+    hidden: true
+sensor.closet_door_appliance:
+    hidden: true
+
+

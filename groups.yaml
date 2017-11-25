@@ -162,6 +162,9 @@ batteries:
         - sensor.battery_motion_dining_room
         - sensor.battery_motion_kitchen
         - sensor.battery_motion_living_room
+        - sensor.battery_motion_upstairs
+        - sensor.battery_closet_door
+        - sensor.battery_dining_room_smoke_alarm
 
 presence_people:
     view: no

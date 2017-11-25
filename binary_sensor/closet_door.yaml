@@ -1,0 +1,9 @@
+- platform: template
+  sensors:
+      closet_door_open:
+          value_template: '{{ is_state("sensor.closet_door_alarm_level", "255") }}'
+          friendly_name: 'Closet Door Open'
+      closet_door_tamper:
+          value_template: '{{ is_state("sensor.closet_door_alarm_type", "7") }}'
+          friendly_name: 'Closet Door Sensor Tampering'
+

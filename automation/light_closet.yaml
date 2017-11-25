@@ -1,0 +1,20 @@
+    - alias: "Closet Light On when Door is Open"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.closet_door_open
+          to: 'on'
+      action:
+          service: switch.turn_on
+          data:
+              entity_id: switch.hallway_closet_switch
+
+    - alias: "Closet Light Off when Door is Closed"
+      trigger:
+          platform: state
+          entity_id: binary_sensor.closet_door_open
+          to: 'off'
+      action:
+          service: switch.turn_off
+          data:
+              entity_id: switch.hallway_closet_switch
+
