@@ -84,12 +84,12 @@ camera:
     - platform: foscam
       username: !secret foscam_username
       password: !secret foscam_password
-      ip: 192.168.1.23
+      ip: 192.168.1.25
       name: Living Room Camera
     - platform: foscam
       username: !secret foscam_username
       password: !secret foscam_password
-      ip: 192.168.1.33
+      ip: 192.168.1.20
       name: Front Porch Camera
     
     

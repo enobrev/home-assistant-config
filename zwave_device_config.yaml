@@ -50,3 +50,13 @@ sensor.power_meter_previous_reading:
   polling_intensity: 1
 sensor.power_meter_energy:
   polling_intensity: 1
+sensor.laundry_power:
+  polling_intensity: 1
+sensor.laundry_power_2:
+  polling_intensity: 1
+sensor.laundry_power_3:
+  polling_intensity: 1
+sensor.laundry_power_4:
+  polling_intensity: 1
+sensor.laundry_power_5:
+  polling_intensity: 1
