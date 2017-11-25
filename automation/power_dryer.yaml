@@ -5,8 +5,9 @@
           entity_id: sensor.laundry_dryer_power
           above: 180
       action:
-          service: input_select.set_value
-          value: "Running"
+          service: input_select.select_option
+          entity_id: input_select.status_dryer
+          option: "Running"
 
     - alias: "Dryer Idle When Power Detected"
       trigger:
@@ -14,5 +15,6 @@
           entity_id: sensor.laundry_dryer_power
           below: 181
       action:
-          service: input_select.set_value
-          value: "Idle"
+          service: input_select.select_option
+          entity_id: input_select.status_dryer
+          option: "Idle"
