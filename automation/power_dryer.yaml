@@ -1,0 +1,18 @@
+
+    - alias: "Dryer Running When Power Detected"
+      trigger:
+          platform: numeric_state
+          entity_id: sensor.laundry_dryer_power
+          above: 180
+      action:
+          service: input_select.set_value
+          value: "Running"
+
+    - alias: "Dryer Idle When Power Detected"
+      trigger:
+          platform: numeric_state
+          entity_id: sensor.laundry_dryer_power
+          below: 181
+      action:
+          service: input_select.set_value
+          value: "Idle"

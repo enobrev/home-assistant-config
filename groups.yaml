@@ -6,6 +6,8 @@ _default_view:
         - persistent_notification.update_available
         - group.light_delays
         - climate.nest
+        - groups.washer
+        - groups.dryer
         - group.power
         - group.garage
         - group.presence_people
@@ -23,6 +25,38 @@ power:
         - sensor.power_meter_power
         - sensor.power_meter_energy
         - sensor.power_meter_previous_reading
+
+laundry:
+    view: yes
+    name: Laundry
+    entities:
+        - groups.washer
+        - groups.dryer
+        - groups.freezer
+
+washer:
+    view: no
+    name: Washing Machine
+    entities:
+        - sensor.laundry_washer_power
+        - switch.laundry_washer_switch
+        - input_select.status_washer
+
+dryer:
+    view: no
+    name: Dryer
+    entities:
+        - sensor.laundry_dryer_power
+        - switch.laundry_dryer_switch
+        - input_select.status_dryer
+
+freezer:
+    view: no
+    name: Freezer
+    entities:
+        - sensor.laundry_freezer_power
+        - switch.laundry_freezer_switch
+        - input_select.status_freezer
 
 test:
     view: yes

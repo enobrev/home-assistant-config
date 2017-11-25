@@ -1,0 +1,18 @@
+
+    - alias: "Freezer Running When Power Detected"
+      trigger:
+          platform: numeric_state
+          entity_id: sensor.laundry_freezer_power
+          above: 200
+      action:
+          service: input_select.set_value
+          value: "Running"
+
+    - alias: "Freezer Idle When Power Detected"
+      trigger:
+          platform: numeric_state
+          entity_id: sensor.laundry_freezer_power
+          below: 201
+      action:
+          service: input_select.set_value
+          value: "Idle"

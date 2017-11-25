@@ -1,0 +1,18 @@
+
+    - alias: "Washing Machine Running When Power Detected"
+      trigger:
+          platform: numeric_state
+          entity_id: sensor.laundry_washer_power
+          above: 6
+      action:
+          service: input_select.set_value
+          value: "Running"
+
+    - alias: "Washing Machine Idle When Power Detected"
+      trigger:
+          platform: numeric_state
+          entity_id: sensor.laundry_washer_power
+          below: 7
+      action:
+          service: input_select.set_value
+          value: "Idle"

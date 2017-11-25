@@ -63,3 +63,27 @@ timer_bedroom:
         - "Stay On"
     initial: "Stay On"
     icon: mdi:clock
+
+status_washer:
+    name: Washing Machine
+    options:
+        - "Running"
+        - "Idle"
+    initial: "Idle"
+    icon: mdi:washing-machine
+
+status_dryer:
+    name: Dryer
+    options:
+        - "Running"
+        - "Idle"
+    initial: "Idle"
+    icon: mdi:washing-machine
+
+status_freezer:
+    name: Freezer
+    options:
+        - "Running"
+        - "Idle"
+    initial: "Idle"
+    icon: mdi:fridge

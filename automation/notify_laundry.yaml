@@ -1,0 +1,25 @@
+- alias: "Washing Machine Alarm Notification"
+  initial_state: 'on'
+  trigger:
+      platform: state
+      entity_id: input_select.status_washer
+      from: 'Running'
+      to: 'Idle'
+  action:
+      - service: notify.pushbullet
+        data:
+            message: "The Washing Machine is Finished"
+            title: "Washing Machine Done"
+
+- alias: "Dryer Alarm Notification"
+  initial_state: 'on'
+  trigger:
+      platform: state
+      entity_id: input_select.status_dryer
+      from: 'Running'
+      to: 'Idle'
+  action:
+      - service: notify.pushbullet
+        data:
+            message: "The Dryer is Finished"
+            title: "Dryer Done"

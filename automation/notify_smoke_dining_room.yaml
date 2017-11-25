@@ -12,4 +12,4 @@
         data:
             title: "Dining Room Smoke Alarm"
             notification_id: "dining_room_smoke_alarm"
-            message: "The Dinging Room Smoke Alarm status changed to {{ states.sensor.dining_room_smoke_alarm.state }}"
+            message: "The Dining Room Smoke Alarm status changed to {{ states.sensor.dining_room_smoke_alarm.state }}"
