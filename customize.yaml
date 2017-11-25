@@ -53,6 +53,12 @@ light.upstairs_light_1_level:
     friendly_name: Up Stairs 1
 light.upstairs_light_2_level:
     friendly_name: Up Stairs 2
+switch.laundry_washer_switch
+    friendly_name: Washing Machine Power Override
+switch.laundry_dryer_switch
+    friendly_name: Dryer Power Override
+switch.laundry_freezer
+    friendly_name: Freezer Power Override
 
 binary_sensor.living_room_sensor: # find-motion-living_room
     friendly_name: Living Room Sensor
