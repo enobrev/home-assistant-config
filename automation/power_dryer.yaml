@@ -6,8 +6,9 @@
           above: 180
       action:
           service: input_select.select_option
-          entity_id: input_select.status_dryer
-          option: "Running"
+          data:
+              entity_id: input_select.status_dryer
+              option: "Running"
 
     - alias: "Dryer Idle When Power Detected"
       trigger:
@@ -16,5 +17,6 @@
           below: 181
       action:
           service: input_select.select_option
-          entity_id: input_select.status_dryer
-          option: "Idle"
+          data:
+              entity_id: input_select.status_dryer
+              option: "Idle"

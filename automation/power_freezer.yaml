@@ -6,8 +6,9 @@
           above: 200
       action:
           service: input_select.select_option
-          entity_id: input_select.status_freezer
-          option: "Running"
+          data:
+              entity_id: input_select.status_freezer
+              option: "Running"
 
     - alias: "Freezer Idle When Power Detected"
       trigger:
@@ -16,5 +17,6 @@
           below: 201
       action:
           service: input_select.select_option
-          entity_id: input_select.status_freezer
-          option: "Idle"
+          data:
+              entity_id: input_select.status_freezer
+              option: "Idle"

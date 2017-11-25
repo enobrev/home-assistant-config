@@ -6,8 +6,9 @@
           above: 6
       action:
           service: input_select.select_option
-          entity_id: input_select.status_washer
-          option: "Running"
+          data:
+              entity_id: input_select.status_washer
+              option: "Running"
 
     - alias: "Washing Machine Idle When Power Detected"
       trigger:
@@ -16,5 +17,6 @@
           below: 7
       action:
           service: input_select.select_option
-          entity_id: input_select.status_washer
-          option: "Idle"
+          data:
+              entity_id: input_select.status_washer
+              option: "Idle"
