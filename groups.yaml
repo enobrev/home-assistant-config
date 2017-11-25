@@ -1,5 +1,5 @@
 
-default_view:
+_default_view:
     view: yes
     name: Hamlin
     entities:
