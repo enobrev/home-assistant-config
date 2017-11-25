@@ -42,8 +42,6 @@
         - platform: state
           entity_id: device_tracker.galaxys8
           to: 'not_home'
-          for:
-              minutes: 3
     action:
         - service: input_boolean.turn_off
           entity_id: input_boolean.presence_home_mark
