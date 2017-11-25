@@ -12,7 +12,6 @@
 /config
 /secrets.yaml
 /home-assistant.log
-/known_devices.yaml
 /google_calendars.yaml
 /testing.yaml
 /OZW_Log.txt
