@@ -224,3 +224,38 @@ roku_living_room:
   track: true
   vendor: Roku
 
+roku_guest_room:
+  hide_if_away: false
+  icon:
+  mac: B0:EE:7B:71:E5:8C
+  name: --
+  picture:
+  track: true
+  vendor: Roku, Inc
+
+google_home_kitchen:
+  hide_if_away: false
+  icon: mdi:google-chrome
+  mac: 20:DF:B9:BC:EB:8E
+  name: Google Home Kitchen
+  picture:
+  track: true
+  vendor: Google, Inc.
+
+google_home_master_bedroom:
+  hide_if_away: false
+  icon: mdi:google-chrome
+  mac: 20:DF:B9:37:97:2B
+  name: Google Home Master Bedrom
+  picture:
+  track: true
+  vendor: Google, Inc.
+
+google_home_office:
+  hide_if_away: false
+  icon: mdi:google-chrome
+  mac: 20:DF:B9:17:04:86
+  name: Google Home Office
+  picture:
+  track: true
+  vendor: Google, Inc.
