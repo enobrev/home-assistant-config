@@ -1,0 +1,20 @@
+- alias: "Freezer Off Notification"
+  initial_state: 'on'
+  trigger:
+      platform: state
+      entity_id: switch.laundry_freezer_switch
+      to: 'off'
+  action:
+      - service: notify.pushbullet_mark
+        data:
+            message: "The Freezer in the Basement is OFF"
+            title: "The Freezer is OFF"
+      - service: notify.pushbullet_lauren
+        data:
+            message: "The Freezer in the Basement is OFF"
+            title: "The Freezer is OFF"
+      - service: persistent_notification.create
+        data:
+            title: "Freezer OFF"
+            notification_id: "freezer_off"
+            message: "The Freezer in the Basement is OFF"
