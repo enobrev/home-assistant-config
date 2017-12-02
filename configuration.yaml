@@ -109,6 +109,16 @@ emulated_hue:
         - light
         - switch
 
+google_assistant:
+    project_id: !secret google_home_project_id
+    client_id: !secret google_home_client_id 
+    access_token: !secret google_home_access_token 
+    agent_user_id: hamlin
+    api_key: !secret google_home_api_key
+    exposed_domains:
+        - light
+        - switch
+
 remote:
     - platform: harmony
       name: Living Room
