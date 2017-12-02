@@ -224,15 +224,6 @@ roku_living_room:
   track: true
   vendor: Roku
 
-roku_guest_room:
-  hide_if_away: false
-  icon:
-  mac: B0:EE:7B:71:E5:8C
-  name: --
-  picture:
-  track: true
-  vendor: Roku, Inc
-
 google_home_kitchen:
   hide_if_away: false
   icon: mdi:google-chrome
@@ -259,3 +250,12 @@ google_home_office:
   picture:
   track: true
   vendor: Google, Inc.
+
+roku_guest_room:
+  hide_if_away: false
+  icon: mdi:youtube-play
+  mac: 08:05:81:73:3E:71
+  name: Roku Guest Room
+  picture:
+  track: true
+  vendor: Roku, Inc.
