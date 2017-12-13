@@ -10,6 +10,7 @@ default_view:
         - group.power
         - group.garage
         - group.presence_people
+        - group.holiday
         - lock.garage_door_locked
         - lock.back_door_locked
         - group.lights_main
@@ -247,6 +248,7 @@ view_floor_1:
         - group.kitchen
         - group.thermostat
         - group.speedtest
+        - group.holiday
         - lock.garage_door_locked
         - lock.back_door_locked
 
@@ -294,6 +296,17 @@ living_room:
         - binary_sensor.living_room_sensor # find-motion-living_room
         - input_number.darkness
         - camera.living_room_camera
+
+holiday:
+    view: no
+    name: Holiday
+    entities:
+        - switch.holiday_tree_switch
+        - switch.holiday_switch_2
+        - switch.holiday_switch_3
+        - switch.holiday_switch_4
+        - switch.holiday_all_switches
+    
 
 dining_room:
     view: no

@@ -1,0 +1,24 @@
+    - alias: "Christmas Tree Lights Off"
+      trigger:
+          platform: state
+          entity_id: input_number.darkness
+      condition:
+          condition: template
+          value_template: '{{ states.input_number.darkness.state | int < 3 }}'
+      action:
+          service: switch.turn_off
+          data:
+              entity_id: switch.holiday_tree_switch
+
+    - alias: "Christmas Tree Lights On"
+      trigger:
+          platform: state
+          entity_id: input_number.darkness
+      condition:
+          condition: template
+          value_template: '{{ states.input_number.darkness.state | int >= 3 }}'
+      action:
+          service: switch.turn_on
+          data_template:
+              entity_id: switch.holiday_tree_switch
+

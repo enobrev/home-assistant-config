@@ -558,7 +558,7 @@
 			</CommandClass>
 			<CommandClass id="38" name="COMMAND_CLASS_SWITCH_MULTILEVEL" version="1" innif="true">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="50" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="19" />
 				<Value type="button" genre="user" instance="1" index="1" label="Bright" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="button" genre="user" instance="1" index="2" label="Dim" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="bool" genre="system" instance="1" index="3" label="Ignore Start Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
@@ -653,7 +653,7 @@
 			</CommandClass>
 			<CommandClass id="38" name="COMMAND_CLASS_SWITCH_MULTILEVEL" version="1" innif="true">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="58" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="67" />
 				<Value type="button" genre="user" instance="1" index="1" label="Bright" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="button" genre="user" instance="1" index="2" label="Dim" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="bool" genre="system" instance="1" index="3" label="Ignore Start Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
@@ -748,7 +748,7 @@
 			</CommandClass>
 			<CommandClass id="38" name="COMMAND_CLASS_SWITCH_MULTILEVEL" version="1" innif="true">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="58" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="67" />
 				<Value type="button" genre="user" instance="1" index="1" label="Bright" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="button" genre="user" instance="1" index="2" label="Dim" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="bool" genre="system" instance="1" index="3" label="Ignore Start Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
@@ -1459,7 +1459,7 @@
 			</CommandClass>
 		</CommandClasses>
 	</Node>
-	<Node id="37" name="Dining Room Smoke" location="" basic="4" generic="161" specific="0" type="Alarm Sensor" listening="false" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" secured="true" query_stage="CacheLoad">
+	<Node id="37" name="Dining Room Smoke" location="" basic="4" generic="161" specific="0" type="Alarm Sensor" listening="false" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" secured="true" query_stage="Associations">
 		<Manufacturer id="138" name="First Alert">
 			<Product type="1" id="2" name="ZCombo Smoke and Carbon Monoxide Detector" />
 		</Manufacturer>
@@ -1485,7 +1485,7 @@
 			</CommandClass>
 			<CommandClass id="128" name="COMMAND_CLASS_BATTERY" version="1" request_flags="4" innif="true">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="87" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Battery Level" units="%" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="86" />
 			</CommandClass>
 			<CommandClass id="132" name="COMMAND_CLASS_WAKE_UP" version="1" request_flags="2">
 				<Instance index="1" />
@@ -1781,7 +1781,7 @@
 			</CommandClass>
 			<CommandClass id="49" name="COMMAND_CLASS_SENSOR_MULTILEVEL" version="8" innif="true">
 				<Instance index="1" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="C" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="22.9" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Temperature" units="C" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="24.1" />
 				<Value type="decimal" genre="user" instance="1" index="3" label="Luminance" units="lux" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0" />
 				<Value type="decimal" genre="user" instance="1" index="25" label="Seismic Intensity" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.0" />
 			</CommandClass>
@@ -2065,30 +2065,30 @@
 				<Instance index="1" />
 				<Instance index="2" endpoint="1" />
 				<Instance index="3" endpoint="2" />
-				<Value type="decimal" genre="user" instance="1" index="4" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="720.610" />
-				<Value type="decimal" genre="user" instance="2" index="4" label="Power-2_1" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="201.740" />
-				<Value type="decimal" genre="user" instance="3" index="4" label="Power-3_1" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="513.700" />
+				<Value type="decimal" genre="user" instance="1" index="4" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="697.840" />
+				<Value type="decimal" genre="user" instance="2" index="4" label="Power-2_1" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="215.160" />
+				<Value type="decimal" genre="user" instance="3" index="4" label="Power-3_1" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="382.030" />
 			</CommandClass>
 			<CommandClass id="50" name="COMMAND_CLASS_METER" version="2" request_flags="3" innif="true">
 				<Instance index="1" />
 				<Instance index="2" endpoint="1" />
 				<Instance index="3" endpoint="2" />
-				<Value type="decimal" genre="user" instance="1" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="281.274" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="280.821" />
-				<Value type="int" genre="user" instance="1" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="2368" />
-				<Value type="decimal" genre="user" instance="1" index="8" label="Power-1_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="715.550" />
+				<Value type="decimal" genre="user" instance="1" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="491.778" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="491.723" />
+				<Value type="int" genre="user" instance="1" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="254" />
+				<Value type="decimal" genre="user" instance="1" index="8" label="Power-1_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="595.100" />
 				<Value type="bool" genre="user" instance="1" index="32" label="Exporting" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 				<Value type="button" genre="system" instance="1" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
-				<Value type="decimal" genre="user" instance="2" index="0" label="Energy-2" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="103.438" />
-				<Value type="decimal" genre="user" instance="2" index="1" label="Previous-2" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="103.284" />
-				<Value type="int" genre="user" instance="2" index="2" label="Interval-2" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="2368" />
-				<Value type="decimal" genre="user" instance="2" index="8" label="Power-2_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="201.850" />
+				<Value type="decimal" genre="user" instance="2" index="0" label="Energy-2" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="199.538" />
+				<Value type="decimal" genre="user" instance="2" index="1" label="Previous-2" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="199.516" />
+				<Value type="int" genre="user" instance="2" index="2" label="Interval-2" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="254" />
+				<Value type="decimal" genre="user" instance="2" index="8" label="Power-2_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="215.600" />
 				<Value type="bool" genre="user" instance="2" index="32" label="Exporting-2" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 				<Value type="button" genre="system" instance="2" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
-				<Value type="decimal" genre="user" instance="3" index="0" label="Energy-3" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="177.836" />
-				<Value type="decimal" genre="user" instance="3" index="1" label="Previous-3" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="177.537" />
-				<Value type="int" genre="user" instance="3" index="2" label="Interval-3" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="2367" />
-				<Value type="decimal" genre="user" instance="3" index="8" label="Power-3_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="513.700" />
+				<Value type="decimal" genre="user" instance="3" index="0" label="Energy-3" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="292.240" />
+				<Value type="decimal" genre="user" instance="3" index="1" label="Previous-3" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="292.207" />
+				<Value type="int" genre="user" instance="3" index="2" label="Interval-3" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="254" />
+				<Value type="decimal" genre="user" instance="3" index="8" label="Power-3_2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="379.500" />
 				<Value type="bool" genre="user" instance="3" index="32" label="Exporting-3" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 				<Value type="button" genre="system" instance="3" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 			</CommandClass>
@@ -2347,7 +2347,7 @@
 				<Value type="bool" genre="user" instance="1" index="0" label="All Switches" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
 				<Value type="bool" genre="user" instance="2" index="0" label="Washer Switch" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
 				<Value type="bool" genre="user" instance="3" index="0" label="Dryer Switch" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
-				<Value type="bool" genre="user" instance="4" index="0" label="Freezer Switch" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+				<Value type="bool" genre="user" instance="4" index="0" label="Freezer Switch" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
 				<Value type="bool" genre="user" instance="5" index="0" label="Switch 4" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 			</CommandClass>
 			<CommandClass id="39" name="COMMAND_CLASS_SWITCH_ALL" version="1" request_flags="5" innif="true">
@@ -2365,9 +2365,9 @@
 				<Instance index="3" endpoint="2" />
 				<Instance index="4" endpoint="3" />
 				<Instance index="5" endpoint="4" />
-				<Value type="decimal" genre="user" instance="1" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="135.338" />
-				<Value type="decimal" genre="user" instance="1" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="135.338" />
-				<Value type="int" genre="user" instance="1" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="5" />
+				<Value type="decimal" genre="user" instance="1" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="145.040" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="145.040" />
+				<Value type="int" genre="user" instance="1" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="30" />
 				<Value type="decimal" genre="user" instance="1" index="8" label="All Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="0.000" />
 				<Value type="decimal" genre="user" instance="1" index="9" label="Previous Reading" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
 				<Value type="int" genre="user" instance="1" index="10" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="43776" />
@@ -2375,7 +2375,7 @@
 				<Value type="button" genre="system" instance="1" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="decimal" genre="user" instance="2" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="13.129" />
 				<Value type="decimal" genre="user" instance="2" index="1" label="Previous 1" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="13.129" />
-				<Value type="int" genre="user" instance="2" index="2" label="Interval 1" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="6" />
+				<Value type="int" genre="user" instance="2" index="2" label="Interval 1" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="30" />
 				<Value type="decimal" genre="user" instance="2" index="8" label="Freezer Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="0.000" />
 				<Value type="decimal" genre="user" instance="2" index="9" label="Previous 1-2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
 				<Value type="int" genre="user" instance="2" index="10" label="Interval 1-2" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="56832" />
@@ -2383,23 +2383,23 @@
 				<Value type="button" genre="system" instance="2" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="decimal" genre="user" instance="3" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="20.287" />
 				<Value type="decimal" genre="user" instance="3" index="1" label="Previous 2" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="20.287" />
-				<Value type="int" genre="user" instance="3" index="2" label="Interval 2" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="6" />
+				<Value type="int" genre="user" instance="3" index="2" label="Interval 2" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="30" />
 				<Value type="decimal" genre="user" instance="3" index="8" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="0.000" />
 				<Value type="decimal" genre="user" instance="3" index="9" label="Previous 2-2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
 				<Value type="int" genre="user" instance="3" index="10" label="Interval 2-2" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="56576" />
 				<Value type="bool" genre="user" instance="3" index="32" label="Exporting 2" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 				<Value type="button" genre="system" instance="3" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
-				<Value type="decimal" genre="user" instance="4" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="26.679" />
-				<Value type="decimal" genre="user" instance="4" index="1" label="Previous 3" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="26.679" />
-				<Value type="int" genre="user" instance="4" index="2" label="Interval 3" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="6" />
+				<Value type="decimal" genre="user" instance="4" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="27.803" />
+				<Value type="decimal" genre="user" instance="4" index="1" label="Previous 3" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="27.803" />
+				<Value type="int" genre="user" instance="4" index="2" label="Interval 3" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="30" />
 				<Value type="decimal" genre="user" instance="4" index="8" label="Washer Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="0.000" />
 				<Value type="decimal" genre="user" instance="4" index="9" label="Previous 3-2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
 				<Value type="int" genre="user" instance="4" index="10" label="Interval 3-2" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="56320" />
 				<Value type="bool" genre="user" instance="4" index="32" label="Exporting 3" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
 				<Value type="button" genre="system" instance="4" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
-				<Value type="decimal" genre="user" instance="5" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="23.190" />
-				<Value type="decimal" genre="user" instance="5" index="1" label="Previous 4" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="23.190" />
-				<Value type="int" genre="user" instance="5" index="2" label="Interval 4" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="5" />
+				<Value type="decimal" genre="user" instance="5" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="26.059" />
+				<Value type="decimal" genre="user" instance="5" index="1" label="Previous 4" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="26.059" />
+				<Value type="int" genre="user" instance="5" index="2" label="Interval 4" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="30" />
 				<Value type="decimal" genre="user" instance="5" index="8" label="Dryer Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="0" value="0.000" />
 				<Value type="decimal" genre="user" instance="5" index="9" label="Previous 4-2" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
 				<Value type="int" genre="user" instance="5" index="10" label="Interval 4-2" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="56064" />
@@ -2528,7 +2528,7 @@
 			</CommandClass>
 		</CommandClasses>
 	</Node>
-	<Node id="54" name="Closet Door" location="" basic="4" generic="7" specific="1" roletype="6" devicetype="3079" nodetype="0" type="Notification Sensor" listening="false" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" query_stage="Associations">
+	<Node id="54" name="Closet Door" location="" basic="4" generic="7" specific="1" roletype="6" devicetype="3079" nodetype="0" type="Notification Sensor" listening="false" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" query_stage="CacheLoad">
 		<Manufacturer id="109" name="Vision">
 			<Product type="2022" id="2201" name="Unknown: type=2022, id=2201" />
 		</Manufacturer>
@@ -2647,7 +2647,7 @@
 			</CommandClass>
 			<CommandClass id="38" name="COMMAND_CLASS_SWITCH_MULTILEVEL" version="1" innif="true">
 				<Instance index="1" />
-				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="255" value="0" />
+				<Value type="byte" genre="user" instance="1" index="0" label="Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="1" min="0" max="255" value="0" />
 				<Value type="button" genre="user" instance="1" index="1" label="Bright" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="button" genre="user" instance="1" index="2" label="Dim" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
 				<Value type="bool" genre="system" instance="1" index="3" label="Ignore Start Level" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
@@ -2744,6 +2744,208 @@
 				<Value type="string" genre="system" instance="1" index="0" label="Library Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="6" />
 				<Value type="string" genre="system" instance="1" index="1" label="Protocol Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="3.67" />
 				<Value type="string" genre="system" instance="1" index="2" label="Application Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="3.37" />
+			</CommandClass>
+		</CommandClasses>
+	</Node>
+	<Node id="56" name="Holiday" location="" basic="4" generic="16" specific="1" type="Binary Power Switch" listening="true" frequentListening="false" beaming="true" routing="true" max_baud_rate="40000" version="4" refreshonnodeinfoframe="false" query_stage="Complete">
+		<Manufacturer id="86" name="Aeotec">
+			<Product type="3" id="b" name="DSC11 Smart Strip" />
+		</Manufacturer>
+		<CommandClasses>
+			<CommandClass id="32" name="COMMAND_CLASS_BASIC" version="1" request_flags="5" mapping="37">
+				<Instance index="1" />
+				<Instance index="2" endpoint="1" />
+				<Instance index="3" endpoint="2" />
+				<Instance index="4" endpoint="3" />
+				<Instance index="5" endpoint="4" />
+			</CommandClass>
+			<CommandClass id="37" name="COMMAND_CLASS_SWITCH_BINARY" version="1" request_flags="5" innif="true">
+				<Instance index="1" />
+				<Instance index="2" endpoint="1" />
+				<Instance index="3" endpoint="2" />
+				<Instance index="4" endpoint="3" />
+				<Instance index="5" endpoint="4" />
+				<Value type="bool" genre="user" instance="1" index="0" label="All Switches" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
+				<Value type="bool" genre="user" instance="2" index="0" label="Tree Switch" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
+				<Value type="bool" genre="user" instance="3" index="0" label="Switch 2" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
+				<Value type="bool" genre="user" instance="4" index="0" label="Switch 3" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
+				<Value type="bool" genre="user" instance="5" index="0" label="Switch 4" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="True" />
+			</CommandClass>
+			<CommandClass id="39" name="COMMAND_CLASS_SWITCH_ALL" version="1" request_flags="5" innif="true">
+				<Instance index="1" />
+				<Value type="list" genre="system" instance="1" index="0" label="Switch All" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" vindex="3" size="1">
+					<Item label="Disabled" value="0" />
+					<Item label="Off Enabled" value="1" />
+					<Item label="On Enabled" value="2" />
+					<Item label="On and Off Enabled" value="255" />
+				</Value>
+			</CommandClass>
+			<CommandClass id="50" name="COMMAND_CLASS_METER" version="2" request_flags="3" innif="true">
+				<Instance index="1" />
+				<Instance index="2" endpoint="1" />
+				<Instance index="3" endpoint="2" />
+				<Instance index="4" endpoint="3" />
+				<Instance index="5" endpoint="4" />
+				<Value type="decimal" genre="user" instance="1" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="121.744" />
+				<Value type="decimal" genre="user" instance="1" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="121.742" />
+				<Value type="int" genre="user" instance="1" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="258" />
+				<Value type="decimal" genre="user" instance="1" index="8" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="33.908" />
+				<Value type="decimal" genre="user" instance="1" index="9" label="Previous Reading" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
+				<Value type="int" genre="user" instance="1" index="10" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="20480" />
+				<Value type="bool" genre="user" instance="1" index="32" label="Exporting" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+				<Value type="button" genre="system" instance="1" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="decimal" genre="user" instance="2" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="9.550" />
+				<Value type="decimal" genre="user" instance="2" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="9.550" />
+				<Value type="int" genre="user" instance="2" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="258" />
+				<Value type="decimal" genre="user" instance="2" index="8" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
+				<Value type="decimal" genre="user" instance="2" index="9" label="Previous Reading" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
+				<Value type="int" genre="user" instance="2" index="10" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="54528" />
+				<Value type="bool" genre="user" instance="2" index="32" label="Exporting" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+				<Value type="button" genre="system" instance="2" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="decimal" genre="user" instance="3" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="16.707" />
+				<Value type="decimal" genre="user" instance="3" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="16.707" />
+				<Value type="int" genre="user" instance="3" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="258" />
+				<Value type="decimal" genre="user" instance="3" index="8" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
+				<Value type="decimal" genre="user" instance="3" index="9" label="Previous Reading" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
+				<Value type="int" genre="user" instance="3" index="10" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="54784" />
+				<Value type="bool" genre="user" instance="3" index="32" label="Exporting" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+				<Value type="button" genre="system" instance="3" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="decimal" genre="user" instance="4" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="23.885" />
+				<Value type="decimal" genre="user" instance="4" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="23.883" />
+				<Value type="int" genre="user" instance="4" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="258" />
+				<Value type="decimal" genre="user" instance="4" index="8" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="33.901" />
+				<Value type="decimal" genre="user" instance="4" index="9" label="Previous Reading" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
+				<Value type="int" genre="user" instance="4" index="10" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="15872" />
+				<Value type="bool" genre="user" instance="4" index="32" label="Exporting" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+				<Value type="button" genre="system" instance="4" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+				<Value type="decimal" genre="user" instance="5" index="0" label="Energy" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="32.221" />
+				<Value type="decimal" genre="user" instance="5" index="1" label="Previous Reading" units="kWh" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="32.221" />
+				<Value type="int" genre="user" instance="5" index="2" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="258" />
+				<Value type="decimal" genre="user" instance="5" index="8" label="Power" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
+				<Value type="decimal" genre="user" instance="5" index="9" label="Previous Reading" units="W" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="0.000" />
+				<Value type="int" genre="user" instance="5" index="10" label="Interval" units="seconds" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="53248" />
+				<Value type="bool" genre="user" instance="5" index="32" label="Exporting" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="False" />
+				<Value type="button" genre="system" instance="5" index="33" label="Reset" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" />
+			</CommandClass>
+			<CommandClass id="96" name="COMMAND_CLASS_MULTI_INSTANCE/CHANNEL" version="3" request_flags="1" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="112" name="COMMAND_CLASS_CONFIGURATION" version="1" request_flags="5" innif="true">
+				<Instance index="1" />
+				<Value type="list" genre="config" instance="1" index="4" label="Report threshold" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="1" size="1">
+					<Help>Enable selective reporting only when power change reaches a certain threshold or percentage set in 4.11 below. This is used to reduce network traffic.</Help>
+					<Item label="Disable," value="0" />
+					<Item label="Enable" value="1" />
+				</Value>
+				<Value type="short" genre="config" instance="1" index="5" label="Whole Smart Strip Minimum Change to send Report (Watt) " units="watts" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="60000" value="25">
+					<Help>Threshold change in wattage to induce an automatic report (Whole Smart Strip).</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="6" label="Socket 1 Minimum Change to send Report (Watt) " units="watts" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="60000" value="25">
+					<Help>Threshold change in wattage to induce an automatic report (Socket 1).</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="7" label="Socket 2 Minimum Change to send Report (Watt) " units="watts" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="60000" value="25">
+					<Help>Threshold change in wattage to induce an automatic report (Socket 2).</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="8" label="Socket 3 Minimum Change to send Report (Watt) " units="watts" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="60000" value="25">
+					<Help>Threshold change in wattage to induce an automatic report (Socket 3).</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="9" label="Socket 4 Minimum Change to send Report (Watt) " units="watts" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="60000" value="25">
+					<Help>Threshold change in wattage to induce an automatic report (Socket 4).</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="10" label="Socket 5 Minimum Change to send Report (Watt) " units="watts" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="60000" value="25">
+					<Help>Threshold change in wattage to induce an automatic report (Socket 5).</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="11" label="Socket 6 Minimum Change to send Report (Watt) " units="watts" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="60000" value="25">
+					<Help>Threshold change in wattage to induce an automatic report (Socket 6).</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="12" label="Whole Smart Strip Minimum Change to send Report (%)" units="%" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="5">
+					<Help>Percentage change in wattage to induce an automatic report (Whole Smart Strip).</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="13" label="Socket 1 Minimum Change to send Report (%)" units="%" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="5">
+					<Help>Percentage change in wattage to induce an automatic report (Socket 1).</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="14" label="Socket 2 Minimum Change to send Report (%)" units="%" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="5">
+					<Help>Percentage change in wattage to induce an automatic report (Socket 2).</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="15" label="Socket 3 Minimum Change to send Report (%)" units="%" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="5">
+					<Help>Percentage change in wattage to induce an automatic report (Socket 3).</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="16" label="Socket 4 Minimum Change to send Report (%)" units="%" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="5">
+					<Help>Percentage change in wattage to induce an automatic report (Socket 4).</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="17" label="Socket 5 Minimum Change to send Report (%)" units="%" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="5">
+					<Help>Percentage change in wattage to induce an automatic report (Socket 5).</Help>
+				</Value>
+				<Value type="byte" genre="config" instance="1" index="18" label="Socket 6 Minimum Change to send Report (%)" units="%" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="100" value="5">
+					<Help>Percentage change in wattage to induce an automatic report (Socket 6).</Help>
+				</Value>
+				<Value type="list" genre="config" instance="1" index="80" label="Notification status" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="2" vindex="0" size="1">
+					<Help>Defines the automated status notification of an associated device when status changes</Help>
+					<Item label="Nothing" value="0" />
+					<Item label="Hail" value="1" />
+					<Item label="Basic" value="2" />
+				</Value>
+				<Value type="short" genre="config" instance="1" index="90" label="Temperature of Smart Strip" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="-32768" max="32767" value="0">
+					<Help>Get temperature of Smart Strip</Help>
+				</Value>
+				<Value type="button" genre="config" instance="1" index="100" label="Default Group Reports" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" affects="101,102,103">
+					<Help>Set report types for groups 1, 2 and 3 to default.</Help>
+				</Value>
+				<Value type="int" genre="config" instance="1" index="101" label="Report type sent in Reporting Group 1" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="0">
+					<Help>Configure auto report which information as Group 1. Value 1 (msb) Reserved Value 2 Reserved Value 3 bit 7 reserved bit 6 Auto report power level with specified time interval (channel 6) bit 5 Auto report power level with specified time interval (channel 5) bit 4 Auto report power level with specified time interval (channel 4) bit 3 Auto report power level with specified time interval (channel 3) bit 2 Auto report power level with specified time interval (channel 2) bit 1 Auto report power level with specified time interval (channel 1) bit 0 Auto report the total power level with specified time interval Value 4 (lsb) bit 7 reserved bit 6 Auto report power consumption with specified time interval (channel 6) bit 5 Auto report power consumption with specified time interval (channel 5) bit 4 Auto report power consumption with specified time interval (channel 4) bit 3 Auto report power consumption with specified time interval (channel 3) bit 2 Auto report power consumption with specified time interval (channel 2) bit 1 Auto report power consumption with specified time interval (channel 1) bit 0 Auto report the total power consumption with specified time interval</Help>
+				</Value>
+				<Value type="int" genre="config" instance="1" index="102" label="Report type sent in Reporting Group 2" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="0">
+					<Help>Configure auto report which information as Group 2. Value 1 (msb) Reserved Value 2 Reserved Value 3 bit 7 reserved bit 6 Auto report power level with specified time interval (channel 6) bit 5 Auto report power level with specified time interval (channel 5) bit 4 Auto report power level with specified time interval (channel 4) bit 3 Auto report power level with specified time interval (channel 3) bit 2 Auto report power level with specified time interval (channel 2) bit 1 Auto report power level with specified time interval (channel 1) bit 0 Auto report the total power level with specified time interval Value 4 (lsb) bit 7 reserved bit 6 Auto report power consumption with specified time interval (channel 6) bit 5 Auto report power consumption with specified time interval (channel 5) bit 4 Auto report power consumption with specified time interval (channel 4) bit 3 Auto report power consumption with specified time interval (channel 3) bit 2 Auto report power consumption with specified time interval (channel 2) bit 1 Auto report power consumption with specified time interval (channel 1) bit 0 Auto report the total power consumption with specified time interval</Help>
+				</Value>
+				<Value type="int" genre="config" instance="1" index="103" label="Report type sent in Reporting Group 3" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="-2147483648" max="2147483647" value="0">
+					<Help>Configure auto report which information as Group 3. Value 1 (msb) Reserved Value 2 Reserved Value 3 bit 7 reserved bit 6 Auto report power level with specified time interval (channel 6) bit 5 Auto report power level with specified time interval (channel 5) bit 4 Auto report power level with specified time interval (channel 4) bit 3 Auto report power level with specified time interval (channel 3) bit 2 Auto report power level with specified time interval (channel 2) bit 1 Auto report power level with specified time interval (channel 1) bit 0 Auto report the total power level with specified time interval Value 4 (lsb) bit 7 reserved bit 6 Auto report power consumption with specified time interval (channel 6) bit 5 Auto report power consumption with specified time interval (channel 5) bit 4 Auto report power consumption with specified time interval (channel 4) bit 3 Auto report power consumption with specified time interval (channel 3) bit 2 Auto report power consumption with specified time interval (channel 2) bit 1 Auto report power consumption with specified time interval (channel 1) bit 0 Auto report the total power consumption with specified time interval</Help>
+				</Value>
+				<Value type="button" genre="config" instance="1" index="110" label="Set 111-113 to default" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0" affects="111,112,113">
+					<Help>Set time interval for sending reports for groups 1, 2 and 3 to default.</Help>
+				</Value>
+				<Value type="int" genre="config" instance="1" index="111" label="Send Interval for Reporting Group 1" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="65535" value="600">
+					<Help>Defines the time interval when the defined report for group 1 is sent.</Help>
+				</Value>
+				<Value type="int" genre="config" instance="1" index="112" label="Send Interval for Reporting Group 2" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="65535" value="600">
+					<Help>Defines the time interval when the defined report for group 2 is sent.</Help>
+				</Value>
+				<Value type="int" genre="config" instance="1" index="113" label="Send Interval for Reporting Group 3" units="seconds" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="65535" value="600">
+					<Help>Defines the time interval when the defined report for group 3 is sent.</Help>
+				</Value>
+				<Value type="list" genre="config" instance="1" index="252" label="Configuration Locked" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="1" vindex="0" size="1">
+					<Help>Enable/disable Configuration Locked</Help>
+					<Item label="Disable" value="0" />
+					<Item label="Enable" value="1" />
+				</Value>
+				<Value type="int" genre="config" instance="1" index="253" label="Enter Meter Calibration Mode" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="1" value="0">
+					<Help>Enter Meter Calibration Mode</Help>
+				</Value>
+				<Value type="short" genre="config" instance="1" index="254" label="Device tag" units="" read_only="false" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="65535" value="0">
+					<Help>Device tag.</Help>
+				</Value>
+				<Value type="button" genre="config" instance="1" index="255" label="Reset device" units="" read_only="false" write_only="true" verify_changes="false" poll_intensity="0" min="0" max="0">
+					<Help>Reset to the default configuration.</Help>
+				</Value>
+			</CommandClass>
+			<CommandClass id="114" name="COMMAND_CLASS_MANUFACTURER_SPECIFIC" version="1" request_flags="5" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="130" name="COMMAND_CLASS_HAIL" version="1" request_flags="5" after_mark="true" innif="true">
+				<Instance index="1" />
+			</CommandClass>
+			<CommandClass id="133" name="COMMAND_CLASS_ASSOCIATION" version="1" request_flags="5" innif="true">
+				<Instance index="1" />
+				<Associations num_groups="1">
+					<Group index="1" max_associations="5" label="LifeLine" auto="true">
+						<Node id="1" />
+					</Group>
+				</Associations>
+			</CommandClass>
+			<CommandClass id="134" name="COMMAND_CLASS_VERSION" version="1" request_flags="5" innif="true">
+				<Instance index="1" />
+				<Value type="string" genre="system" instance="1" index="0" label="Library Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="3" />
+				<Value type="string" genre="system" instance="1" index="1" label="Protocol Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="3.67" />
+				<Value type="string" genre="system" instance="1" index="2" label="Application Version" units="" read_only="true" write_only="false" verify_changes="false" poll_intensity="0" min="0" max="0" value="1.01" />
 			</CommandClass>
 		</CommandClasses>
 	</Node>
