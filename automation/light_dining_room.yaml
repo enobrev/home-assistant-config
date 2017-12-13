@@ -41,3 +41,16 @@
           data_template:
               entity_id: light.dining_room_level # find-light-dining_room
               brightness: '{{ states.input_number.darkness.state | int * 50 }}'
+
+    - alias: "Dining Room Lights Off setting Presence to 0"
+      trigger:
+          platform: state
+          entity_id: light.dining_room_level
+          from: 'on'
+          to: 'off'
+      action:
+        - service: input_number.set_value
+          data:
+              entity_id: input_number.countdown_dining
+              value: 0
+

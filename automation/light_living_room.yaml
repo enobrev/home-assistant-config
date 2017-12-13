@@ -40,3 +40,15 @@
           data_template:
               entity_id: light.living_room_level # find-light-living_room
               brightness: '{{ states.input_number.darkness.state | int * 50 }}'
+
+    - alias: "Living Room Lights Off setting Presence to 0"
+      trigger:
+          platform: state
+          entity_id: light.living_room_level
+          from: 'on'
+          to: 'off'
+      action:
+        - service: input_number.set_value
+          data:
+              entity_id: input_number.countdown_living
+              value: 0

@@ -41,3 +41,15 @@
           data_template:
               entity_id: light.kitchen_level # find-light-kitchen
               brightness: '{{ states.input_number.darkness.state | int * 50 }}'
+
+    - alias: "Kitchen Lights Off setting Presence to 0"
+      trigger:
+          platform: state
+          entity_id: light.kitchen_level
+          from: 'on'
+          to: 'off'
+      action:
+        - service: input_number.set_value
+          data:
+              entity_id: input_number.countdown_kitchen
+              value: 0
