@@ -6,7 +6,7 @@ light.kitchen_level:
 light.dining_room_level:
   refresh_value: true
   delay: 2
-  polling_intensity: 0
+  polling_intensity: 1
   ignored: false
 zwave.kwikset_touchpad_electronic_deadbolt_9:
   ignored: false
