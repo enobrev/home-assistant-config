@@ -40,7 +40,7 @@ countdown_upstairs:
     name: Up Stairs Countdown
     initial: 0
     min: 0
-    max: 120
+    max: 1300
     step: 10
     mode: box
     unit_of_measurement: seconds
