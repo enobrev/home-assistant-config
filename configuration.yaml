@@ -150,3 +150,13 @@ timer:
     upstairs:
         name: Up Stairs
         icon: mdi:timer
+
+panel_iframe:
+    nodered:
+        title: Node-Red
+        icon:  mdi:shuffle-variant
+        url:   https://red.enobrev.net
+    nest:
+        title: Nest
+        icon:  mdi:nest-thermostat
+        url:   https://home.nest.com/
