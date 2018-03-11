@@ -1,0 +1,399 @@
+climate.nest:
+  platform: nest
+  unique_id: aAILrIeIfL5jq9WSSXsnvxt2qxaiEpCt
+switch.deck_switch:
+  platform: zwave
+  unique_id: 3-72057594093060096
+light.hallway_level:
+  platform: zwave
+  unique_id: 5-72057594126630913
+binary_sensor.living_room_sensor:
+  platform: zwave
+  unique_id: 6-72057594143571968
+sensor.living_room_alarm_type:
+  platform: zwave
+  unique_id: 6-72057594144636929
+sensor.living_room_alarm_level:
+  platform: zwave
+  unique_id: 6-72057594144636945
+sensor.living_room_sourcenodeid:
+  platform: zwave
+  unique_id: 6-72057594144636961
+sensor.living_room_burglar:
+  platform: zwave
+  unique_id: 6-72057594144637089
+sensor.living_room_power_management:
+  platform: zwave
+  unique_id: 6-72057594144637105
+binary_sensor.dining_room_sensor:
+  platform: zwave
+  unique_id: 7-72057594160349184
+sensor.dining_room_alarm_type:
+  platform: zwave
+  unique_id: 7-72057594161414145
+sensor.dining_room_alarm_level:
+  platform: zwave
+  unique_id: 7-72057594161414161
+sensor.dining_room_sourcenodeid:
+  platform: zwave
+  unique_id: 7-72057594161414177
+sensor.dining_room_burglar:
+  platform: zwave
+  unique_id: 7-72057594161414305
+sensor.dining_room_power_management:
+  platform: zwave
+  unique_id: 7-72057594161414321
+binary_sensor.kitchen_sensor:
+  platform: zwave
+  unique_id: 8-72057594177126400
+sensor.kitchen_alarm_type:
+  platform: zwave
+  unique_id: 8-72057594178191361
+sensor.kitchen_alarm_level:
+  platform: zwave
+  unique_id: 8-72057594178191377
+sensor.kitchen_sourcenodeid:
+  platform: zwave
+  unique_id: 8-72057594178191393
+sensor.kitchen_burglar:
+  platform: zwave
+  unique_id: 8-72057594178191521
+sensor.kitchen_power_management:
+  platform: zwave
+  unique_id: 8-72057594178191537
+light.living_room_level:
+  platform: zwave
+  unique_id: 10-72057594210516993
+light.garage_level:
+  platform: zwave
+  unique_id: 11-72057594227294209
+light.front_porch_level:
+  platform: zwave
+  unique_id: 12-72057594244071425
+light.dining_room_level:
+  platform: zwave
+  unique_id: 15-72057594294403073
+switch.hallway_closet_switch:
+  platform: zwave
+  unique_id: 16-72057594311163904
+light.kitchen_level:
+  platform: zwave
+  unique_id: 18-72057594344734721
+lock.garage_door_locked:
+  platform: zwave
+  unique_id: 27-72057594496712704
+light.master_bedroom_level:
+  platform: zwave
+  unique_id: 28-72057594512506881
+light.upstairs_light_1_level:
+  platform: zwave
+  unique_id: 30-72057594546061313
+lock.back_door_locked:
+  platform: zwave
+  unique_id: 35-72057594630930432
+sensor.back_door_alarm_type:
+  platform: zwave
+  unique_id: 35-72057594631176193
+sensor.back_door_alarm_level:
+  platform: zwave
+  unique_id: 35-72057594631176209
+sensor.back_door_sourcenodeid:
+  platform: zwave
+  unique_id: 35-72057594631176225
+sensor.back_door_access_control:
+  platform: zwave
+  unique_id: 35-72057594631176337
+sensor.back_door_burglar:
+  platform: zwave
+  unique_id: 35-72057594631176353
+sensor.back_door_power_management:
+  platform: zwave
+  unique_id: 35-72057594631176369
+sensor.back_door_system:
+  platform: zwave
+  unique_id: 35-72057594631176385
+sensor.dining_room_smoke_alarm_type:
+  platform: zwave
+  unique_id: 37-72057594664730625
+sensor.dining_room_smoke_alarm_level:
+  platform: zwave
+  unique_id: 37-72057594664730641
+binary_sensor.upstairs_sensor:
+  platform: zwave
+  unique_id: 47-72057594831437824
+sensor.upstairs_temperature:
+  platform: zwave
+  unique_id: 47-72057594831454226
+sensor.upstairs_luminance:
+  platform: zwave
+  unique_id: 47-72057594831454258
+sensor.upstairs_seismic_intensity:
+  platform: zwave
+  unique_id: 47-72057594831454610
+sensor.upstairs_alarm_type:
+  platform: zwave
+  unique_id: 47-72057594832502785
+sensor.upstairs_alarm_level:
+  platform: zwave
+  unique_id: 47-72057594832502801
+sensor.upstairs_sourcenodeid:
+  platform: zwave
+  unique_id: 47-72057594832502817
+sensor.upstairs_burglar:
+  platform: zwave
+  unique_id: 47-72057594832502945
+sensor.upstairs_general:
+  platform: zwave
+  unique_id: 47-72057594833207297
+sensor.power_meter_power:
+  platform: zwave
+  unique_id: 48-72057594848231490
+sensor.power_meter_power2_1:
+  platform: zwave
+  unique_id: 48-144115188886159426
+sensor.power_meter_power3_1:
+  platform: zwave
+  unique_id: 48-216172782924087362
+sensor.power_meter_energy:
+  platform: zwave
+  unique_id: 48-72057594848247810
+sensor.power_meter_energy2:
+  platform: zwave
+  unique_id: 48-144115188886175746
+sensor.power_meter_energy3:
+  platform: zwave
+  unique_id: 48-216172782924103682
+sensor.power_meter_previous_reading:
+  platform: zwave
+  unique_id: 48-72057594848247826
+sensor.power_meter_interval:
+  platform: zwave
+  unique_id: 48-72057594848247843
+sensor.power_meter_power1_2:
+  platform: zwave
+  unique_id: 48-72057594848247938
+sensor.power_meter_exporting:
+  platform: zwave
+  unique_id: 48-72057594848248320
+sensor.power_meter_previous2:
+  platform: zwave
+  unique_id: 48-144115188886175762
+sensor.power_meter_interval2:
+  platform: zwave
+  unique_id: 48-144115188886175779
+sensor.power_meter_power2_2:
+  platform: zwave
+  unique_id: 48-144115188886175874
+sensor.power_meter_exporting2:
+  platform: zwave
+  unique_id: 48-144115188886176256
+sensor.power_meter_previous3:
+  platform: zwave
+  unique_id: 48-216172782924103698
+sensor.power_meter_interval3:
+  platform: zwave
+  unique_id: 48-216172782924103715
+sensor.power_meter_power3_2:
+  platform: zwave
+  unique_id: 48-216172782924103810
+sensor.power_meter_exporting3:
+  platform: zwave
+  unique_id: 48-216172782924104192
+light.office_level:
+  platform: zwave
+  unique_id: 49-72057594864828417
+switch.laundry_all_switches:
+  platform: zwave
+  unique_id: 51-72057594898366464
+switch.laundry_washer_switch:
+  platform: zwave
+  unique_id: 51-144115188936294400
+switch.laundry_dryer_switch:
+  platform: zwave
+  unique_id: 51-216172782974222336
+switch.laundry_freezer_switch:
+  platform: zwave
+  unique_id: 51-288230377012150272
+switch.laundry_switch_4:
+  platform: zwave
+  unique_id: 51-360287971050078208
+sensor.laundry_energy:
+  platform: zwave
+  unique_id: 51-72057594898579458
+sensor.laundry_energy_2:
+  platform: zwave
+  unique_id: 51-144115188936507394
+sensor.laundry_energy_3:
+  platform: zwave
+  unique_id: 51-216172782974435330
+sensor.laundry_energy_4:
+  platform: zwave
+  unique_id: 51-288230377012363266
+sensor.laundry_energy_5:
+  platform: zwave
+  unique_id: 51-360287971050291202
+sensor.laundry_previous_reading:
+  platform: zwave
+  unique_id: 51-72057594898579474
+sensor.laundry_all_power:
+  platform: zwave
+  unique_id: 51-72057594898579586
+sensor.laundry_previous_reading_2:
+  platform: zwave
+  unique_id: 51-72057594898579602
+sensor.laundry_previous_1:
+  platform: zwave
+  unique_id: 51-144115188936507410
+sensor.laundry_freezer_power:
+  platform: zwave
+  unique_id: 51-144115188936507522
+sensor.laundry_previous_12:
+  platform: zwave
+  unique_id: 51-144115188936507538
+sensor.laundry_previous_2:
+  platform: zwave
+  unique_id: 51-216172782974435346
+sensor.laundry_power:
+  platform: zwave
+  unique_id: 51-216172782974435458
+sensor.laundry_previous_22:
+  platform: zwave
+  unique_id: 51-216172782974435474
+sensor.laundry_previous_3:
+  platform: zwave
+  unique_id: 51-288230377012363282
+sensor.laundry_washer_power:
+  platform: zwave
+  unique_id: 51-288230377012363394
+sensor.laundry_previous_32:
+  platform: zwave
+  unique_id: 51-288230377012363410
+sensor.laundry_previous_4:
+  platform: zwave
+  unique_id: 51-360287971050291218
+sensor.laundry_dryer_power:
+  platform: zwave
+  unique_id: 51-360287971050291330
+sensor.laundry_previous_42:
+  platform: zwave
+  unique_id: 51-360287971050291346
+binary_sensor.closet_door_sensor:
+  platform: zwave
+  unique_id: 54-72057594948878336
+sensor.closet_door_alarm_type:
+  platform: zwave
+  unique_id: 54-72057594949943297
+sensor.closet_door_alarm_level:
+  platform: zwave
+  unique_id: 54-72057594949943313
+sensor.closet_door_sourcenodeid:
+  platform: zwave
+  unique_id: 54-72057594949943329
+sensor.closet_door_access_control:
+  platform: zwave
+  unique_id: 54-72057594949943441
+sensor.closet_door_burglar:
+  platform: zwave
+  unique_id: 54-72057594949943457
+sensor.closet_door_power_management:
+  platform: zwave
+  unique_id: 54-72057594949943473
+sensor.closet_door_system:
+  platform: zwave
+  unique_id: 54-72057594949943489
+sensor.closet_door_clock:
+  platform: zwave
+  unique_id: 54-72057594949943521
+sensor.closet_door_appliance:
+  platform: zwave
+  unique_id: 54-72057594949943537
+sensor.closet_door_homehealth:
+  platform: zwave
+  unique_id: 54-72057594949943553
+light.main_bathroom_level:
+  platform: zwave
+  unique_id: 55-72057594965491713
+switch.holiday_all_switches:
+  platform: zwave
+  unique_id: 56-72057594982252544
+switch.holiday_tree_switch:
+  platform: zwave
+  unique_id: 56-144115189020180480
+switch.holiday_switch_2:
+  platform: zwave
+  unique_id: 56-216172783058108416
+switch.holiday_switch_3:
+  platform: zwave
+  unique_id: 56-288230377096036352
+switch.holiday_switch_4:
+  platform: zwave
+  unique_id: 56-360287971133964288
+sensor.holiday_energy:
+  platform: zwave
+  unique_id: 56-72057594982465538
+sensor.holiday_energy_2:
+  platform: zwave
+  unique_id: 56-144115189020393474
+sensor.holiday_energy_3:
+  platform: zwave
+  unique_id: 56-216172783058321410
+sensor.holiday_energy_4:
+  platform: zwave
+  unique_id: 56-288230377096249346
+sensor.holiday_energy_5:
+  platform: zwave
+  unique_id: 56-360287971134177282
+sensor.holiday_previous_reading:
+  platform: zwave
+  unique_id: 56-72057594982465554
+sensor.holiday_power:
+  platform: zwave
+  unique_id: 56-72057594982465666
+sensor.holiday_previous_reading_2:
+  platform: zwave
+  unique_id: 56-72057594982465682
+sensor.holiday_previous_reading_3:
+  platform: zwave
+  unique_id: 56-144115189020393490
+sensor.holiday_power_2:
+  platform: zwave
+  unique_id: 56-144115189020393602
+sensor.holiday_previous_reading_4:
+  platform: zwave
+  unique_id: 56-144115189020393618
+sensor.holiday_previous_reading_5:
+  platform: zwave
+  unique_id: 56-216172783058321426
+sensor.holiday_power_3:
+  platform: zwave
+  unique_id: 56-216172783058321538
+sensor.holiday_previous_reading_6:
+  platform: zwave
+  unique_id: 56-216172783058321554
+sensor.holiday_previous_reading_7:
+  platform: zwave
+  unique_id: 56-288230377096249362
+sensor.holiday_power_4:
+  platform: zwave
+  unique_id: 56-288230377096249474
+sensor.holiday_previous_reading_8:
+  platform: zwave
+  unique_id: 56-288230377096249490
+sensor.holiday_previous_reading_9:
+  platform: zwave
+  unique_id: 56-360287971134177298
+sensor.holiday_power_5:
+  platform: zwave
+  unique_id: 56-360287971134177410
+sensor.holiday_previous_reading_10:
+  platform: zwave
+  unique_id: 56-360287971134177426
+light.upstairs_light_2_level:
+  platform: zwave
+  unique_id: 57-72057594999046145
+sensor.power_meter_previous_reading_2:
+  platform: zwave
+  unique_id: 48-72057594848247954
+sensor.power_meter_interval_2:
+  platform: zwave
+  unique_id: 48-72057594848247971
