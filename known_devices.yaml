@@ -304,3 +304,12 @@ c0d012a8815d:
   picture:
   track: true
   vendor: unknown
+
+unknown:
+  hide_if_away: false
+  icon:
+  mac: AC:89:95:F5:56:AB
+  name: UNKNOWN
+  picture:
+  track: true
+  vendor: AzureWave Technology Inc.
