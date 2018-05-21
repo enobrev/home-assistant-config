@@ -11,7 +11,7 @@ light.dining_room_level:
 zwave.kwikset_touchpad_electronic_deadbolt_9:
   ignored: false
   polling_intensity: 1
-light.front_porch_level:
+light.front_door_level:
   ignored: false
   polling_intensity: 0
 light.living_room_level:

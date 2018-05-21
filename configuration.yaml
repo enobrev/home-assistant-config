@@ -45,7 +45,7 @@ sun:
 recorder:
     db_url: !secret db_url
     purge_interval: 2
-    purge_keep_days: 7
+    purge_keep_days: 2
 
 # Text to speech
 tts:
@@ -131,7 +131,6 @@ device_tracker:
 
 input_select: !include input_select.yaml
 input_boolean: !include input_boolean.yaml
-input_number: !include input_number.yaml
 automation: !include_dir_merge_list automation
 sensor: !include_dir_merge_list sensor
 binary_sensor: !include_dir_merge_list binary_sensor

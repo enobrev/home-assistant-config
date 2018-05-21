@@ -10,7 +10,7 @@
                 option: "5 Minutes"
           - service: light.turn_off
             data:
-                entity_id: light.living_room_level # find-light-living_room
+                entity_id: light.living_room_lamp # find-light-living_room
           - service: light.turn_off
             data:
                 entity_id: light.kitchen_level

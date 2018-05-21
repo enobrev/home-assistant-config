@@ -69,61 +69,6 @@ freezer:
         - switch.laundry_freezer_switch
         - input_select.status_freezer
 
-test:
-    view: yes
-    name: Test
-    entities:
-        - group.test_dining
-        - group.test_living
-        - group.test_kitchen
-        - group.test_upstairs
-
-test_dining:
-    view: no
-    name: Test Dining
-    entities:
-        - input_number.countdown_dining
-        - input_boolean.presence_room_dining
-        - light.dining_room_level # find-light-dining_room
-        - binary_sensor.dining_room_sensor # find-motion-dining_room
-        - input_number.darkness
-        - timer.dining_room
-        
-test_living:
-    view: no
-    name: Test Living
-    entities:
-        - input_number.countdown_living
-        - input_boolean.presence_room_living
-        - light.living_room_level # find-light-living_room
-        - binary_sensor.living_room_sensor # find-motion-living_room
-        - input_number.darkness
-        - timer.living_room
-        
-test_kitchen:
-    view: no
-    name: Test Kitchen
-    entities:
-        - input_number.countdown_kitchen
-        - input_boolean.presence_room_kitchen
-        - light.kitchen_level # find-light-kitchen_room
-        - binary_sensor.kitchen_sensor # find-motion-kitchen_room
-        - input_number.darkness
-        - timer.kitchen
-
-test_upstairs:
-    view: no
-    name: Test Up Stairs
-    entities:
-        - input_number.countdown_upstairs
-        - input_boolean.presence_upstairs
-        - light.upstairs_light_1_level
-        - light.upstairs_light_2_level
-        - binary_sensor.upstairs_motion
-        - sensor.upstairs_burglar
-        - input_number.darkness
-        - timer.upstairs
-
 cameras:
     view: yes
     name: Cameras
@@ -136,20 +81,14 @@ light_delays:
     name: Light Fade-Out Timing
     entities:
         - input_select.timer_bedroom
-        - input_number.countdown_dining
-        - input_number.countdown_living
-        - input_number.countdown_kitchen
-        - input_number.countdown_upstairs
 
 party:
     view: yes
     name: Party
     entities:
         - input_boolean.mode_home_party
-        - input_number.darkness
-        - sensor.darkness
         - light.master_bedroom_level # find-light-master_bedroom
-        - light.living_room_level # find-light-living_room
+        - light.living_room_lamp # find-light-living_room
         - light.dining_room_level # find-light-dining_room
         - light.kitchen_level # find-light-kitchen
         - switch.deck_switch # find-switch-deck
@@ -221,15 +160,6 @@ motion_sensors:
         - binary_sensor.dining_room_sensor
         - binary_sensor.upstairs_motion
 
-media:
-    view: yes
-    name: Media
-    entities:
-        - media_player.roku_6325ae219771
-        - media_player.samsung_wireless_audio_spkwam1500
-        - media_player.johnny_5_guestroom
-        - media_player.walle_living_room
-
 view_outside:
     view: yes
     name: Outside
@@ -237,7 +167,6 @@ view_outside:
         - group.outside
         - group.garage
         - group.weather
-        - persistent_notification.darkness_math
 
 view_floor_1:
     view: yes
@@ -290,11 +219,10 @@ living_room:
     name: Living Room
     entities:
         - input_boolean.presence_room_living
-        - light.living_room_level # find-light-living_room
+        - light.living_room_lamp # find-light-living_room
         - light.hallway_level # find-light-hallway
         - switch.hallway_closet_level # find-light-hallway_closet
         - binary_sensor.living_room_sensor # find-motion-living_room
-        - input_number.darkness
         - camera.living_room_camera
 
 holiday:
@@ -315,7 +243,6 @@ dining_room:
         - input_boolean.presence_room_dining
         - light.dining_room_level # find-light-dining_room
         - binary_sensor.dining_room_sensor # find-motion-dining_room
-        - input_number.darkness
 
 
 kitchen:
@@ -337,9 +264,7 @@ outside:
     view: no
     name: Outside
     entities:
-        - input_number.darkness
-        - sensor.darkness
-        - light.front_porch_level # find-light-front_porch
+        - light.front_door_level # find-light-front_door
         - light.garage_level # find-light-garage
         - switch.deck_switch # find-switch-deck
         - sensor.solar_angle
@@ -459,7 +384,7 @@ lights_main:
     view: no
     name: Main Floor Lights
     entities:
-        - light.living_room_level # find-light-living_room
+        - light.living_room_lamp # find-light-living_room
         - light.hallway_level # find-light-hallway
         - switch.hallway_closet_switch # find-switch-hallway_closet
         - light.dining_room_level # find-light-dining_room
@@ -470,7 +395,7 @@ lights_outside:
     view: no
     name: Outside Lights
     entities:
-        - light.front_porch_level # find-light-front_porch
+        - light.front_door_level # find-light-front_door
         - light.garage_level # find-light-garage
         - switch.deck_switch # find-switch-deck
 
@@ -479,8 +404,8 @@ lights:
     name: Lights
     entities:
         - light.master_bedroom_level # find-light-master_bedroom
-        - light.front_porch_level # find-light-front_porch
-        - light.living_room_level # find-light-living_room
+        - light.front_door_level # find-light-front_door
+        - light.living_room_lamp # find-light-living_room
         - light.hallway_level # find-light-hallway
         - switch.hallway_closet_switch # find-switch-hallway_closet
         - light.garage_level # find-light-garage

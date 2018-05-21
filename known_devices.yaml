@@ -313,3 +313,12 @@ unknown:
   picture:
   track: true
   vendor: AzureWave Technology Inc.
+
+ubuntu:
+  hide_if_away: false
+  icon:
+  mac: 2C:FD:A1:BF:73:84
+  name: UBUNTU
+  picture:
+  track: true
+  vendor: unknown

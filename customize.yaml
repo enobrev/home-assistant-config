@@ -1,171 +1,161 @@
 media_player.roku_6325ae219771:
-    friendly_name: Roku
+  friendly_name: Roku
 media_player.samsung_wireless_audio_spkwam1500:
-    friendly_name: Samsung Wireless Speaker
+  friendly_name: Samsung Wireless Speaker
 media_player.johnny_5_guestroom:
-    friendly_name: Chromecast Guest Room
+  friendly_name: Chromecast Guest Room
 media_player.walle_living_room:
-    friendly_name: Chromecast Living Room
-
+  friendly_name: Chromecast Living Room
 input_boolean.presence_home_mark:
-    entity_picture: /local/mark.jpg
+  entity_picture: /local/mark.jpg
 input_boolean.presence_home_lauren:
-    entity_picture: /local/lauren.jpg
+  entity_picture: /local/lauren.jpg
 climate.dining_room:
-    entity_picture: /local/nest.jpg
+  entity_picture: /local/nest.jpg
 cover.garage_door_opener:
-    entity_picture: /local/garage.jpg
-light.living_room_level: # find-light-living_room
-    entity_picture: /local/lamp.jpg
-    friendly_name: Living Room
-light.master_bedroom_level: # find-light-master_bedroom
-    entity_picture: /local/lamp.jpg
-    friendly_name: Master Bedroom
-light.front_porch_level: # find-light-front_porch
-    entity_picture: /local/porch-light.jpg
-    friendly_name: Front Porch
-light.garage_level: # find-light-garage
-    entity_picture: /local/porch-light.jpg
-    friendly_name: Garage
+  entity_picture: /local/garage.jpg
+light.living_room_level:
+  entity_picture: /local/lamp.jpg
+  friendly_name: Living Room
+light.master_bedroom_level:
+  entity_picture: /local/lamp.jpg
+  friendly_name: Master Bedroom
+light.front_door_level:
+  entity_picture: /local/porch-light.jpg
+  friendly_name: Front Door
+light.garage_level:
+  entity_picture: /local/porch-light.jpg
+  friendly_name: Garage
 switch.deck_switch:
-    friendly_name: Deck
-    entity_picture: /local/globe.jpg
+  friendly_name: Deck
+  entity_picture: /local/globe.jpg
 switch.switch_switch_3_0:
-    friendly_name: Deck
-    entity_picture: /local/globe.jpg
-light.dining_room_level: # find-light-dining_room
-    entity_picture: /local/jar-light.jpg
-    friendly_name: Dining Room
-light.kitchen_level: # find-light-kitchen
-    entity_picture: /local/track-light.jpg
-    friendly_name: Kitchen
-lock.garage_door_locked: # find-lock-garage
-    friendly_name: Garage Door
-lock.back_door_locked: # find-lock-back_door
-    friendly_name: Back Door
-light.hallway_level: # find-light-hallway
-    friendly_name: Hallway
-switch.hallway_closet: # find-switch-hallway_closet
-    friendly_name: Hallway Closet
-light.main_bathroom_level: # find-light-main_bathroom
-    friendly_name: Main Bathroom
+  friendly_name: Deck
+  entity_picture: /local/globe.jpg
+light.dining_room_level:
+  entity_picture: /local/jar-light.jpg
+  friendly_name: Dining Room
+light.kitchen_level:
+  entity_picture: /local/track-light.jpg
+  friendly_name: Kitchen
+lock.garage_door_locked:
+  friendly_name: Garage Door
+lock.back_door_locked:
+  friendly_name: Back Door
+light.hallway_level:
+  friendly_name: Hallway
+switch.hallway_closet:
+  friendly_name: Hallway Closet
+light.main_bathroom_level:
+  friendly_name: Main Bathroom
 light.upstairs_light_1_level:
-    friendly_name: Up Stairs 1
+  friendly_name: Up Stairs 1
 light.upstairs_light_2_level:
-    friendly_name: Up Stairs 2
+  friendly_name: Up Stairs 2
 switch.laundry_washer_switch:
-    friendly_name: Washing Machine Power Override
+  friendly_name: Washing Machine Power Override
 switch.laundry_dryer_switch:
-    friendly_name: Dryer Power Override
+  friendly_name: Dryer Power Override
 switch.laundry_freezer:
-    friendly_name: Freezer Power Override
+  friendly_name: Freezer Power Override
 switch.holiday_tree_switch:
-    friendly_name: Christmas Tree
-    icon: mdi:pine-tree
+  friendly_name: Christmas Tree
+  icon: mdi:pine-tree
 switch.holiday_switch_2:
-    friendly_name: Holiday Switch 2
+  friendly_name: Holiday Switch 2
 switch.holiday_switch_3:
-    friendly_name: Holiday Switch 3
+  friendly_name: Holiday Switch 3
 switch.holiday_switch_4:
-    friendly_name: Holiday Switch 4
+  friendly_name: Holiday Switch 4
 switch.holiday_all_switches:
-    friendly_name: All Holiday Switches
+  friendly_name: All Holiday Switches
 sensor.laundry_washer_power:
-    icon: mdi:flash
-    friendly_name: Washing Machine Power
+  icon: mdi:flash
+  friendly_name: Washing Machine Power
 sensor.laundry_dryer_power:
-    icon: mdi:flash
-    friendly_name: Dryer Power
+  icon: mdi:flash
+  friendly_name: Dryer Power
 sensor.laundry_freezer_power:
-    icon: mdi:flash
-    friendly_name: Freezer Power
+  icon: mdi:flash
+  friendly_name: Freezer Power
 sensor.power_meter_power:
-    icon: mdi:flash
-    friendly_name: Total Power Usage
-
-binary_sensor.living_room_sensor: # find-motion-living_room
-    friendly_name: Living Room Sensor
-binary_sensor.dining_room_sensor: # find-motion-dining_room
-    friendly_name: Dining Room Sensor
-binary_sensor.kitchen_sensor: # find-motion-kitchen
-    friendly_name: Kitchen Sensor
+  icon: mdi:flash
+  friendly_name: Total Power Usage
+binary_sensor.living_room_sensor:
+  friendly_name: Living Room Sensor
+binary_sensor.dining_room_sensor:
+  friendly_name: Dining Room Sensor
+binary_sensor.kitchen_sensor:
+  friendly_name: Kitchen Sensor
 binary_sensor.upstairs_motion:
-    friendly_name: Up Stairs Sensor
-
-
+  friendly_name: Up Stairs Sensor
 group.all_automations:
-    hidden: false
+  hidden: false
 group.all_devices:
-    hidden: false
+  hidden: false
 group.all_lights:
-    hidden: false
+  hidden: false
 group.all_covers:
-    hidden: false
+  hidden: false
 group.all_locks:
-    hidden: false
+  hidden: false
 group.all_remotes:
-    hidden: false
+  hidden: false
 group.all_scripts:
-    hidden: false
+  hidden: false
 group.all_switches:
-    hidden: false
-
+  hidden: false
 media_player.plex_web_chrome:
-    hidden: true
+  hidden: true
 media_player.galaxy_s6:
-    hidden: true
-
+  hidden: true
 sensor.solar_angle:
-    icon: mdi:weather-sunny
-
+  icon: mdi:weather-sunny
 sensor.living_room_alarm_type:
-    hidden: true
+  hidden: true
 sensor.living_room_alarm_level:
-    hidden: true
+  hidden: true
 sensor.living_room_sourcenodeid:
-    hidden: true
+  hidden: true
 sensor.living_room_burglar:
-    hidden: true
+  hidden: true
 sensor.living_room_power_management:
-    hidden: true
-
+  hidden: true
 sensor.dining_room_alarm_type:
-    hidden: true
+  hidden: true
 sensor.dining_room_alarm_level:
-    hidden: true
+  hidden: true
 sensor.dining_room_sourcenodeid:
-    hidden: true
+  hidden: true
 sensor.dining_room_burglar:
-    hidden: true
+  hidden: true
 sensor.dining_room_power_management:
-    hidden: true
-
+  hidden: true
 sensor.kitchen_alarm_type:
-    hidden: true
+  hidden: true
 sensor.kitchen_alarm_level:
-    hidden: true
+  hidden: true
 sensor.kitchen_sourcenodeid:
-    hidden: true
+  hidden: true
 sensor.kitchen_burglar:
-    hidden: true
+  hidden: true
 sensor.kitchen_power_management:
-    hidden: true
-
+  hidden: true
 sensor.closet_door_access_control:
-    hidden: true
+  hidden: true
 sensor.closet_door_power_management:
-    hidden: true
+  hidden: true
 sensor.closet_door_sourcenodeid:
-    hidden: true
+  hidden: true
 sensor.closet_door_system:
-    hidden: true
+  hidden: true
 sensor.closet_door_homehealth:
-    hidden: true
+  hidden: true
 sensor.closet_door_clock:
-    hidden: true
+  hidden: true
 sensor.closet_door_burglar:
-    hidden: true
+  hidden: true
 sensor.closet_door_appliance:
-    hidden: true
-
-
+  hidden: true
+light.level_2:
+  friendly_name: Front Porch
