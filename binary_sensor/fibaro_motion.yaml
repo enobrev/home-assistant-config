@@ -7,3 +7,4 @@
           value_template: '{{ is_state("sensor.upstairs_burglar", "3") }}'
           friendly_name: 'Upstairs Tampering'
 
+

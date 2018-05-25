@@ -58,17 +58,6 @@ switch.laundry_dryer_switch:
   friendly_name: Dryer Power Override
 switch.laundry_freezer:
   friendly_name: Freezer Power Override
-switch.holiday_tree_switch:
-  friendly_name: Christmas Tree
-  icon: mdi:pine-tree
-switch.holiday_switch_2:
-  friendly_name: Holiday Switch 2
-switch.holiday_switch_3:
-  friendly_name: Holiday Switch 3
-switch.holiday_switch_4:
-  friendly_name: Holiday Switch 4
-switch.holiday_all_switches:
-  friendly_name: All Holiday Switches
 sensor.laundry_washer_power:
   icon: mdi:flash
   friendly_name: Washing Machine Power

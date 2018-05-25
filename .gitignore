@@ -5,6 +5,7 @@
 .uuid
 .google.token
 .spotify-token-cache
+.cloud
 /ozw_config
 /deps/
 /tts/

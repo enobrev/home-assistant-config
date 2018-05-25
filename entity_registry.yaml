@@ -82,10 +82,6 @@ sensor.kitchen_power_management:
   name:
   platform: zwave
   unique_id: 8-72057594178191537
-light.living_room_level:
-  name:
-  platform: zwave
-  unique_id: 10-72057594210516993
 light.front_door_level:
   name: Front Door
   platform: zwave
@@ -418,103 +414,103 @@ light.main_bathroom_level:
   name:
   platform: zwave
   unique_id: 55-72057594965491713
-switch.holiday_all_switches:
-  name:
+switch.decks_all_switches:
+  name: Decks
   platform: zwave
   unique_id: 56-72057594982252544
-switch.holiday_tree_switch:
-  name:
+switch.decks_left_turntable:
+  name: Left Turntable
   platform: zwave
   unique_id: 56-144115189020180480
-switch.holiday_switch_2:
-  name:
+switch.decks_mixer:
+  name: Mixer
   platform: zwave
   unique_id: 56-216172783058108416
-switch.holiday_switch_3:
-  name:
+switch.decks_right_turntable:
+  name: Right Turntable
   platform: zwave
   unique_id: 56-288230377096036352
-switch.holiday_switch_4:
+switch.decks_switch_4:
   name:
   platform: zwave
   unique_id: 56-360287971133964288
-sensor.holiday_energy:
+sensor.decks_energy:
   name:
   platform: zwave
   unique_id: 56-72057594982465538
-sensor.holiday_energy_2:
+sensor.decks_energy_2:
   name:
   platform: zwave
   unique_id: 56-144115189020393474
-sensor.holiday_energy_3:
+sensor.decks_energy_3:
   name:
   platform: zwave
   unique_id: 56-216172783058321410
-sensor.holiday_energy_4:
+sensor.decks_energy_4:
   name:
   platform: zwave
   unique_id: 56-288230377096249346
-sensor.holiday_energy_5:
+sensor.decks_energy_5:
   name:
   platform: zwave
   unique_id: 56-360287971134177282
-sensor.holiday_previous_reading:
+sensor.decks_previous_reading:
   name:
   platform: zwave
   unique_id: 56-72057594982465554
-sensor.holiday_power:
+sensor.decks_power:
   name:
   platform: zwave
   unique_id: 56-72057594982465666
-sensor.holiday_previous_reading_2:
+sensor.decks_previous_reading_2:
   name:
   platform: zwave
   unique_id: 56-72057594982465682
-sensor.holiday_previous_reading_3:
+sensor.decks_previous_reading_3:
   name:
   platform: zwave
   unique_id: 56-144115189020393490
-sensor.holiday_power_2:
+sensor.decks_power_2:
   name:
   platform: zwave
   unique_id: 56-144115189020393602
-sensor.holiday_previous_reading_4:
+sensor.decks_previous_reading_4:
   name:
   platform: zwave
   unique_id: 56-144115189020393618
-sensor.holiday_previous_reading_5:
+sensor.decks_previous_reading_5:
   name:
   platform: zwave
   unique_id: 56-216172783058321426
-sensor.holiday_power_3:
+sensor.decks_power_3:
   name:
   platform: zwave
   unique_id: 56-216172783058321538
-sensor.holiday_previous_reading_6:
+sensor.decks_previous_reading_6:
   name:
   platform: zwave
   unique_id: 56-216172783058321554
-sensor.holiday_previous_reading_7:
+sensor.decks_previous_reading_7:
   name:
   platform: zwave
   unique_id: 56-288230377096249362
-sensor.holiday_power_4:
+sensor.decks_power_4:
   name:
   platform: zwave
   unique_id: 56-288230377096249474
-sensor.holiday_previous_reading_8:
+sensor.decks_previous_reading_8:
   name:
   platform: zwave
   unique_id: 56-288230377096249490
-sensor.holiday_previous_reading_9:
+sensor.decks_previous_reading_9:
   name:
   platform: zwave
   unique_id: 56-360287971134177298
-sensor.holiday_power_5:
+sensor.decks_power_5:
   name:
   platform: zwave
   unique_id: 56-360287971134177410
-sensor.holiday_previous_reading_10:
+sensor.decks_previous_reading_10:
   name:
   platform: zwave
   unique_id: 56-360287971134177426
@@ -530,10 +526,6 @@ sensor.power_meter_interval_2:
   name:
   platform: zwave
   unique_id: 48-72057594848247971
-light.living_room_lamp:
-  name: Living Room Lamp
-  platform: zwave
-  unique_id: 59-72057595032600577
 light.level:
   name:
   platform: zwave
@@ -614,7 +606,7 @@ zwave.main_bathroom:
   name:
   platform: zwave
   unique_id: node-55
-zwave.holiday:
+zwave.decks:
   name:
   platform: zwave
   unique_id: node-56
@@ -622,11 +614,55 @@ zwave.upstairs_light_2:
   name:
   platform: zwave
   unique_id: node-57
-zwave.living_room_2:
-  name:
-  platform: zwave
-  unique_id: node-59
 zwave.front_porch:
   name:
   platform: zwave
   unique_id: node-61
+light.living_room_lamp:
+  name: Living Room Lamp
+  platform: zwave
+  unique_id: 63-72057595099709441
+zwave.living_room_lamp:
+  name:
+  platform: zwave
+  unique_id: node-63
+sensor.office_motion_alarm_type:
+  name:
+  platform: zwave
+  unique_id: 64-72057595117715457
+sensor.office_motion_alarm_level:
+  name:
+  platform: zwave
+  unique_id: 64-72057595117715473
+binary_sensor.office_motion_sensor:
+  name:
+  platform: zwave
+  unique_id: 64-72057595116650496
+sensor.office_motion_temperature:
+  name:
+  platform: zwave
+  unique_id: 64-72057595116666898
+sensor.office_motion_luminance:
+  name:
+  platform: zwave
+  unique_id: 64-72057595116666930
+zwave.office_motion_sensor:
+  name:
+  platform: zwave
+  unique_id: node-64
+sensor.office_motion_seismic_intensity:
+  name:
+  platform: zwave
+  unique_id: 64-72057595116667282
+sensor.office_motion_sourcenodeid:
+  name:
+  platform: zwave
+  unique_id: 64-72057595117715489
+sensor.office_motion_burglar:
+  name:
+  platform: zwave
+  unique_id: 64-72057595117715617
+sensor.office_motion_general:
+  name:
+  platform: zwave
+  unique_id: 64-72057595118419969

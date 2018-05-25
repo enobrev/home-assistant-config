@@ -20,6 +20,14 @@ frontend:
 # Enables configuration UI
 config:
 
+# Enables Home Assistant Cloud
+cloud:
+    google_actions:
+        filter:
+            include_domains:
+                - switch
+                - light
+
 http:
     api_password: !secret api_password
 #    base_url: !secret host
@@ -31,7 +39,7 @@ updater:
 # discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+# conversation:
 
 # Enables support for tracking state changes over time.
 history:
@@ -93,8 +101,6 @@ camera:
       ip: 192.168.1.50
       name: Front Porch Camera
     
-    
-
 notify:
     - name: pushbullet_mark
       platform: pushbullet
@@ -102,23 +108,6 @@ notify:
     - name: pushbullet_lauren
       platform: pushbullet
       api_key: !secret pushbullet_key_lauren
-
-emulated_hue:
-    type: alexa
-    expose_by_default: true
-    exposed_domains:
-        - light
-        - switch
-
-google_assistant:
-    project_id: !secret google_home_project_id
-    client_id: !secret google_home_client_id 
-    access_token: !secret google_home_access_token 
-    agent_user_id: hamlin
-    api_key: !secret google_home_api_key
-    exposed_domains:
-        - light
-        - switch
 
 remote:
     - platform: harmony
@@ -130,32 +119,13 @@ device_tracker:
       password: !secret netgear_password
 
 input_select: !include input_select.yaml
-input_boolean: !include input_boolean.yaml
 automation: !include_dir_merge_list automation
 sensor: !include_dir_merge_list sensor
 binary_sensor: !include_dir_merge_list binary_sensor
 script: !include_dir_merge_named script
-
-timer:
-    living_room:
-        name: Living Room
-        icon: mdi:timer
-    dining_room:
-        name: Dining Room
-        icon: mdi:timer
-    kitchen:
-        name: Kitchen
-        icon: mdi:timer
-    upstairs:
-        name: Up Stairs
-        icon: mdi:timer
 
 panel_iframe:
     nodered:
         title: Node-Red
         icon:  mdi:shuffle-variant
         url:   https://red.enobrev.net
-    nest:
-        title: Nest
-        icon:  mdi:nest-thermostat
-        url:   https://home.nest.com/

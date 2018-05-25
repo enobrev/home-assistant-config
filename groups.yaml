@@ -9,8 +9,7 @@ default_view:
         - group.home_laundry
         - group.power
         - group.garage
-        - group.presence_people
-        - group.holiday
+        - group.decks
         - lock.garage_door_locked
         - lock.back_door_locked
         - group.lights_main
@@ -18,6 +17,7 @@ default_view:
         - group.lights_outside
         - camera.front_porch_camera
         - camera.living_room_camera
+        - sensor.dining_room_smoke_alarm
 
 power:
     view: no
@@ -80,76 +80,14 @@ light_delays:
     view: no
     name: Light Fade-Out Timing
     entities:
-        - input_select.timer_bedroom
-
-party:
-    view: yes
-    name: Party
-    entities:
-        - input_boolean.mode_home_party
-        - light.master_bedroom_level # find-light-master_bedroom
-        - light.living_room_lamp # find-light-living_room
-        - light.dining_room_level # find-light-dining_room
-        - light.kitchen_level # find-light-kitchen
-        - switch.deck_switch # find-switch-deck
-
-batteries:
-    view: no
-    name: Batteries
-    entities:
-        - sensor.battery_lock_back
-        - sensor.battery_lock_garage
-        - sensor.battery_motion_dining_room
-        - sensor.battery_motion_kitchen
-        - sensor.battery_motion_living_room
-        - sensor.battery_motion_upstairs
-        - sensor.battery_closet_door
-        - sensor.battery_dining_room_smoke_alarm
-
-presence_people:
-    view: no
-    name: Where is Everybody
-    entities:
-        - input_boolean.presence_home_mark
-        - input_boolean.presence_home_lauren
-        - input_boolean.presence_home_visitor
-
-modes:
-    view: no
-    name: Modes
-    entities:
-        - input_boolean.mode_sleep
-        - input_boolean.mode_movie
-        - input_boolean.mode_home_party
 
 view_people:
     view: yes
     name: People
     entities:
-        - group.presence_places
         - group.mark
         - group.lauren
         - group.cat_pan
-
-presence_places:
-    view: no
-    name: Presence Sensors
-    entities:
-        - input_boolean.presence_home_all
-        - input_boolean.presence_home_visitor
-        - input_boolean.presence_room_living
-        - input_boolean.presence_room_dining
-        - input_boolean.presence_room_kitchen
-        - input_boolean.presence_upstairs
-
-room_sensors:
-    view: no
-    name: Room Sensors
-    entities:
-        - input_boolean.presence_room_living
-        - input_boolean.presence_room_dining
-        - input_boolean.presence_room_kitchen
-        - input_boolean.presence_upstairs
 
 motion_sensors:
     view: no
@@ -168,6 +106,14 @@ view_outside:
         - group.garage
         - group.weather
 
+view_office:
+    view: yes
+    name: Office
+    entities:
+        - group.office
+        - camera.living_room_camera
+        - camera.front_porch_camera
+
 view_floor_1:
     view: yes
     name: First Floor
@@ -177,7 +123,7 @@ view_floor_1:
         - group.kitchen
         - group.thermostat
         - group.speedtest
-        - group.holiday
+        - group.decks
         - lock.garage_door_locked
         - lock.back_door_locked
 
@@ -196,13 +142,22 @@ master_bedroom:
         - light.master_bedroom_level # find-light-master_bedroom
         - media_player.samsung_wireless_audio_spkwam1500
 
+office:
+    view: no
+    name: Office
+    entities:
+        - light.office_level
+        - binary_sensor.office_motion_sensor
+        - sensor.office_motion_temperature
+        - sensor.office_motion_luminance
+        - sensor.office_motion_burglar
+
 up_stairs:
     view: no
     name: Up Stairs
     entities:
         - light.upstairs_light_1_level
         - light.upstairs_light_2_level
-        - input_boolean.presence_upstairs
         - binary_sensor.upstairs_motion
         - sensor.upstairs_temperature
         - sensor.upstairs_luminance
@@ -218,29 +173,27 @@ living_room:
     view: no
     name: Living Room
     entities:
-        - input_boolean.presence_room_living
         - light.living_room_lamp # find-light-living_room
         - light.hallway_level # find-light-hallway
         - switch.hallway_closet_level # find-light-hallway_closet
         - binary_sensor.living_room_sensor # find-motion-living_room
         - camera.living_room_camera
 
-holiday:
+decks:
     view: no
-    name: Holiday
+    name: Decks
     entities:
-        - switch.holiday_tree_switch
-        - switch.holiday_switch_2
-        - switch.holiday_switch_3
-        - switch.holiday_switch_4
-        - switch.holiday_all_switches
+        - switch.decks_left_turntable
+        - switch.decks_mixer
+        - switch.decks_right_turntable
+        - switch.decks_switch_4
+        - switch.decks_all_switches
     
 
 dining_room:
     view: no
     name: Dining Room
     entities:
-        - input_boolean.presence_room_dining
         - light.dining_room_level # find-light-dining_room
         - binary_sensor.dining_room_sensor # find-motion-dining_room
 
@@ -249,7 +202,6 @@ kitchen:
     view: no
     name: Kitchen
     entities:
-        - input_boolean.presence_room_kitchen
         - light.kitchen_level # find-light-kitchen
         - binary_sensor.kitchen_sensor # find-motion-kitchen
 
@@ -274,19 +226,6 @@ outside:
         - lock.back_door_locked
         - camera.front_porch_camera
 
-lauren:
-    view: no
-    name: Lauren
-    entities:
-        - input_boolean.presence_home_lauren
-        - input_select.presence_room_lauren
-mark:
-    view: no
-    name: Mark
-    entities:
-        - input_boolean.presence_home_mark
-        - input_select.presence_room_mark
-
 view_all_of_it:
     view: yes
     name: Kitchen Sink
@@ -308,19 +247,6 @@ view_all_of_it:
         - group.modes
         - group.batteries
 
-inputs:
-    view: no
-    name: Inputs
-    entities:
-        - input_boolean.presence_home_mark
-        - input_boolean.presence_home_lauren
-        - input_boolean.presence_home_all
-        - input_boolean.presence_room_kitchen
-        - input_boolean.presence_room_dining
-        - input_boolean.presence_room_living
-        - input_select.presence_room_mark
-        - input_select.presence_room_lauren
-        - input_select.presence_upstairs
 weather:
     view: no
     name: Weather
@@ -379,6 +305,7 @@ lights_upstairs:
         - light.master_bedroom_level # find-light-master_bedroom
         - light.upstairs_light_1_level
         - light.upstairs_light_2_level
+        - input_select.timer_bedroom
 
 lights_main:
     view: no
